@@ -1,0 +1,2566 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Образцовая гора — усадьба Мосолова и Меньшикова в Валдае</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230E1513'/%3E%3Cpath d='M7 24V15l9-7 9 7v9h-6v-6h-6v6z' fill='%23C9A24B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+:root{
+  --bg:#0E1513; --bg2:#131C18; --panel:#15211C;
+  --cream:#EDE6D3; --dim:rgba(237,230,211,.62); --dim2:rgba(237,230,211,.42);
+  --gold:#C9A24B; --gold2:#E4C77E; --wine:#C06A4A; --sage:#8FAE8B;
+  --line:rgba(237,230,211,.13); --line2:rgba(237,230,211,.3);
+  --fd:'Prata',Georgia,serif; --fs:'Golos Text',Arial,sans-serif;
+  --rail:236px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--cream);font:400 16px/1.68 var(--fs);-webkit-font-smoothing:antialiased;overflow-x:hidden;
+  background-image:radial-gradient(900px 500px at 85% -5%,rgba(201,162,75,.06),transparent 60%),radial-gradient(700px 700px at -10% 40%,rgba(72,110,96,.08),transparent 60%)}
+::selection{background:var(--gold);color:#14100a}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;background:none;border:none;color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.caps{font-size:10px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--dim)}
+.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.if{fill:currentColor;stroke:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 5vw}
+.art{width:100%;height:100%;display:block}
+.ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;opacity:0;transition:opacity .7s}
+.ph.ok{opacity:1}
+.st{font-size:8.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--dim2)}
+.st.ok{color:var(--sage)}.st.warn{color:var(--gold2)}.st.err{color:var(--wine)}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.js .reveal.in{opacity:1;transform:none}
+
+.rail{position:fixed;top:0;left:0;bottom:0;width:var(--rail);z-index:80;background:rgba(19,28,24,.6);backdrop-filter:blur(8px);border-right:1px solid var(--line);display:flex;flex-direction:column;padding:30px 26px 26px}
+.rail-brand{display:flex;align-items:center;gap:12px;padding-bottom:24px;border-bottom:1px solid var(--line)}
+.rail-mark{width:42px;height:42px;flex:none}
+.rail-brand b{font:400 17px/1.25 var(--fd);letter-spacing:.02em;display:block}
+.rail-brand small{font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+.rail-nav{display:flex;flex-direction:column;margin-top:20px;flex:1}
+.rail-nav a{display:flex;align-items:baseline;gap:12px;padding:11px 0 11px 14px;font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);transition:.25s;border-left:1px solid var(--line)}
+.rail-nav a em{font:400 11px var(--fd);font-style:normal;color:var(--gold);opacity:.65;min-width:22px}
+.rail-nav a:hover{color:var(--cream);padding-left:20px}
+.rail-nav a.active{color:var(--gold2);border-left:2px solid var(--gold);padding-left:13px}
+.rail-nav a.adm{margin-top:10px;padding-top:13px;border-top:1px solid var(--line)}
+.rail-nav a.adm em{display:flex;align-items:center;min-width:22px}
+.rail-nav a.adm em svg{width:13px;height:13px}
+.rail-foot{border-top:1px solid var(--line);padding-top:18px;display:grid;gap:12px}
+.rail-quote{font:400 12.5px/1.6 var(--fd);font-style:italic;color:var(--dim2)}
+.rail-quote b{display:block;font:600 8.5px var(--fs);letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-style:normal;margin-top:6px}
+.rail-cta{display:flex;align-items:center;justify-content:center;background:var(--gold);color:#181206;font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:13px 10px;transition:.22s}
+.rail-cta:hover{background:var(--gold2)}
+
+.topbar{position:fixed;top:0;left:0;right:0;z-index:85;display:none;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;background:rgba(14,21,19,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.topbar .rail-brand{border:none;padding:0}
+.topbar .rail-brand b{font-size:15px}
+.burger{width:44px;height:44px;border:1px solid var(--line2);display:flex;align-items:center;justify-content:center}
+.mnav{position:fixed;top:0;right:0;bottom:0;width:min(320px,86vw);background:var(--bg2);border-left:1px solid var(--line2);z-index:95;padding:84px 30px 30px;transform:translateX(103%);transition:transform .45s cubic-bezier(.7,0,.2,1);display:flex;flex-direction:column;overflow-y:auto}
+body.menu-open .mnav{transform:none}
+.mnav a{font:400 21px var(--fd);padding:11px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline}
+.mnav a span{font-size:10px;font-weight:600;letter-spacing:.16em;color:var(--gold)}
+.mnav-close{position:absolute;top:16px;right:20px;width:42px;height:42px;border:1px solid var(--line2);display:flex;align-items:center;justify-content:center}
+
+main{margin-left:var(--rail)}
+html.js .page{display:none}
+html.js .page.active{display:block;animation:pin .5s cubic-bezier(.2,.7,.2,1)}
+@keyframes pin{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+
+.shead{padding:64px 0 10px;display:grid;grid-template-columns:auto 1fr;gap:14px 30px;align-items:end;margin-bottom:40px}
+.snum{font:400 15px var(--fd);color:var(--gold);letter-spacing:.3em;padding-bottom:14px}
+.shead h2{font:400 clamp(2rem,4vw,3.1rem)/1.08 var(--fd)}
+.slede{grid-column:2;color:var(--dim);max-width:66ch;font-size:15.5px;margin-top:10px}
+.btn{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line2);padding:14px 22px;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--cream);transition:.22s;background:transparent;cursor:pointer}
+.btn:hover{border-color:var(--gold);color:var(--gold2)}
+.btn.gold{background:var(--gold);border-color:var(--gold);color:#181206}
+.btn.gold:hover{background:var(--gold2);border-color:var(--gold2);color:#181206}
+.btn.danger:hover{border-color:var(--wine);color:var(--wine)}
+
+.hero{min-height:92vh;display:grid;grid-template-columns:1.04fr 1fr;gap:54px;align-items:center;max-width:1150px;margin:0 auto;padding:60px 5vw 40px}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:11px;font-size:10px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:22px}
+.hero-eyebrow::before{content:"";width:26px;height:1px;background:var(--gold)}
+h1{font:400 clamp(2.9rem,6.4vw,5.4rem)/1.04 var(--fd);margin-bottom:18px}
+h1 .lnwrap{display:block;overflow:hidden}
+h1 .ln{display:block;transform:translateY(112%);animation:lup .9s cubic-bezier(.2,.7,.2,1) forwards}
+h1 .lnwrap:nth-child(2) .ln{animation-delay:.14s}
+@keyframes lup{to{transform:none}}
+html:not(.js) h1 .ln{transform:none;animation:none}
+.hero-sub{font:400 clamp(1.05rem,1.7vw,1.3rem)/1.45 var(--fd);color:var(--gold2);margin-bottom:18px}
+.lede{color:var(--dim);max-width:56ch;font-size:15.5px;line-height:1.85;margin-bottom:30px}
+.lede b{color:var(--cream);font-weight:600}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:40px}
+.hstats{display:flex;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:20px}
+.hs{padding-right:26px;margin-right:26px;border-right:1px solid var(--line)}
+.hs:last-child{border:none;margin:0;padding-right:0}
+.hs b{display:block;font:400 26px/1.2 var(--fd);color:var(--gold2)}
+.hs small{font-size:9px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+
+.stage{position:relative;height:560px;border:1px solid var(--line2);background:#0C1310;user-select:none;overflow:hidden;box-shadow:0 34px 80px -34px rgba(0,0,0,.8)}
+.stage::after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 120px rgba(0,0,0,.5);z-index:3}
+.stage canvas{position:absolute;inset:0;width:100%!important;height:100%!important;touch-action:none;cursor:grab}
+.stage canvas:active{cursor:grabbing}
+.stage-tag{position:absolute;font-size:9px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);pointer-events:none;z-index:4}
+.stage-tag.tl{top:16px;left:52px}
+.stage-tag.tr{top:16px;right:52px;color:var(--gold)}
+.corner{position:absolute;width:15px;height:15px;border:1px solid var(--gold);opacity:.75;z-index:4;pointer-events:none}
+.c1{top:9px;left:9px;border-right:none;border-bottom:none}
+.c2{top:9px;right:9px;border-left:none;border-bottom:none}
+.c3{bottom:9px;left:9px;border-right:none;border-top:none}
+.c4{bottom:9px;right:9px;border-left:none;border-top:none}
+.zoomer{position:absolute;top:40px;right:10px;display:flex;flex-direction:column;gap:6px;z-index:5}
+.zoomer button{width:30px;height:30px;border:1px solid var(--line2);background:rgba(14,21,19,.85);color:var(--cream);display:flex;align-items:center;justify-content:center;transition:.2s}
+.zoomer button:hover{border-color:var(--gold);color:var(--gold2)}
+.stage-fb{display:none;position:absolute;inset:0;flex-direction:column;gap:16px;align-items:center;justify-content:center;padding:24px;text-align:center;z-index:2}
+.stage-fb p{font:400 16px/1.6 var(--fd);font-style:italic;color:var(--dim);max-width:42ch}
+.stage-ui{position:absolute;left:0;right:0;bottom:0;z-index:4;padding:14px 20px 16px;background:rgba(11,17,14,.9);backdrop-filter:blur(6px);border-top:1px solid var(--line)}
+.sui-top{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:8px}
+.sui-top b{font-size:9.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+.play{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line2);padding:8px 13px;font-size:9.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:.2s;color:var(--cream)}
+.play:hover{border-color:var(--gold);color:var(--gold2)}
+.play svg{width:11px;height:11px}
+.sui-scale{display:flex;justify-content:space-between;font:400 13.5px var(--fd);font-style:italic;color:var(--dim);margin-top:5px}
+.sui-scale em{font-style:normal;color:var(--gold2)}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:22px;background:transparent}
+input[type=range]::-webkit-slider-runnable-track{height:2px;background:var(--line2)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:17px;height:17px;border-radius:50%;background:var(--gold);border:3px solid #0B120F;box-shadow:0 0 0 1.5px var(--gold);margin-top:-7.5px;cursor:ew-resize}
+input[type=range]::-moz-range-track{height:2px;background:var(--line2)}
+input[type=range]::-moz-range-thumb{width:13px;height:13px;border-radius:50%;background:var(--gold);border:3px solid #0B120F;box-shadow:0 0 0 1.5px var(--gold);cursor:ew-resize}
+
+.ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:13px 0;background:rgba(19,28,24,.5)}
+.ticker-track{display:flex;align-items:center;gap:42px;width:max-content;animation:tk 36s linear infinite}
+.ticker-track:hover{animation-play-state:paused}
+.ticker-track span{font:400 14px var(--fd);letter-spacing:.12em;text-transform:uppercase;color:var(--gold2);white-space:nowrap}
+.ticker-track i{width:5px;height:5px;background:var(--gold);transform:rotate(45deg);flex:none}
+@keyframes tk{to{transform:translateX(-50%)}}
+
+.names{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.name-card{position:relative;border:1px solid var(--line);background:var(--panel);padding:30px 26px 26px;transition:.3s;overflow:hidden}
+.name-card:hover{border-color:rgba(201,162,75,.5);transform:translateY(-4px)}
+.name-card .ny{font:400 13px var(--fd);color:var(--gold);letter-spacing:.1em;margin-bottom:10px}
+.name-card h3{font:400 24px/1.15 var(--fd);margin-bottom:4px}
+.name-card .nr{font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);margin-bottom:14px}
+.name-card p{font-size:14px;color:var(--dim);line-height:1.75}
+.name-card .nq{font:400 14.5px/1.6 var(--fd);font-style:italic;color:var(--gold2);margin-top:14px;padding-left:14px;border-left:2px solid var(--gold)}
+
+.note{display:grid;grid-template-columns:120px 1fr auto;gap:8px 32px;padding:28px 8px;border-top:1px solid var(--line);align-items:start;transition:background .25s}
+.note:last-of-type{border-bottom:1px solid var(--line)}
+.note:hover{background:rgba(24,36,30,.55)}
+.nmeta .nno{display:block;font:400 24px/1 var(--fd);color:var(--gold);margin-bottom:6px}
+.nmeta small{font-size:9.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);line-height:1.9;display:block}
+.note h3{font:400 clamp(1.25rem,2.1vw,1.6rem)/1.2 var(--fd);margin-bottom:7px;transition:color .25s}
+.note:hover h3{color:var(--gold2)}
+.note p{color:var(--dim);font-size:14.5px;max-width:66ch}
+.ntags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.ntags span{font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,162,75,.35);padding:4px 9px}
+.nside{display:flex;flex-direction:column;align-items:flex-end;gap:13px;padding-top:8px}
+.read{display:inline-flex;align-items:center;gap:7px;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--cream);border-bottom:1px solid var(--line2);padding-bottom:3px;transition:.2s}
+.read:hover{color:var(--gold2);border-color:var(--gold)}
+.read svg{width:13px;height:13px}
+.like{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:500;color:var(--dim);transition:.2s}
+.like svg{width:15px;height:15px}
+.like:hover{color:var(--gold2)}
+.like.liked{color:var(--gold)}
+.like.liked svg{fill:var(--gold)}
+.note.feat{grid-template-columns:1fr 1.02fr;gap:40px;align-items:center;padding:30px 8px}
+.feat .nimg{position:relative;border:1px solid var(--line2);overflow:hidden;aspect-ratio:16/10.5}
+.feat .nimg .art{filter:grayscale(.5) sepia(.1);transition:.7s}
+.note.feat:hover .nimg .art{filter:none;transform:scale(1.02)}
+.stamp{position:absolute;top:12px;right:12px;background:rgba(14,21,19,.9);border:1px solid var(--line2);font-size:8px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);padding:4px 9px;z-index:3}
+.note.hasimg{grid-template-columns:110px 1fr 170px auto}
+.nthumb{position:relative;border:1px solid var(--line2);overflow:hidden;align-self:center;aspect-ratio:4/3}
+.nthumb .art{filter:grayscale(.8) sepia(.15) brightness(.92);transition:.5s}
+.note:hover .nthumb .art{filter:none}
+
+.mani{position:relative;margin:70px 0 0;padding:110px 5vw;background:#0E1A15;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;text-align:center}
+.mani-bg{position:absolute;inset:0;width:100%;height:100%;opacity:.22;filter:grayscale(1) brightness(.75);pointer-events:none}
+.mani .ph{opacity:0;filter:grayscale(.7) brightness(.6)}
+.mani .ph.ok{opacity:.38}
+.mani::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,21,19,.55),rgba(14,21,19,.25) 45%,rgba(14,21,19,.72));pointer-events:none;z-index:2}
+.mani-in{position:relative;z-index:3}
+.mani-orn{color:var(--gold);opacity:.85;margin-bottom:22px}
+.mani blockquote{max-width:30ch;margin:0 auto;font:400 clamp(1.5rem,3.1vw,2.4rem)/1.35 var(--fd)}
+.mani blockquote em{color:var(--gold2);font-style:normal}
+.mani figcaption{margin-top:24px;font-size:9.5px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--dim)}
+
+.hrow{display:grid;grid-template-columns:76px 1fr auto;gap:24px;align-items:center;padding:24px 8px;border-top:1px solid var(--line);transition:.25s;cursor:pointer}
+.hrow:last-of-type{border-bottom:1px solid var(--line)}
+.hrow:hover{background:rgba(24,36,30,.55);padding-left:20px}
+.hn{font:400 30px/1 var(--fd);color:rgba(201,162,75,.5)}
+.hrow h3{font:400 21px var(--fd);margin-bottom:3px}
+.hrow p{color:var(--dim);font-size:14px}
+.go{width:44px;height:44px;border:1px solid var(--line2);display:flex;align-items:center;justify-content:center;transition:.22s}
+.hrow:hover .go{border-color:var(--gold);color:var(--gold2)}
+
+.tl{position:relative;max-width:940px;margin:0 auto;padding:16px 0 30px}
+.tl-line{position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--line);transform:translateX(-50%)}
+.tl-fill{position:absolute;left:0;top:0;width:100%;height:0;background:var(--gold)}
+.ti{position:relative;width:50%;padding:22px 48px 22px 0;text-align:right}
+.ti:nth-child(odd){left:50%;padding:22px 0 22px 48px;text-align:left}
+.ti::before{content:"";position:absolute;top:40px;right:-5px;width:10px;height:10px;background:var(--bg);border:1.5px solid var(--gold);transform:rotate(45deg);z-index:2}
+.ti:nth-child(odd)::before{right:auto;left:-5px}
+.ty{font:400 clamp(1.6rem,2.8vw,2.2rem)/1.1 var(--fd);color:var(--gold2)}
+.ti.dark .ty{color:var(--wine)}
+.ti.future .ty{color:var(--sage)}
+.ti h3{font:400 19px var(--fd);margin:5px 0 4px}
+.ti p{font-size:14px;color:var(--dim);line-height:1.7;max-width:46ch;display:inline-block}
+.tl-ph{position:relative;margin-top:14px;border:1px solid var(--line2);aspect-ratio:16/9.6;overflow:hidden}
+.tl-ph .art{filter:sepia(.2) contrast(1.03)}
+.tl-phc{display:block;margin-top:7px;font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--dim2)}
+.tl-note{max-width:940px;margin:24px auto 0;font-size:12px;font-style:italic;color:var(--dim2);border-top:1px solid var(--line);padding-top:16px;line-height:1.8}
+
+.ba-title{text-align:center;margin-bottom:14px;font:400 20px var(--fd);font-style:italic;color:var(--gold2)}
+.ba{position:relative;aspect-ratio:16/9.4;border:1px solid var(--gold);overflow:hidden;cursor:ew-resize;--x:55%;touch-action:none;box-shadow:0 30px 70px -30px rgba(0,0,0,.8)}
+.ba .art{position:absolute;inset:0;pointer-events:none}
+.b-side{position:absolute;inset:0}
+.b-side .art{filter:sepia(.3) contrast(1.04) brightness(.95)}
+.ba-after{position:absolute;inset:0;clip-path:inset(0 0 0 var(--x))}
+.ba-handle{position:absolute;top:0;bottom:0;left:var(--x);width:1.5px;background:var(--gold);transform:translateX(-1px);z-index:4}
+.ba-knob{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;border-radius:50%;background:var(--bg);border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold2);box-shadow:0 10px 26px rgba(0,0,0,.55);z-index:4}
+.ba-knob svg{width:18px;height:18px}
+.ba-tag{position:absolute;bottom:14px;font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;background:rgba(11,17,14,.85);color:var(--gold2);border:1px solid var(--line);padding:6px 11px;pointer-events:none;z-index:5}
+.ba-tag.l{left:14px}.ba-tag.r{right:14px}
+.ba-hint{text-align:center;margin-top:12px;font-size:9.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--dim2)}
+.ba-tabs{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin:22px 0 8px}
+.ba-tab{border:1px solid var(--line);padding:10px 16px;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);transition:.2s}
+.ba-tab:hover{border-color:var(--gold);color:var(--gold2)}
+.ba-tab.active{background:var(--gold);border-color:var(--gold);color:#181206}
+.steps{margin-top:70px}
+.step{display:grid;grid-template-columns:64px 1fr 1.5fr auto;gap:16px 28px;align-items:center;padding:22px 8px;border-top:1px solid var(--line);transition:background .25s}
+.step:last-child{border-bottom:1px solid var(--line)}
+.step:hover{background:rgba(24,36,30,.55)}
+.sn{font:400 26px/1 var(--fd);color:rgba(201,162,75,.55)}
+.step h3{font:400 20px var(--fd)}
+.step p{font-size:13.5px;color:var(--dim)}
+.bdg{display:inline-flex;align-items:center;gap:8px;font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--line);padding:6px 11px;white-space:nowrap;color:var(--dim)}
+.bdg::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--st,var(--dim))}
+.bdg.run{--st:var(--gold)}.bdg.wait{--st:#6b7d6a}
+
+.facts{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.fact{position:relative;background:var(--panel);border:1px solid var(--line);padding:30px 28px 26px;overflow:hidden;will-change:transform;transition:border-color .3s}
+.fact:hover{border-color:rgba(201,162,75,.55)}
+.fn{position:absolute;top:-6px;right:12px;font:400 76px/1 var(--fd);color:rgba(201,162,75,.09);pointer-events:none}
+.fk{display:inline-flex;align-items:center;gap:8px;font-size:9px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;position:relative}
+.fk svg{width:14px;height:14px}
+.fact h3{font:400 clamp(1.2rem,1.8vw,1.5rem)/1.2 var(--fd);margin-bottom:9px;position:relative}
+.fact p{font-size:14px;color:var(--dim);position:relative;line-height:1.75}
+.fact.gold{background:linear-gradient(150deg,#1C2A1F,#15201A);border-color:rgba(201,162,75,.4)}
+.f1{grid-column:span 7}.f2{grid-column:span 5}.f3{grid-column:span 4}.f4{grid-column:span 8}.f5{grid-column:span 5}.f6{grid-column:span 7}.f7{grid-column:span 12}
+.fact .q{font:400 16px/1.6 var(--fd);font-style:italic;color:var(--gold2);margin-top:14px;padding-left:14px;border-left:2px solid var(--gold);position:relative}
+
+.ev{display:grid;grid-template-columns:110px 1fr auto;gap:8px 30px;align-items:center;padding:26px 8px;border-top:1px solid var(--line);transition:.25s}
+.ev:last-of-type{border-bottom:1px solid var(--line)}
+.ev:hover{background:rgba(24,36,30,.55);transform:translateX(5px)}
+.ed{text-align:center}
+.ed b{display:block;font:400 38px/1 var(--fd);color:var(--gold2)}
+.ed small{font-size:9.5px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--dim)}
+.ev h3{font:400 clamp(1.2rem,2vw,1.55rem)/1.25 var(--fd);margin-bottom:5px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.et{font-size:8.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;border:1px solid rgba(201,162,75,.5);color:var(--gold);padding:3px 9px}
+.ev .edesc{font-size:14px;color:var(--dim);max-width:64ch}
+.em{display:flex;flex-wrap:wrap;gap:16px;margin-top:10px;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+.em span{display:inline-flex;align-items:center;gap:7px}
+.em svg{width:13px;height:13px;color:var(--gold)}
+.ev .btn{padding:12px 18px;font-size:10px}
+.aftxt{margin-top:24px;text-align:center;color:var(--dim2);font-size:13px;font-style:italic}
+
+.gal{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.gitem{position:relative;overflow:hidden;border:1px solid var(--line2);margin:0;background:var(--panel)}
+.gitem .art{filter:grayscale(.3) sepia(.08) brightness(.95);transition:.8s cubic-bezier(.2,.7,.2,1)}
+.gitem:hover .art{filter:none;transform:scale(1.04)}
+.gitem .ph{filter:none}
+.gitem figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 14px 12px;display:flex;justify-content:space-between;gap:10px;align-items:flex-end;font-size:9.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--cream);background:linear-gradient(transparent,rgba(8,12,10,.88));z-index:3}
+.gitem figcaption b{color:var(--gold2);flex:none}
+.g-w3{grid-column:span 3}.g-w4{grid-column:span 4}.g-w5{grid-column:span 5}.g-w6{grid-column:span 6}.g-w8{grid-column:span 8}
+.r34{aspect-ratio:3/4}.r45{aspect-ratio:4/5}.r169{aspect-ratio:16/9}.r1610{aspect-ratio:16/10}
+.gcard{grid-column:span 4;background:var(--panel);border:1px solid var(--line);padding:26px 24px;display:flex;flex-direction:column;justify-content:center;gap:10px}
+.gcard .fk{margin-bottom:2px}
+.gcard p{font-size:13.5px;color:var(--dim);line-height:1.75}
+.gcard .q{font:400 16px/1.55 var(--fd);font-style:italic;color:var(--gold2)}
+.glink{display:inline-block;color:var(--gold2);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid var(--gold);padding-bottom:2px;transition:.2s}
+.glink:hover{color:var(--cream);border-color:var(--cream)}
+.ghead{grid-column:1/-1;display:flex;align-items:center;gap:16px;margin-top:24px}
+.ghead:first-child{margin-top:0}
+.ghead b{font:400 21px var(--fd);font-style:italic;color:var(--gold2);white-space:nowrap}
+.ghead span{flex:1;height:1px;background:var(--line)}
+.ghead small{font-size:9.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);white-space:nowrap}
+
+.support{padding:100px 0 110px}
+.sup-grid{display:grid;grid-template-columns:1.08fr 1fr;gap:60px;align-items:start}
+.support h2{font:400 clamp(2rem,3.8vw,3rem)/1.12 var(--fd);margin:14px 0 16px}
+.support .lead{color:var(--dim);max-width:56ch;font-size:15px;margin-bottom:36px}
+.fund{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:12px}
+.fund b{font:400 clamp(2rem,3.4vw,2.9rem)/1 var(--fd);color:var(--gold2)}
+.fund b.dimm{font-size:1.3rem;color:var(--dim)}
+.fund span{font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+.fbar{height:5px;background:rgba(237,230,211,.12);margin:6px 0 10px;overflow:hidden}
+.fbar i{display:block;height:100%;width:0;background:var(--gold);transition:width 1.4s cubic-bezier(.2,.7,.2,1)}
+.fnote{font-size:11.5px;color:var(--dim2);margin-bottom:32px}
+.way{display:flex;gap:15px;align-items:center;padding:15px 0;border-top:1px solid var(--line)}
+.way:last-child{border-bottom:1px solid var(--line)}
+.way svg{width:18px;height:18px;color:var(--gold);flex:none}
+.way b{font-size:14px;display:block;font-weight:600}
+.way small{font-size:12.5px;color:var(--dim)}
+.sup-form{border:1px solid var(--line2);padding:40px 34px;background:var(--panel)}
+.sup-form h3{font:400 26px var(--fd);margin-bottom:6px}
+.sup-form>p{font-size:13px;color:var(--dim);margin-bottom:26px}
+.fld{margin-bottom:22px}
+.fld label{display:block;font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin-bottom:7px}
+.fld input,.fld select{width:100%;background:transparent;border:none;border-bottom:1px solid var(--line2);color:var(--cream);font:400 15px var(--fs);padding:9px 2px;border-radius:0;transition:border-color .25s}
+.fld input:focus,.fld select:focus{outline:none;border-color:var(--gold)}
+.fld select option{color:var(--cream);background:var(--bg2)}
+.sup-form .btn{width:100%;justify-content:center;margin-top:4px}
+.sup-form small{display:block;text-align:center;margin-top:13px;font-size:11px;color:var(--dim2)}
+
+.gate{max-width:420px;margin:10px auto 90px}
+.gate-card{border:1px solid var(--line2);background:var(--panel);padding:36px 30px;text-align:center;display:grid;gap:12px;justify-items:center}
+.gate-card>svg{width:30px;height:30px;color:var(--gold)}
+.gate-card h3{font:400 24px var(--fd)}
+.gate-card p{font-size:13.5px;color:var(--dim);max-width:34ch}
+.gate-card input{width:180px;text-align:center;font:600 20px var(--fs);letter-spacing:.35em;color:var(--gold2);background:transparent;border:none;border-bottom:1.5px solid var(--line2);padding:9px 2px;transition:.25s}
+.gate-card input:focus{outline:none;border-color:var(--gold)}
+.gate.err input{border-color:var(--wine);animation:shake .45s}
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-7px)}40%{transform:translateX(7px)}60%{transform:translateX(-4px)}80%{transform:translateX(4px)}}
+.gate-card small{color:var(--dim2);font-size:11px;line-height:1.6}
+.cab-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:10px}
+.sto{font-size:11.5px;margin-left:auto}
+.cab-hint{font-size:12.5px;color:var(--dim2);line-height:1.7;max-width:78ch;margin-bottom:22px}
+.cab-hint b{color:var(--gold2);font-weight:600}
+.slots{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.slot{border:1px solid var(--line);background:var(--panel);padding:10px;display:grid;gap:8px;transition:.2s}
+.slot.drag{border-color:var(--gold);background:rgba(201,162,75,.09)}
+.slot-ph{position:relative;aspect-ratio:4/3;overflow:hidden;border:1px solid var(--line);background:#0F1713}
+.slot-meta b{font:400 13px/1.35 var(--fd);display:block}
+.slot.has .st{color:var(--sage)}
+.slot-btns{display:flex;gap:6px}
+.mini{flex:1;text-align:center;cursor:pointer;border:1px solid var(--line2);font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:7px 4px;transition:.2s;color:var(--cream);display:block}
+.mini:hover{border-color:var(--gold);color:var(--gold2)}
+.mini.ghost:hover{border-color:var(--wine);color:var(--wine)}
+.cab-sec{margin-top:34px;border-top:1px solid var(--line);padding-top:26px}
+.cab-sec h3{font:400 19px var(--fd);margin-bottom:4px}
+.cab-sec .desc{font-size:12.5px;color:var(--dim);line-height:1.7;max-width:78ch;margin-bottom:18px}
+.cab-sec .desc b{color:var(--gold2)}
+.gh-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 22px;max-width:640px}
+.gh-grid .fld{margin-bottom:12px}
+.gh-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.gh-actions .btn{padding:11px 18px;font-size:10px}
+.cab-note{margin-top:20px;font-size:12px;color:var(--dim2);line-height:1.8;max-width:78ch}
+.cab-note b{color:var(--dim)}
+
+footer{border-top:1px solid var(--line2);background:#151F1A;padding:56px 5vw 30px}
+.ft{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+.ft p{font-size:13px;color:var(--dim);margin-top:14px;max-width:44ch;line-height:1.8}
+.ft h4{font-size:9.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.ft nav{display:grid;gap:8px}
+.ft nav a{font-size:13.5px;color:var(--dim);transition:color .2s}
+.ft nav a:hover{color:var(--gold2)}
+.ft address{font-style:normal;font-size:13.5px;color:var(--dim);line-height:1.9}
+.ftb{max-width:1080px;margin:38px auto 0;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:11px;color:var(--dim2)}
+
+.modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;padding:20px}
+.modal.open{display:flex}
+.modal-ov{position:absolute;inset:0;background:rgba(6,10,8,.75);backdrop-filter:blur(4px);animation:ovIn .3s}
+@keyframes ovIn{from{opacity:0}}
+.modal-panel{position:relative;background:var(--bg2);max-width:660px;width:100%;max-height:86vh;overflow-y:auto;border:1px solid var(--gold);box-shadow:0 40px 90px rgba(0,0,0,.7);padding:44px 42px 38px;animation:panelIn .45s cubic-bezier(.2,.7,.2,1)}
+@keyframes panelIn{from{opacity:0;transform:translateY(24px)}}
+.modal-x{position:absolute;top:14px;right:14px;width:40px;height:40px;border:1px solid var(--line2);display:flex;align-items:center;justify-content:center;transition:.2s}
+.modal-x:hover{border-color:var(--gold);color:var(--gold2)}
+.modal-meta{font-size:9.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.modal-panel h3{font:400 clamp(1.5rem,2.6vw,2rem)/1.18 var(--fd);margin-bottom:18px;padding-right:28px}
+.modal-body p{font-size:14.5px;line-height:1.9;color:rgba(237,230,211,.82);margin-bottom:15px}
+.modal-body p:first-child::first-letter{font:400 46px/0.85 var(--fd);float:left;padding:5px 10px 0 0;color:var(--gold)}
+.modal-body .sign{font:400 15px var(--fd);font-style:italic;color:var(--gold2)}
+.mform .btn{width:100%;justify-content:center}
+.toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,20px);background:var(--gold);color:#181206;padding:14px 24px;font-size:13.5px;font-weight:600;z-index:210;opacity:0;pointer-events:none;transition:.4s cubic-bezier(.2,.7,.2,1);max-width:88vw;box-shadow:0 18px 44px rgba(0,0,0,.5)}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+@media(max-width:1120px){
+  .hero{grid-template-columns:1fr;gap:44px;padding-top:80px;min-height:0}
+  .stage{height:460px}
+  .f1,.f2,.f3,.f4,.f5,.f6{grid-column:span 6}.f7{grid-column:span 12}
+  .names{grid-template-columns:1fr}
+  .note.feat{grid-template-columns:1fr;gap:20px}
+  .note.hasimg{grid-template-columns:96px 1fr 140px auto}
+  .sup-grid{grid-template-columns:1fr;gap:50px}
+  .step{grid-template-columns:48px 1fr auto}
+  .step p{grid-column:2/3}
+  .g-w3{grid-column:span 6}.g-w4{grid-column:span 6}
+  .g-w5,.g-w6,.g-w8{grid-column:span 12}
+  .gcard{grid-column:span 12}
+  .slots{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:940px){
+  .rail{display:none}
+  .topbar{display:flex}
+  main{margin-left:0;padding-top:56px}
+  .hero{padding-top:30px}
+}
+@media(max-width:720px){
+  .stage{height:400px}
+  .note{grid-template-columns:1fr;gap:6px}
+  .note.hasimg{grid-template-columns:1fr}
+  .note.hasimg .nthumb{display:none}
+  .nmeta{display:flex;align-items:baseline;gap:14px}
+  .nno{margin:0!important}
+  .nside{flex-direction:row;align-items:center;gap:18px}
+  .f1,.f2,.f3,.f4,.f5,.f6,.f7{grid-column:span 12}
+  .g-w3,.g-w4,.g-w5,.g-w6,.g-w8,.gcard{grid-column:span 12}
+  .tl-line{left:8px}
+  .ti,.ti:nth-child(odd){width:100%;left:0;text-align:left;padding:18px 0 18px 34px}
+  .ti::before,.ti:nth-child(odd)::before{left:3px;right:auto}
+  .ev{grid-template-columns:76px 1fr}
+  .ev .btn{grid-column:1/-1;justify-content:center}
+  .ba{aspect-ratio:4/3.4}
+  .step{grid-template-columns:36px 1fr}
+  .step .bdg{grid-column:2;justify-self:start}
+  .hrow{grid-template-columns:44px 1fr auto;gap:12px}
+  .hn{font-size:24px}
+  .modal-panel{padding:34px 22px 26px}
+  .ft{grid-template-columns:1fr}
+  .shead{padding-top:48px}
+  .slots{grid-template-columns:repeat(2,1fr)}
+  .sto{margin-left:0;width:100%}
+  .gh-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body>
+
+<!-- Иллюстрации-реконструкции -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<linearGradient id="gSkyD" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#101B16"/><stop offset=".6" stop-color="#1B2A20"/><stop offset="1" stop-color="#22301F"/></linearGradient>
+<linearGradient id="gSkyW" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1C2A22"/><stop offset=".7" stop-color="#33422F"/><stop offset="1" stop-color="#4A5A3C"/></linearGradient>
+<linearGradient id="gSkyR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22403A"/><stop offset=".55" stop-color="#41604C"/><stop offset="1" stop-color="#7E8F62"/></linearGradient>
+<linearGradient id="gWar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0D1512"/><stop offset="1" stop-color="#1E2A26"/></linearGradient>
+<radialGradient id="gPort" cx=".5" cy=".38" r=".8"><stop offset="0" stop-color="#33443A"/><stop offset="1" stop-color="#18221C"/></radialGradient>
+
+<symbol id="art-house1917" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+  <rect width="800" height="500" fill="url(#gSkyW)"/>
+  <circle cx="620" cy="130" r="70" fill="#E8B86A" opacity=".1"/><circle cx="620" cy="130" r="22" fill="#E8B86A" opacity=".3"/>
+  <rect y="322" width="800" height="26" fill="#1E3438"/>
+  <g fill="#16241F"><rect x="698" y="306" width="8" height="18"/><path d="M698 306l4-9 4 9z"/><rect x="712" y="310" width="6" height="14"/><path d="M712 310l3-7 3 7z"/></g>
+  <rect y="340" width="800" height="160" fill="#223328"/><rect y="426" width="800" height="74" fill="#1C2A20"/>
+  <g transform="translate(250,110)">
+    <path d="M-20 122L150 38L320 122Z" fill="#2C3B37" stroke="#0A0F0C" stroke-width="1.5"/>
+    <rect x="46" y="56" width="17" height="42" fill="#9A917C" stroke="#0A0F0C"/><rect x="43" y="52" width="23" height="6" fill="#7A715E"/>
+    <rect x="100" y="58" width="100" height="62" fill="#7E919F" stroke="#0A0F0C"/>
+    <path d="M90 58L150 20L210 58Z" fill="#2C3B37" stroke="#0A0F0C"/>
+    <path d="M132 106v-16a18 18 0 0 1 36 0v16z" fill="#F2B96B" stroke="#DCD5C1" stroke-width="2.5"/>
+    <path d="M150 72v34M132 89h36" stroke="#8A6D3F" stroke-width="1.4"/>
+    <g stroke="#DCD5C1" stroke-width="2"><path d="M126 108v10M138 108v10M150 108v10M162 108v10M174 108v10"/><path d="M122 107h56"/></g>
+    <rect x="0" y="122" width="300" height="108" fill="#7E919F" stroke="#0A0F0C"/>
+    <path d="M0 134h300M0 146h300M0 158h300M0 170h300M0 182h300M0 194h300M0 206h300M0 218h300" stroke="#6B7B87" stroke-width="1"/>
+    <rect x="0" y="122" width="7" height="108" fill="#8E9FAC"/><rect x="293" y="122" width="7" height="108" fill="#8E9FAC"/>
+    <g>
+      <path d="M32 118l16-12 16 12z" fill="#DCD5C1" opacity=".9"/><rect x="36" y="142" width="26" height="52" fill="#F2B96B" stroke="#DCD5C1" stroke-width="3"/><path d="M49 142v52M36 168h26" stroke="#8A6D3F" stroke-width="1.5"/>
+      <path d="M118 118l16-12 16 12z" fill="#DCD5C1" opacity=".9"/><rect x="122" y="142" width="26" height="52" fill="#F2B96B" stroke="#DCD5C1" stroke-width="3"/><path d="M135 142v52M122 168h26" stroke="#8A6D3F" stroke-width="1.5"/>
+      <path d="M236 118l16-12 16 12z" fill="#DCD5C1" opacity=".9"/><rect x="240" y="142" width="26" height="52" fill="#F2B96B" stroke="#DCD5C1" stroke-width="3"/><path d="M253 142v52M240 168h26" stroke="#8A6D3F" stroke-width="1.5"/>
+    </g>
+    <rect x="296" y="106" width="90" height="14" fill="#2C3B37" stroke="#0A0F0C"/>
+    <rect x="300" y="120" width="82" height="110" fill="#78909C" opacity=".55"/>
+    <path d="M306 230V122M338 230V122M370 230V122" stroke="#DCD5C1" stroke-width="3.4"/>
+    <g stroke="#DCD5C1" stroke-width="1.8"><path d="M296 96v12M312 96v12M328 96v12M344 96v12M360 96v12M376 96v12"/><path d="M292 94h90"/></g>
+    <rect x="322" y="170" width="34" height="60" fill="#4A3B28" stroke="#DCD5C1" stroke-width="2.4"/><circle cx="349" cy="202" r="2.4" fill="#DCD5C1"/>
+    <rect x="-2" y="230" width="384" height="42" fill="#CFC8B2" stroke="#0A0F0C"/>
+    <path d="M-2 244h384M-2 258h384" stroke="#A89B7E" stroke-width="1.2"/>
+  </g>
+  <path d="M64 350c-6-46 4-80 10-108" stroke="#4C4132" stroke-width="13" fill="none"/>
+  <g fill="#2F4A3B"><ellipse cx="66" cy="196" rx="64" ry="52"/><ellipse cx="112" cy="168" rx="46" ry="38" fill="#35513F"/><ellipse cx="34" cy="170" rx="36" ry="30"/></g>
+  <path d="M742 356c5-40-3-70-8-92" stroke="#4C4132" stroke-width="10" fill="none"/>
+  <g fill="#2F4A3B"><ellipse cx="740" cy="222" rx="48" ry="40"/><ellipse cx="774" cy="200" rx="30" ry="26" fill="#35513F"/></g>
+  <ellipse cx="180" cy="438" rx="56" ry="15" fill="#2C4032" stroke="#C9A24B" stroke-opacity=".25"/>
+  <g><circle cx="158" cy="434" r="3.4" fill="#C06A4A"/><circle cx="176" cy="430" r="3.4" fill="#C9A24B"/><circle cx="194" cy="436" r="3.4" fill="#E4C77E"/><circle cx="210" cy="431" r="3.4" fill="#C06A4A"/></g>
+  <g stroke="#33503F" stroke-width="2" fill="none" opacity=".8"><path d="M470 470v-24M480 474v-30M490 470v-22M560 480v-26M572 484v-32M584 480v-24"/></g>
+</symbol>
+
+<symbol id="art-ruins" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+  <rect width="800" height="500" fill="url(#gSkyD)"/>
+  <circle cx="420" cy="240" r="90" fill="#E8B86A" opacity=".14"/><circle cx="420" cy="240" r="26" fill="#E8B86A" opacity=".35"/>
+  <g fill="#16241B"><ellipse cx="90" cy="30" rx="150" ry="70"/><ellipse cx="330" cy="10" rx="140" ry="60"/><ellipse cx="600" cy="30" rx="170" ry="72"/><ellipse cx="780" cy="0" rx="120" ry="66"/></g>
+  <g stroke="#2F4A3B" stroke-width="2.4" fill="none" opacity=".9"><path d="M40 60q30-26 64-8M180 40q40-20 70 4M640 44q36-18 66 6"/></g>
+  <rect y="296" width="800" height="204" fill="#1B281E"/><rect y="420" width="800" height="80" fill="#15201A"/>
+  <g transform="translate(180,140)">
+    <path d="M0 238L46 231L92 239L138 230L186 238L232 231L272 238L300 234L300 302L0 302Z" fill="#CFC8B2" stroke="#0A0F0C"/>
+    <path d="M0 254h300M0 272h300M60 238v64M150 232v70M240 236v66" stroke="#A89B7E" stroke-width="1.1"/>
+    <rect x="188" y="242" width="48" height="60" fill="#05080A"/>
+    <path d="M22 150l34-8 40 8 46-9 44 8 34-5 0 84-198 4z" fill="#565049" stroke="#0A0F0C"/>
+    <path d="M30 168h176M28 186h180M30 204h178M30 222h176" stroke="#3C3833" stroke-width="2.6"/>
+    <rect x="58" y="182" width="42" height="56" fill="#0B0F0C"/>
+    <path d="M152 236l52-86 13 6-44 84z" fill="#4A443C" stroke="#0A0F0C"/>
+  </g>
+  <g transform="translate(600,148)">
+    <rect x="-6" y="146" width="82" height="16" fill="#B9B29C" stroke="#0A0F0C"/>
+    <path d="M0 148L6 108L18 120L32 104L46 118L60 106L70 148Z" fill="#D8D2C0" stroke="#0A0F0C"/>
+    <path d="M20 152v-38a15 15 0 0 1 30 0v38z" fill="#0D1210"/>
+  </g>
+  <g stroke="#33503F" stroke-width="2.2" fill="none"><path d="M90 420v-30M102 426v-40M114 420v-28M300 452v-34M314 458v-42M328 452v-30M520 440v-30M534 446v-38M548 440v-28M700 456v-32M714 462v-40M728 456v-30"/></g>
+  <path d="M110 478L470 436l10 12-366 40z" fill="#2E2A24"/>
+</symbol>
+
+<symbol id="art-hammock" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+  <rect width="800" height="500" fill="url(#gSkyD)"/>
+  <g fill="#2F4A3B"><ellipse cx="140" cy="40" rx="190" ry="80"/><ellipse cx="620" cy="30" rx="220" ry="86"/><ellipse cx="400" cy="0" rx="160" ry="60"/></g>
+  <g fill="#3C5745" opacity=".8"><ellipse cx="240" cy="60" rx="70" ry="34"/><ellipse cx="540" cy="52" rx="80" ry="36"/></g>
+  <rect y="240" width="800" height="260" fill="#1E2E22"/>
+  <g><rect x="0" y="196" width="800" height="17" fill="#3A3A30"/><rect x="0" y="216" width="800" height="17" fill="#34342B"/><rect x="0" y="236" width="800" height="17" fill="#2E2E26"/><g stroke="#23231D" stroke-width="2"><path d="M90 196v74M210 196v74M330 196v74M450 196v74M570 196v74M690 196v74"/></g></g>
+  <path d="M120 470c-4-120 8-220 16-300l34 4c-10 84-20 190-14 296z" fill="#4C4132"/>
+  <path d="M672 470c4-100-2-190-10-260l-28 4c8 74 14 164 10 256z" fill="#4C4132"/>
+  <path d="M150 170 C 260 260, 540 260, 648 162" stroke="#4C4132" stroke-width="7" fill="none"/>
+  <path d="M158 176 C 280 244, 520 244, 642 168 L 640 186 C 520 268, 280 268, 160 194 Z" fill="#CBBE97"/>
+  <g stroke="#A89B78" stroke-width="1.2"><path d="M190 196l20 44M230 204l24 46M274 210l26 44M320 214l28 42M368 216l30 40M416 216l30 38M464 214l28 40M510 210l26 42M554 204l22 44M596 196l18 42"/></g>
+  <g fill="#141A15">
+    <circle cx="318" cy="212" r="13"/>
+    <path d="M304 218c26-12 68-14 96-6 10 3 14 10 8 15-30 9-78 8-102-1-6-3-7-6-2-8z"/>
+    <path d="M336 228l60 4 34 14-6 10-38-12-52-2z"/>
+  </g>
+  <rect x="398" y="188" width="27" height="19" fill="#E9E2CC" transform="rotate(-9 411 197)"/>
+  <g stroke="#33503F" stroke-width="2.6" fill="none"><path d="M80 470v-40M96 478v-52M112 470v-38M240 488v-46M258 494v-56M430 482v-40M448 490v-52M610 486v-44M628 492v-54"/></g>
+  <g fill="#E8B86A" opacity=".55"><circle cx="200" cy="300" r="2.2"/><circle cx="620" cy="320" r="2"/><circle cx="520" cy="270" r="1.8"/></g>
+</symbol>
+
+<symbol id="art-plan" viewBox="0 0 560 620" preserveAspectRatio="xMidYMid slice">
+  <rect width="560" height="620" fill="#E7DEBF"/>
+  <rect x="8" y="8" width="544" height="604" fill="none" stroke="#B9AD8A" stroke-width="1.4"/>
+  <g font-family="Georgia,serif" font-style="italic" fill="#3A3426">
+    <text x="34" y="52" font-size="19">План усадебной земли на Образцовой горе</text>
+    <text x="34" y="76" font-size="15">тайного советника А. Н. Мосолова · 1777 кв. саж.</text>
+  </g>
+  <path d="M60 200 L60 120 L210 96 L214 210 L260 214 L262 300 L200 306 L198 420 L330 424 L336 560 L60 566 Z" fill="#B9CDBA" stroke="#6E8272" stroke-width="1.6"/>
+  <path d="M218 100 L522 92 L526 240 L470 244 L468 330 L330 336 L328 240 L262 236Z" fill="#CBD8C0" stroke="#6E8272" stroke-width="1.4"/>
+  <g fill="#A7C0AC" opacity=".9"><ellipse cx="130" cy="170" rx="46" ry="30"/><ellipse cx="90" cy="280" rx="40" ry="26"/><ellipse cx="150" cy="380" rx="52" ry="30"/><ellipse cx="120" cy="490" rx="60" ry="32"/><ellipse cx="300" cy="150" rx="60" ry="30"/><ellipse cx="420" cy="150" rx="44" ry="26"/></g>
+  <g stroke="#D9B95C" stroke-width="9" fill="none" stroke-linecap="round">
+    <path d="M336 540 L340 470 L360 430 L380 400"/>
+    <path d="M380 400 C 370 370 330 350 300 342"/>
+    <path d="M380 400 L430 380 L470 330"/>
+    <path d="M300 342 L240 330 L200 300"/>
+    <path d="M200 300 L170 240 L180 170"/>
+  </g>
+  <circle cx="360" cy="468" r="36" fill="#E4C77E" stroke="#8A6D3F" stroke-width="2"/>
+  <g fill="#B0432A"><circle cx="360" cy="468" r="3"/><circle cx="348" cy="458" r="2.4"/><circle cx="372" cy="458" r="2.4"/><circle cx="348" cy="478" r="2.4"/><circle cx="372" cy="478" r="2.4"/></g>
+  <g fill="#EFE6CE" stroke="#B0432A" stroke-width="2">
+    <rect x="296" y="292" width="92" height="46"/><rect x="400" y="286" width="52" height="30"/><rect x="462" y="286" width="40" height="30"/><rect x="470" y="356" width="44" height="26"/><rect x="252" y="180" width="26" height="20"/><rect x="380" y="200" width="22" height="16"/>
+  </g>
+  <g font-family="Georgia,serif" font-style="italic" font-size="15" fill="#B0432A">
+    <text x="332" y="320">А</text><text x="420" y="306">Б</text><text x="478" y="306">В</text><text x="486" y="374">Г</text><text x="260" y="195">Е</text><text x="386" y="213">Д</text>
+  </g>
+  <text x="380" y="606" font-family="Georgia,serif" font-style="italic" font-size="17" fill="#6B4A3A">Садовая улица</text>
+  <g stroke="#3A3426" stroke-width="2"><path d="M500 128v-34M500 94l-7 12M500 94l7 12"/></g>
+  <text x="512" y="104" font-family="Georgia,serif" font-size="13" fill="#3A3426">N</text>
+</symbol>
+
+<symbol id="art-children" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+  <rect width="800" height="500" fill="url(#gSkyW)"/>
+  <g fill="#24382B"><ellipse cx="400" cy="120" rx="330" ry="150"/><ellipse cx="180" cy="90" rx="180" ry="100"/><ellipse cx="640" cy="80" rx="190" ry="110"/></g>
+  <rect y="330" width="800" height="170" fill="#223328"/><rect y="430" width="800" height="70" fill="#1C2A20"/>
+  <g transform="translate(140,236)">
+    <rect x="0" y="0" width="520" height="86" fill="#CBC4AE" stroke="#8A8270"/>
+    <path d="M0 20h520M0 44h520" stroke="#A89B7E" stroke-width="1.2"/>
+    <path d="M30 0v-52M66 0v-52M102 0v-52M138 0v-52M174 0v-52M210 0v-52M246 0v-52M282 0v-52M318 0v-52M354 0v-52M390 0v-52M426 0v-52M462 0v-52M498 0v-52" stroke="#8A8270" stroke-width="3"/>
+    <path d="M14 -54h492" stroke="#B9B29C" stroke-width="5"/>
+  </g>
+  <g transform="translate(56,96)">
+    <rect x="-6" y="230" width="122" height="18" fill="#B9B29C" stroke="#0A0F0C"/>
+    <rect x="0" y="0" width="110" height="232" fill="#DCD5C1" stroke="#0A0F0C"/>
+    <path d="M25 214v-92a30 30 0 0 1 60 0v92z" fill="#0D1210"/>
+    <path d="M14 0L55 -26L96 0z" fill="#C4BCA4" stroke="#0A0F0C"/>
+    <g fill="#10160F"><circle cx="55" cy="140" r="9"/><path d="M47 150h16l4 34h-24z"/></g>
+  </g>
+  <g transform="translate(634,96)">
+    <rect x="-6" y="230" width="122" height="18" fill="#B9B29C" stroke="#0A0F0C"/>
+    <rect x="0" y="0" width="110" height="232" fill="#DCD5C1" stroke="#0A0F0C"/>
+    <path d="M25 214v-92a30 30 0 0 1 60 0v92z" fill="#0D1210"/>
+    <path d="M14 0L55 -26L96 0z" fill="#C4BCA4" stroke="#0A0F0C"/>
+    <g fill="#10160F"><circle cx="58" cy="128" r="9"/><path d="M50 138h16l6 30-14 4-12-4z"/></g>
+  </g>
+  <g fill="#10160F" transform="translate(392,352)">
+    <circle cx="14" cy="14" r="10"/><path d="M4 26h20l6 30h-32z"/>
+  </g>
+  <g stroke="#33503F" stroke-width="2.4" fill="none"><path d="M120 460v-34M136 468v-44M152 460v-32M600 466v-36M616 474v-46M632 466v-34"/></g>
+</symbol>
+
+<symbol id="art-portrait" viewBox="0 0 480 620" preserveAspectRatio="xMidYMid slice">
+  <rect width="480" height="620" fill="#131C18"/>
+  <ellipse cx="240" cy="280" rx="172" ry="228" fill="url(#gPort)"/>
+  <g fill="#0C100D">
+    <path d="M300 118c20 0 32 14 32 32 0 12-5 22-13 28 26 10 44 34 50 74 4 26 6 60 6 96h-150c0-60 6-116 24-142 8-12 18-20 30-24-8-6-13-16-13-28 0-20 14-36 34-36z"/>
+    <path d="M182 176c22 0 36 16 36 38 0 14-6 26-16 32 30 14 52 44 58 96 4 32 5 56 5 72h-168c0-72 8-136 30-168 10-14 22-24 35-28-10-7-16-19-16-34 0-20 16-38 36-38z"/>
+  </g>
+  <path d="M196 250c10 8 26 8 36 0l-6 14h-24z" fill="#DCD5C1" opacity=".9"/>
+  <path d="M304 200c8 6 20 6 28 0l-5 11h-18z" fill="#DCD5C1" opacity=".9"/>
+  <ellipse cx="240" cy="280" rx="172" ry="228" fill="none" stroke="#C9A24B" stroke-width="2.4"/>
+  <g stroke="#C9A24B" stroke-width="1.4" fill="none" opacity=".8">
+    <path d="M30 40q24 14 12 34M450 40q-24 14-12 34M30 560q24-14 12-34M450 560q-24-14-12-34"/>
+  </g>
+  <text x="240" y="574" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="16" fill="#C9A24B" opacity=".85">Михаилъ и Марія Меншиковы</text>
+</symbol>
+
+<symbol id="art-veranda" viewBox="0 0 560 720" preserveAspectRatio="xMidYMid slice">
+  <rect width="560" height="720" fill="#151F19"/>
+  <rect x="60" y="56" width="440" height="360" fill="#33493A"/>
+  <rect x="60" y="290" width="440" height="60" fill="#1E3438"/>
+  <path d="M60 330q120-16 220 0t220-6v92H60z" fill="#24352B"/>
+  <circle cx="420" cy="120" r="40" fill="#E8B86A" opacity=".2"/>
+  <g fill="#DCD5C1" stroke="#9A917C">
+    <rect x="52" y="46" width="16" height="380"/><rect x="492" y="46" width="16" height="380"/><rect x="52" y="40" width="456" height="16"/><rect x="52" y="404" width="456" height="16"/><rect x="274" y="56" width="12" height="348"/>
+  </g>
+  <rect y="404" width="560" height="316" fill="#232F26"/>
+  <g fill="#3A2F22"><path d="M330 430c0-26 18-40 42-40s40 14 42 38l6 120h-96z"/><rect x="324" y="546" width="102" height="14"/></g>
+  <g fill="#10160F">
+    <circle cx="352" cy="352" r="21"/>
+    <path d="M336 372c-14 30-10 62 4 86l64 4c10-26 10-58-4-84-16-12-48-14-64-6z"/>
+    <path d="M398 448l54 26c8 4 8 12-2 14l-56-16z"/>
+  </g>
+  <g><ellipse cx="150" cy="470" rx="34" ry="9" fill="#3A2F22"/><rect x="146" y="470" width="8" height="70" fill="#3A2F22"/><rect x="142" y="440" width="10" height="16" fill="#E9E2CC" opacity=".85"/></g>
+</symbol>
+
+<symbol id="art-war" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+  <rect width="800" height="500" fill="url(#gWar)"/>
+  <circle cx="140" cy="80" r="26" fill="#DCE8E0" opacity=".18"/>
+  <rect y="330" width="800" height="170" fill="#141D18"/><rect y="420" width="800" height="80" fill="#101812"/>
+  <g transform="translate(240,96)">
+    <path d="M-18 118L148 40L314 118Z" fill="#242E29" stroke="#0A0F0C"/>
+    <rect x="98" y="60" width="100" height="60" fill="#2A2E28" stroke="#0A0F0C"/>
+    <path d="M88 60L148 24L208 60Z" fill="#242E29" stroke="#0A0F0C"/>
+    <path d="M132 104v-14a16 16 0 0 1 32 0v14z" fill="#F2B96B" stroke="#C9A24B" stroke-width="2"/>
+    <rect x="0" y="118" width="296" height="104" fill="#2E332D" stroke="#0A0F0C"/>
+    <g fill="#C9A24B" opacity=".85"><path d="M28 116l14-11 14 11z"/><path d="M112 116l14-11 14 11z"/><path d="M240 116l14-11 14 11z"/></g>
+    <rect x="32" y="140" width="26" height="50" fill="#F2B96B" stroke="#DCD5C1" stroke-width="2.6"/>
+    <rect x="118" y="140" width="26" height="50" fill="#10160F" stroke="#3A423A" stroke-width="2.6"/>
+    <rect x="244" y="140" width="26" height="50" fill="#F2B96B" stroke="#DCD5C1" stroke-width="2.6"/>
+    <rect x="196" y="150" width="32" height="72" fill="#3A2F22" stroke="#DCD5C1" stroke-width="2"/>
+    <rect x="60" y="74" width="15" height="40" fill="#5A5F58"/><rect x="56" y="30" width="23" height="7" fill="#454A44"/>
+    <path d="M67 28q-4-16 6-26M70 28q6-14 18-18" stroke="#5A5F58" stroke-width="5" fill="none" opacity=".65"/>
+    <rect x="-4" y="222" width="304" height="38" fill="#B9B29C" stroke="#0A0F0C"/>
+    <path d="M-4 236h304M-4 249h304" stroke="#8F8871"/>
+  </g>
+  <g fill="#10160F" transform="translate(492,268)">
+    <path d="M0 0c2-8 9-13 16-13s14 5 15 13l3 10h-37z"/><path d="M4 12h24l6 62h-36z"/>
+  </g>
+  <g fill="#C9CFC4" opacity=".14"><ellipse cx="200" cy="452" rx="70" ry="14"/><ellipse cx="600" cy="470" rx="90" ry="16"/></g>
+</symbol>
+
+<symbol id="art-recon" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+  <rect width="800" height="500" fill="url(#gSkyR)"/>
+  <circle cx="640" cy="150" r="80" fill="#F2D488" opacity=".28"/><circle cx="640" cy="150" r="30" fill="#F2D488" opacity=".55"/>
+  <rect y="318" width="800" height="28" fill="#2A4A4C"/>
+  <g fill="#1E3A38"><rect x="704" y="300" width="9" height="20"/><path d="M704 300l4.5-10 4.5 10z"/></g>
+  <rect y="338" width="800" height="162" fill="#33513C"/><rect y="424" width="800" height="76" fill="#2A4531"/>
+  <path d="M330 500L500 500L440 360L392 360Z" fill="#8C8264"/>
+  <g transform="translate(250,110)">
+    <path d="M-22 122L150 36L322 122Z" fill="#33453F" stroke="#0A0F0C" stroke-width="1.5"/>
+    <rect x="46" y="54" width="18" height="44" fill="#CFC8B2" stroke="#0A0F0C"/>
+    <rect x="98" y="56" width="104" height="66" fill="#86A0B4" stroke="#0A0F0C"/>
+    <path d="M88 56L150 18L212 56Z" fill="#33453F" stroke="#0A0F0C"/>
+    <path d="M130 108v-18a20 20 0 0 1 40 0v18z" fill="#F2B96B" stroke="#EDE6D3" stroke-width="3"/>
+    <path d="M150 72v36M130 90h40" stroke="#8A6D3F" stroke-width="1.5"/>
+    <g stroke="#EDE6D3" stroke-width="2"><path d="M124 110v11M137 110v11M150 110v11M163 110v11M176 110v11"/><path d="M120 109h60"/></g>
+    <rect x="0" y="122" width="300" height="108" fill="#86A0B4" stroke="#0A0F0C"/>
+    <path d="M0 134h300M0 146h300M0 158h300M0 170h300M0 182h300M0 194h300M0 206h300M0 218h300" stroke="#75909F" stroke-width="1"/>
+    <g>
+      <path d="M30 116l17-13 17 13z" fill="#EDE6D3"/><rect x="35" y="140" width="28" height="54" fill="#F2B96B" stroke="#EDE6D3" stroke-width="3.4"/>
+      <path d="M116 116l17-13 17 13z" fill="#EDE6D3"/><rect x="121" y="140" width="28" height="54" fill="#F2B96B" stroke="#EDE6D3" stroke-width="3.4"/>
+      <path d="M236 116l17-13 17 13z" fill="#EDE6D3"/><rect x="241" y="140" width="28" height="54" fill="#F2B96B" stroke="#EDE6D3" stroke-width="3.4"/>
+    </g>
+    <rect x="296" y="104" width="92" height="15" fill="#33453F" stroke="#0A0F0C"/>
+    <rect x="300" y="119" width="84" height="111" fill="#7E98A8" opacity=".6"/>
+    <path d="M306 230V121M340 230V121M372 230V121" stroke="#EDE6D3" stroke-width="3.4"/>
+    <g fill="#F2B96B"><rect x="313" y="135" width="20" height="28"/><rect x="347" y="135" width="20" height="28"/></g>
+    <rect x="-4" y="230" width="388" height="42" fill="#DCD5C1" stroke="#0A0F0C"/>
+  </g>
+  <g transform="translate(96,300)">
+    <rect x="-8" y="128" width="106" height="18" fill="#B9B29C" stroke="#0A0F0C"/>
+    <rect x="0" y="0" width="90" height="130" fill="#DCD5C1" stroke="#0A0F0C"/>
+    <path d="M20 130V56a25 25 0 0 1 50 0v74z" fill="#0D1210"/>
+    <path d="M10 0L45 -22L80 0z" fill="#C4BCA4" stroke="#0A0F0C"/>
+    <circle cx="45" cy="40" r="5" fill="#F2B96B"/><path d="M45 34v12M39 40h12" stroke="#E4C77E" stroke-width="2"/>
+  </g>
+  <g transform="translate(636,300)">
+    <rect x="-8" y="128" width="106" height="18" fill="#B9B29C" stroke="#0A0F0C"/>
+    <rect x="0" y="0" width="90" height="130" fill="#DCD5C1" stroke="#0A0F0C"/>
+    <path d="M20 130V56a25 25 0 0 1 50 0v74z" fill="#0D1210"/>
+    <path d="M10 0L45 -22L80 0z" fill="#C4BCA4" stroke="#0A0F0C"/>
+    <circle cx="45" cy="40" r="5" fill="#F2B96B"/><path d="M45 34v12M39 40h12" stroke="#E4C77E" stroke-width="2"/>
+  </g>
+  <g><rect x="536" y="392" width="6" height="52" fill="#2A241C"/><circle cx="539" cy="386" r="8" fill="#F2B96B" opacity=".9"/><circle cx="539" cy="386" r="14" fill="#F2B96B" opacity=".25"/></g>
+  <g fill="#10160F" opacity=".92">
+    <circle cx="238" cy="428" r="8"/><path d="M231 437h14l4 34h-22z"/>
+    <circle cx="266" cy="432" r="7"/><path d="M260 440h12l4 30h-20z"/>
+  </g>
+  <path d="M672 352c-5-40 3-72 9-96l14 2c-6 26-12 60-8 94z" fill="#4C4132"/>
+  <g fill="#3A5745"><ellipse cx="678" cy="222" rx="52" ry="42"/><ellipse cx="716" cy="200" rx="34" ry="28" fill="#41654C"/><ellipse cx="758" cy="242" rx="40" ry="32"/></g>
+  <path d="M760 356c4-34 0-62-5-82l-12 2c5 22 8 50 5 80z" fill="#4C4132"/>
+  <path d="M700 322 C 712 342 736 344 748 330 L 747 344 C 734 356 712 354 701 338 Z" fill="#CBBE97"/>
+  <ellipse cx="170" cy="440" rx="60" ry="16" fill="#3A5745" stroke="#C9A24B" stroke-opacity=".3"/>
+  <g><circle cx="148" cy="436" r="3.6" fill="#C06A4A"/><circle cx="166" cy="432" r="3.6" fill="#C9A24B"/><circle cx="184" cy="438" r="3.6" fill="#E4C77E"/><circle cx="200" cy="433" r="3.6" fill="#C06A4A"/></g>
+</symbol>
+</defs>
+</svg>
+
+<!-- ============ БОКОВАЯ НАВИГАЦИЯ ============ -->
+<aside class="rail">
+  <a class="rail-brand" href="#page-home" data-go="home">
+    <svg class="rail-mark" viewBox="0 0 48 48" aria-hidden="true">
+      <rect x="1" y="1" width="46" height="46" fill="none" stroke="#C9A24B" stroke-width="1"/>
+      <path d="M12 36V22l12-9 12 9v14h-8v-8h-8v8z" fill="none" stroke="#EDE6D3" stroke-width="1.6"/>
+      <rect x="21" y="14" width="6" height="5" fill="none" stroke="#C9A24B" stroke-width="1.2"/>
+    </svg>
+    <span><b>Образцовая<br>гора</b><small>Валдай · усадьба</small></span>
+  </a>
+  <nav class="rail-nav">
+    <a href="#page-home" data-go="home" class="active"><em>I</em>Дневник</a>
+    <a href="#page-history" data-go="history"><em>II</em>История дома</a>
+    <a href="#page-before" data-go="before"><em>III</em>До и после</a>
+    <a href="#page-facts" data-go="facts"><em>IV</em>Факты</a>
+    <a href="#page-events" data-go="events"><em>V</em>Афиша</a>
+    <a href="#page-gallery" data-go="gallery"><em>VI</em>Галерея</a>
+    <a href="#page-support" data-go="support"><em>VII</em>Поддержать</a>
+    <a href="#page-admin" data-go="admin" class="adm"><em><svg class="i" viewBox="0 0 24 24"><circle cx="8" cy="15.5" r="4"/><path d="M11 12.5L20 3.5M15.5 8l3 3M18.5 5l2 2"/></svg></em>Кабинет</a>
+  </nav>
+  <div class="rail-foot">
+    <span class="st" id="svBadge">определяем сервер…</span>
+    <p class="rail-quote">«Мне лучшего не нужно, чем этот старый дом и сад»<b>— М. О. Меньшиков, 1918</b></p>
+    <a class="rail-cta" href="#page-support" data-go="support">Поддержать дом</a>
+  </div>
+</aside>
+
+<div class="topbar">
+  <a class="rail-brand" href="#page-home" data-go="home">
+    <svg class="rail-mark" style="width:36px;height:36px" viewBox="0 0 48 48" aria-hidden="true">
+      <path d="M12 36V22l12-9 12 9v14h-8v-8h-8v8z" fill="none" stroke="#EDE6D3" stroke-width="1.8"/>
+      <rect x="21" y="14" width="6" height="5" fill="none" stroke="#C9A24B" stroke-width="1.4"/>
+    </svg>
+    <span><b>Образцовая гора</b></span>
+  </a>
+  <button class="burger" id="burger" aria-label="Меню"><svg class="i" viewBox="0 0 24 24"><path d="M3.5 7.5h17M3.5 12h17M3.5 16.5h17"/></svg></button>
+</div>
+<nav class="mnav" id="mnav" aria-label="Меню">
+  <button class="mnav-close" id="mnavClose" aria-label="Закрыть"><svg class="i" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <a href="#page-home" data-go="home">Дневник <span>I</span></a>
+  <a href="#page-history" data-go="history">История <span>II</span></a>
+  <a href="#page-before" data-go="before">До и после <span>III</span></a>
+  <a href="#page-facts" data-go="facts">Факты <span>IV</span></a>
+  <a href="#page-events" data-go="events">Афиша <span>V</span></a>
+  <a href="#page-gallery" data-go="gallery">Галерея <span>VI</span></a>
+  <a href="#page-support" data-go="support">Поддержать <span>VII</span></a>
+  <a href="#page-admin" data-go="admin">Кабинет <span>VIII</span></a>
+</nav>
+
+<main>
+<!-- ================= I. ДНЕВНИК ================= -->
+<section class="page active" id="page-home">
+  <div class="hero">
+    <div>
+      <p class="hero-eyebrow reveal">Дневник усадьбы · Валдай, Образцовая гора</p>
+      <h1><span class="lnwrap"><span class="ln">Образцовая</span></span><span class="lnwrap"><span class="ln">гора</span></span></h1>
+      <p class="hero-sub">Дом построил губернатор Мосолов, девять лет берёг «генерал» Трубников — а написал его Меньшиков.</p>
+      <p class="lede">Деревянный дом с мезонином на высоком кирпичном фундаменте стоит на вершине Образцовой горы с <b>1898 года</b>. Здесь гамак висел между двумя липами, пол по утрам мели свежескошенной травой, а из окон открывался Иверский монастырь. Сегодня дом — руины. Мы ведём дневник его возвращения: <b>к 2027 году здесь должен открыться дом-музей</b>.</p>
+      <div class="cta-row">
+        <a class="btn" href="#page-before" data-go="before">Смотреть реконструкцию <svg class="i" viewBox="0 0 24 24"><path d="M4.5 12h15M13.5 6l6 6-6 6"/></svg></a>
+        <a class="btn gold" href="#page-support" data-go="support">Поддержать реставрацию</a>
+      </div>
+      <div class="hstats">
+        <div class="hs"><b>1896</b><small>земля куплена</small></div>
+        <div class="hs"><b>1913</b><small>хозяин — Меньшиков</small></div>
+        <div class="hs"><b>1995</b><small>доска и чтения</small></div>
+        <div class="hs"><b>2027</b><small>цель — музей</small></div>
+      </div>
+    </div>
+
+    <div class="stage" id="stage">
+      <canvas id="hero3d"></canvas>
+      <span class="stage-tag tl">3D-подача · усадьба на вершине горы</span>
+      <span class="stage-tag tr">тяните, чтобы вращать</span>
+      <span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span>
+      <div class="zoomer">
+        <button id="zin" aria-label="Приблизить"><svg class="i" viewBox="0 0 24 24"><path d="M12 5.5v13M5.5 12h13"/></svg></button>
+        <button id="zout" aria-label="Отдалить"><svg class="i" viewBox="0 0 24 24"><path d="M5.5 12h13"/></svg></button>
+      </div>
+      <div class="stage-fb" id="stageFallback">
+        <svg class="art" style="width:min(74%,400px)" viewBox="0 0 560 330">
+          <g stroke="#C9A24B" fill="none" stroke-width="1.4">
+            <line x1="40" y1="282" x2="520" y2="282"/>
+            <rect x="150" y="216" width="260" height="66"/><rect x="138" y="192" width="284" height="24"/>
+            <rect x="230" y="130" width="100" height="62"/><path d="M222 130 L280 88 L338 130"/>
+            <path d="M150 216 L280 156 L410 216"/><rect x="252" y="232" width="40" height="50"/>
+          </g>
+        </svg>
+        <p>3D-модель недоступна в этом браузере — держите чертёж фасада. Дом тот же.</p>
+      </div>
+      <div class="stage-ui">
+        <div class="sui-top">
+          <b>Хроника возвращения · 2008 → 2027</b>
+          <button class="play" id="playRec"><svg class="i if" viewBox="0 0 24 24"><path d="M8 5.8v12.4L18.4 12z"/></svg>проиграть</button>
+        </div>
+        <input type="range" id="recRange" min="0" max="100" value="0" aria-label="Степень восстановления дома">
+        <div class="sui-scale"><span>2008 · <em>руины</em></span><span id="recPct">восстановлено: 0%</span><span>2027 · <em>дом-музей</em></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Образцовая гора · Валдай</span><i></i><span>Мосолов · Трубников · Меньшиков</span><i></i><span>1896 → 2027</span><i></i><span>Липы помнят гамак</span><i></i><span>Дом-музей вернётся</span><i></i>
+      <span>Образцовая гора · Валдай</span><i></i><span>Мосолов · Трубников · Меньшиков</span><i></i><span>1896 → 2027</span><i></i><span>Липы помнят гамак</span><i></i><span>Дом-музей вернётся</span><i></i>
+    </div>
+  </div>
+
+  <div class="wrap" style="padding-top:70px">
+    <div class="shead reveal"><span class="snum">·</span><div><h2>Три имени одной усадьбы</h2></div></div>
+    <div class="names">
+      <article class="name-card reveal">
+        <div class="ny">1896 — 1904</div><h3>А. Н. Мосолов</h3>
+        <div class="nr">тайный советник · новгородский губернатор</div>
+        <p>Купил землю на вершине горы 26 апреля 1896 года, составил план усадьбы и выстроил дом с флигелями. Друг Новгородского музея, автор исторических драм, почётный гражданин Великого Новгорода.</p>
+      </article>
+      <article class="name-card reveal" style="--d:.08s">
+        <div class="ny">1904 — 1913</div><h3>А. Н. Трубников</h3>
+        <div class="nr">душеприказчик · шталмейстер Двора</div>
+        <p>Девять лет искал покупателя, сам проводил здесь лето и завёл породистых коней. Валдайцы считали его хозяином и долго вспоминали «генерала в парадной форме» на выездах.</p>
+      </article>
+      <article class="name-card reveal" style="--d:.16s">
+        <div class="ny">1913 — 1918</div><h3>М. О. Меньшиков</h3>
+        <div class="nr">публицист · «Новое время»</div>
+        <p>Осуществил мечту, о которой писал Чехову ещё в 1894-м. Здесь работал в гамаке между липами, собирал за вечерним чаем большую семью и вёл валдайский дневник 1918 года.</p>
+        <p class="nq">«Мне лучшего не нужно, чем этот старый дом и сад».</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="wrap" style="padding-top:76px" id="diary">
+    <div class="shead reveal">
+      <span class="snum">I</span>
+      <div>
+        <p class="caps" style="color:var(--gold);margin-bottom:8px">заметки хранителя · с 1990 года</p>
+        <h2>Дневник усадьбы</h2>
+        <p class="slede">Разговор о доме начался в 1990-м с заметки в валдайской газете — и не заканчивается до сих пор. Здесь мы публикуем находки, документы и отчёты о работах.</p>
+      </div>
+    </div>
+
+    <article class="note feat reveal">
+      <div class="nimg">
+        <svg class="art" aria-hidden="true"><use href="#art-plan"/></svg>
+        <img class="ph" data-slot="plan" alt="План усадьбы Мосолова, 1894" loading="lazy">
+        <span class="stamp">Музей уездного города · 1894</span>
+      </div>
+      <div>
+        <div class="nmeta"><span class="nno">№ 14</span><small>февраль 2025<br>заметки хранителя</small></div>
+        <h3>Не купец, а тайный советник: что говорит купчая 1913 года</h3>
+        <p>В публикациях кочевала версия, что дом куплен «у купца Мосолова». Купчая грамота из Новгородского нотариального архива говорит другое — и раскрывает цену вопроса с точностью до копейки. На плане усадьбы так и написано: «тайного советника Александра Николаевича Мосолова».</p>
+        <div class="ntags"><span>#документы</span><span>#купчая 1913</span></div>
+        <div class="nside" style="margin-top:16px">
+          <button class="read" data-post="p1">Читать <svg class="i" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></button>
+          <button class="like" data-like="n1" data-count="27"><svg class="i" viewBox="0 0 24 24"><path d="M12 20.3C7.2 16.9 3.4 13.4 3.4 9.7 3.4 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.6 2 4.6 4.7 0 3.7-3.8 7.2-8.6 10.6z"/></svg><span>27</span></button>
+        </div>
+      </div>
+    </article>
+
+    <article class="note hasimg reveal">
+      <div class="nmeta"><span class="nno">№ 13</span><small>январь 2025</small></div>
+      <div>
+        <h3>Гамак между двумя липами</h3>
+        <p>Самое плодотворное рабочее место самого читаемого журналиста эпохи висело между старыми липами у забора. Липы стоят до сих пор — и каждое лето цветут там, где был гамак.</p>
+        <div class="ntags"><span>#сад</span><span>#Меньшиков</span></div>
+      </div>
+      <div class="nthumb">
+        <svg class="art" aria-hidden="true"><use href="#art-hammock"/></svg>
+        <img class="ph" data-slot="gamak" alt="М. О. Меньшиков в гамаке" loading="lazy">
+      </div>
+      <div class="nside">
+        <button class="read" data-post="p2">Читать <svg class="i" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></button>
+        <button class="like" data-like="n2" data-count="44"><svg class="i" viewBox="0 0 24 24"><path d="M12 20.3C7.2 16.9 3.4 13.4 3.4 9.7 3.4 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.6 2 4.6 4.7 0 3.7-3.8 7.2-8.6 10.6z"/></svg><span>44</span></button>
+      </div>
+    </article>
+
+    <article class="note hasimg reveal" style="--d:.07s">
+      <div class="nmeta"><span class="nno">№ 12</span><small>декабрь 2024</small></div>
+      <div>
+        <h3>Столб, который все зовут часовенкой</h3>
+        <p>Единственный уцелевший столб-павильон усадебной ограды многие принимают за часовню. В войну туда опускали записки с поминаниями — часть из них нашлась в 1943-м.</p>
+        <div class="ntags"><span>#ограда</span><span>#память</span></div>
+      </div>
+      <div class="nthumb">
+        <svg class="art" aria-hidden="true"><use href="#art-children"/></svg>
+        <img class="ph" data-slot="deti" alt="Дети у усадебной ограды, 1917" loading="lazy">
+      </div>
+      <div class="nside">
+        <button class="read" data-post="p3">Читать <svg class="i" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></button>
+        <button class="like" data-like="n3" data-count="31"><svg class="i" viewBox="0 0 24 24"><path d="M12 20.3C7.2 16.9 3.4 13.4 3.4 9.7 3.4 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.6 2 4.6 4.7 0 3.7-3.8 7.2-8.6 10.6z"/></svg><span>31</span></button>
+      </div>
+    </article>
+
+    <article class="note reveal" style="--d:.14s">
+      <div class="nmeta"><span class="nno">№ 11</span><small>ноябрь 2024</small></div>
+      <div>
+        <h3>1990: как начинался разговор о доме</h3>
+        <p>Первой публикации о валдайской усадьбе — больше тридцати лет. Письма родственников, отклики Товарищества русских художников и Всероссийского фонда культуры, первая дискуссия о будущем дома.</p>
+        <div class="ntags"><span>#история изучения</span><span>#1990</span></div>
+      </div>
+      <div class="nside">
+        <button class="read" data-post="p4">Читать <svg class="i" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></button>
+        <button class="like" data-like="n4" data-count="22"><svg class="i" viewBox="0 0 24 24"><path d="M12 20.3C7.2 16.9 3.4 13.4 3.4 9.7 3.4 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.6 2 4.6 4.7 0 3.7-3.8 7.2-8.6 10.6z"/></svg><span>22</span></button>
+      </div>
+    </article>
+
+    <article class="note reveal" style="--d:.07s">
+      <div class="nmeta"><span class="nno">№ 10</span><small>октябрь 2024</small></div>
+      <div>
+        <h3>Дом, где писался фронт</h3>
+        <p>В 1941–1943 годах в усадьбе размещалось Политуправление Северо-Западного фронта. Здесь бывали Светлов, Михалков, Алигер, Матусовский, Кедрин; у дома встречали партизанский обоз для блокадного Ленинграда.</p>
+        <div class="ntags"><span>#1941–1943</span><span>#ПУ СЗФ</span></div>
+      </div>
+      <div class="nside">
+        <button class="read" data-post="p5">Читать <svg class="i" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></button>
+        <button class="like" data-like="n5" data-count="38"><svg class="i" viewBox="0 0 24 24"><path d="M12 20.3C7.2 16.9 3.4 13.4 3.4 9.7 3.4 7 5.5 5 8 5c1.6 0 3.1.8 4 2.1C12.9 5.8 14.4 5 16 5c2.5 0 4.6 2 4.6 4.7 0 3.7-3.8 7.2-8.6 10.6z"/></svg><span>38</span></button>
+      </div>
+    </article>
+  </div>
+
+  <figure class="mani reveal">
+    <svg class="mani-bg" aria-hidden="true"><use href="#art-ruins"/></svg>
+    <img class="ph" data-slot="ruiny" alt="" loading="lazy">
+    <div class="mani-in">
+      <svg class="mani-orn" width="90" height="18" viewBox="0 0 90 18" aria-hidden="true"><path d="M2 9c8-8 16-8 24 0s16 8 24 0 16-8 24 0 8 6 14 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+      <blockquote>«Настанет время, когда во всех уголках нашего Отечества затеплится <em>сознательная любовь к его великому прошлому</em>».</blockquote>
+      <figcaption>— А. Н. Мосолов, обращение к новгородцам · XIX век</figcaption>
+    </div>
+  </figure>
+
+  <div class="wrap" style="padding-top:76px;padding-bottom:80px">
+    <div class="shead reveal"><span class="snum">·</span><div>
+      <p class="caps" style="color:var(--gold);margin-bottom:8px">три пути к одному дому</p><h2>Как помочь усадьбе</h2>
+    </div></div>
+    <div class="hrow reveal" data-go="support">
+      <span class="hn">01</span>
+      <div><h3>Деньгами</h3><p>Целевой взнос на консервацию руин и проект реставрации деревянного дома с мезонином.</p></div>
+      <span class="go"><svg class="i" viewBox="0 0 24 24"><path d="M4.5 12h15M13.5 6l6 6-6 6"/></svg></span>
+    </div>
+    <div class="hrow reveal" style="--d:.06s" data-go="support">
+      <span class="hn">02</span>
+      <div><h3>Волонтёром</h3><p>Расчистка территории у лип и фундамента, фотофиксация, оцифровка семейного архива.</p></div>
+      <span class="go"><svg class="i" viewBox="0 0 24 24"><path d="M4.5 12h15M13.5 6l6 6-6 6"/></svg></span>
+    </div>
+    <div class="hrow reveal" style="--d:.12s" data-go="support">
+      <span class="hn">03</span>
+      <div><h3>Сведущим словом</h3><p>Историкам, архивистам, реставраторам дерева: документы, воспоминания, экспертиза — всё в счёт.</p></div>
+      <span class="go"><svg class="i" viewBox="0 0 24 24"><path d="M4.5 12h15M13.5 6l6 6-6 6"/></svg></span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= II. ИСТОРИЯ ================= -->
+<section class="page" id="page-history">
+  <div class="wrap">
+    <div class="shead reveal">
+      <span class="snum">II</span>
+      <div>
+        <p class="caps" style="color:var(--gold);margin-bottom:8px">1896 → 2027</p>
+        <h2>История дома на горе</h2>
+        <p class="slede">Губернаторская дача, «генеральские» кони, менышиковский гамак, фронтовое Политуправление и школьный звонок — один дом вобрал целый век.</p>
+      </div>
+    </div>
+
+    <div class="tl" id="tl">
+      <div class="tl-line"><div class="tl-fill" id="tlFill"></div></div>
+      <div class="ti reveal"><div class="ty">1894</div><h3>«Хуторок для приюта»</h3><p>Меньшиков пишет Чехову: «Я тоже подумываю переселиться в провинцию, купить себе где-нибудь хуторок — не для хозяйства, а так, для приюта…» Мечта ждёт — ещё девятнадцать лет.</p></div>
+      <div class="ti reveal"><div class="ty">26.04.1896</div><h3>Земля на Образцовой горе</h3><p>Новгородский губернатор Александр Николаевич Мосолов покупает участок в 26-м квартале Валдая, у перекрёстка Сиверсовой, Садовой и Боровичской улиц. С холма — озеро и Иверский монастырь.</p></div>
+      <div class="ti reveal"><div class="ty">1897–1898</div><h3>План усадьбы</h3><p>Утверждён план: господский дом с мезонином, два каменных флигеля — дворницкая и прачечная, конюшня, погреб, баня, беседка. Перед входом — круглая клумба. Идут стройка и разбивка парка; взята банковская ссуда в 3600 рублей.</p></div>
+      <div class="ti dark reveal"><div class="ty">08.05.1904</div><h3>Хозяин не успел</h3><p>Мосолов скоропостижно умирает, не выплатив ссуду. Усадьба переходит к душеприказчику — Александру Николаевичу Трубникову, губернатору Орловской губернии и кавалеристу.</p></div>
+      <div class="ti reveal"><div class="ty">1904–1913</div><h3>«Генеральские» годы</h3><p>Девять лет Трубников ищет покупателя, сам проводит в усадьбе летние сезоны и заводит породистых коней. Валдайцы уверены: хозяин — «генерал в парадной форме». Его сын, сотрудник Эрмитажа А. А. Трубников, позже поставит подпись в купчей.</p></div>
+      <div class="ti reveal"><div class="ty">06.06.1913</div><h3>Купчая</h3><p>В Петербурге оформлена сделка: усадьбу из четырёх участков покупает ведущий публицист «Нового времени» М. О. Меньшиков, принимая и долг банку — 1321 рубль 55 копеек. Оценка имения: 8000 рублей, страховая — 12 000.</p></div>
+      <div class="ti reveal"><div class="ty">1913–1917</div><h3>Рай земной</h3><p>Серо-голубой дом с белыми рамами, веранда с балконом, вид на Иверский. Утром пол мели свежескошенной травой, днём сад полон детей, а между двумя липами у забора висит гамак.</p>
+        <div class="tl-ph">
+          <svg class="art" aria-hidden="true"><use href="#art-house1917"/></svg>
+          <img class="ph" data-slot="balcon" alt="Семья на веранде-балконе" loading="lazy">
+        </div>
+        <small class="tl-phc">Семья на веранде-балконе · нач. XX века · Музей уездного города</small>
+      </div>
+      <div class="ti dark reveal"><div class="ty">09.09.1918</div><h3>«Народное достояние»</h3><p>«Дача всецело перешла в народное достояние, а её хозяин стал квартиронанимателем», — записывает Меньшиков. В саду пасутся чужие лошади, в доме — военно-строительное управление.</p></div>
+      <div class="ti dark reveal"><div class="ty">20.09.1918</div><h3>Расстрел</h3><p>Меньшиков арестован и расстрелян на берегу Валдайского озера. Семью с шестью детьми выселяют из дома во флигель. За день до гибели он просит жену из тюремной записки: успеть закрепить хотя бы флигель.</p></div>
+      <div class="ti reveal"><div class="ty">1918–1919</div><h3>Госпиталь</h3><p>В хозяйском доме — военный госпиталь. Для осиротевшей семьи это и стеснение, и спасение: питание от госпитального котла. Вдова шьёт обувь на дом и работает в канцелярии железнодорожной школы.</p></div>
+      <div class="ti reveal"><div class="ty">1930-е</div><h3>Школьный звонок</h3><p>В доме — начальная Образцовая школа № 4, летом — санаторный лагерь. Семья краеведа В. И. Успенского живёт в старом флигеле; здесь зарождается валдайское музейное дело.</p></div>
+      <div class="ti dark reveal"><div class="ty">1941–1943</div><h3>Столица Северо-Западного фронта</h3><p>В усадьбе — Политуправление фронта. Здесь бывали Светлов, Михалков, Алигер, Матусовский, Кедрин. В марте 1942-го у дома встречают партизанский обоз с продовольствием для блокадного Ленинграда.</p>
+        <div class="tl-ph">
+          <svg class="art" aria-hidden="true"><use href="#art-war"/></svg>
+          <img class="ph" data-slot="voyna" alt="Дом в годы Великой Отечественной войны" loading="lazy">
+        </div>
+        <small class="tl-phc">Дом в годы войны · резьба наличников — ориентир для реставраторов</small>
+      </div>
+      <div class="ti reveal"><div class="ty">1943–1980-е</div><h3>Снова школа</h3><p>После фронта школа № 4 возвращается и работает до конца 1960-х, затем — пришкольный интернат. В конце 1980-х интернат закрывают; пустое здание ветшает.</p></div>
+      <div class="ti reveal"><div class="ty">1990</div><h3>Слово — делу</h3><p>Публикации об усадьбе вызывают волну откликов. 29 ноября решением райсовета дом безвозмездно передают внуку публициста — Михаилу Борисовичу Поспелову, хранителю семейного архива.</p></div>
+      <div class="ti reveal"><div class="ty">1995</div><h3>Доска и чтения</h3><p>26 сентября на доме устанавливают мемориальную доску, проходят I Меньшиковские чтения. С тех пор они собирают исследователей регулярно. Комплектуется меньшиковский музейный фонд.</p></div>
+      <div class="ti dark reveal"><div class="ty">2004–2008</div><h3>Пожары и тишина</h3><p>Несколько пожаров, а затем смерть Поспелова. Попытки музеефикации — писательская дача, воскресная школа, центр для ветеранов — так и не сложились. Дом обезлюдевает окончательно.</p></div>
+      <div class="ti reveal"><div class="ty">сегодня</div><h3>Руины и липы</h3><p>Еле держатся остатки дома, стоит одинокий столб бывшей ограды, и там, где был гамак, каждое лето цветут старые липы. Мы продолжаем дело 1990 года — возвращаем дом.</p></div>
+      <div class="ti future reveal"><div class="ty">2027</div><h3>Дом-музей «Образцовая гора»</h3><p>Реставрированный дом с мезонином, экспозиция из меньшиковского фонда Валдайского музея, вечера у лип — и та самая тишина, «нарушаемая лишь щебетом птиц да звоном колоколов».</p></div>
+    </div>
+    <p class="tl-note">Хроника сверена с купчей 1913 года, планом усадьбы 1897 года, валдайским дневником М. О. Меньшикова 1918 года и воспоминаниями его дочери О. М. Меньшиковой. Иллюстрации — художественная реконструкция; архивные снимки — из фондов Музея уездного города (Валдай).</p>
+  </div>
+</section>
+
+<!-- ================= III. ДО И ПОСЛЕ ================= -->
+<section class="page" id="page-before">
+  <div class="wrap">
+    <div class="shead reveal">
+      <span class="snum">III</span>
+      <div>
+        <p class="caps" style="color:var(--gold);margin-bottom:8px">перетащите шов времени</p>
+        <h2>До и после</h2>
+        <p class="slede">Три пары: каким дом дожил до наших дней и каким мы его вернём; каким он был при хозяевах и в годы войны.</p>
+      </div>
+    </div>
+
+    <p class="ba-title reveal" id="baTitle">Реконструкция дома-музея</p>
+    <div class="ba reveal" id="ba">
+      <div class="b-side">
+        <svg class="art" aria-hidden="true"><use id="baUseB" href="#art-ruins"/></svg>
+        <img class="ph" id="baImgB" data-slot="ruiny" alt="">
+      </div>
+      <div class="ba-after">
+        <svg class="art" aria-hidden="true"><use id="baUseA" href="#art-recon"/></svg>
+        <img class="ph" id="baImgA" alt="">
+      </div>
+      <div class="ba-handle"><div class="ba-knob"><svg class="i" viewBox="0 0 24 24"><path d="M8.5 6L3 12l5.5 6M15.5 6L21 12l-5.5 6"/></svg></div></div>
+      <span class="ba-tag l" id="baTagL">сегодня · руины</span>
+      <span class="ba-tag r" id="baTagR">проект · 2027</span>
+    </div>
+    <p class="ba-hint">← потяните шов влево-вправо →</p>
+    <div class="ba-tabs reveal" id="baTabs">
+      <button class="ba-tab active" data-i="0">Реконструкция 2027</button>
+      <button class="ba-tab" data-i="1">Столетняя дистанция</button>
+      <button class="ba-tab" data-i="2">Годы войны</button>
+    </div>
+
+    <div class="steps">
+      <div class="shead reveal"><span class="snum">·</span><div>
+        <p class="caps" style="color:var(--gold);margin-bottom:8px">дорожная карта</p><h2>Четыре шага к музею</h2>
+      </div></div>
+      <div class="step reveal"><span class="sn">I</span><h3>Консервация</h3><p>Сохранить то, что есть: фундамент, остатки сруба, столб-павильон, старые липы. Отвести воду, укрепить основание.</p><span class="bdg run">задача первого года</span></div>
+      <div class="step reveal" style="--d:.05s"><span class="sn">II</span><h3>Изыскания и проект</h3><p>Обмеры, архивная работа (купчая 1913-го, дневник 1918-го, снимки 1917 года), проект реставрации и музейная концепция.</p><span class="bdg run">ведётся</span></div>
+      <div class="step reveal" style="--d:.1s"><span class="sn">III</span><h3>Реставрация</h3><p>Сруб, мезонин с арочным окном, веранда с балконом, кирпичные ворота между флигелями, парк с круглой клумбой.</p><span class="bdg wait">сбор средств</span></div>
+      <div class="step reveal" style="--d:.15s"><span class="sn">IV</span><h3>Музей</h3><p>Экспозиция «Три имени Образцовой горы», мемориальные интерьеры, меньшиковский фонд Валдайского музея — в возвращённые стены.</p><span class="bdg wait">перспектива 2027</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= IV. ФАКТЫ ================= -->
+<section class="page" id="page-facts">
+  <div class="wrap">
+    <div class="shead reveal">
+      <span class="snum">IV</span>
+      <div>
+        <p class="caps" style="color:var(--gold);margin-bottom:8px">картотека хранителя</p>
+        <h2>Факты, которые стоит знать</h2>
+        <p class="slede">Гамак, липы, купчая с копейками, крестница Достоевской и поэты военного лихолетья — из чего складывается биография одного деревянного дома.</p>
+      </div>
+    </div>
+    <div class="facts">
+      <article class="fact gold f1 reveal" data-tilt>
+        <span class="fn">01</span>
+        <span class="fk"><svg class="i" viewBox="0 0 24 24"><path d="M3 10c2-2.5 4-2.5 6 0s4 2.5 6 0 4-2.5 6 0"/><path d="M6 10v7a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-7"/><path d="M6 13c4 2 8 2 12 0"/></svg>кабинет</span>
+        <h3>100 тысяч марок — лёжа в гамаке</h3>
+        <p>Гамак висел между двумя старыми липами у самой ограды. Пленный немец Якоб говорил: будь у него такой сад — вырабатывал бы 8 тысяч марок в год. «А я вырабатываю в этом саду, лёжа в гамаке, — 100 тысяч», — отвечал Меньшиков. Усадьба кормила семью не вишнями, а строчками, писанными между липами.</p>
+      </article>
+      <article class="fact f2 reveal" style="--d:.06s" data-tilt>
+        <span class="fn">02</span>
+        <span class="fk"><svg class="i" viewBox="0 0 24 24"><path d="M21 6.5L12 13 3 6.5"/><rect x="3" y="5.5" width="18" height="13"/></svg>письмо</span>
+        <h3>Чехову — о хуторке</h3>
+        <p>«Купить себе где-нибудь хуторок — не для хозяйства, а так, для приюта…» — писал Меньшиков Чехову в 1894 году. Приют нашёлся спустя девятнадцать лет — уже готовый, с липами и видом на монастырь.</p>
+      </article>
+      <article class="fact f3 reveal" data-tilt>
+        <span class="fn">03</span>
+        <span class="fk"><svg class="i" viewBox="0 0 24 24"><path d="M12 3l7 4v5c0 4.5-3 8-7 9-4-1-7-4.5-7-9V7z"/></svg>быт</span>
+        <h3>Пол, мётенный травой</h3>
+        <p>Дом был обшит тёсом и выкрашен серо-голубым, рамы и двери — белыми. Окна не закрывались даже на ночь, а ранним утром пол подметали свежескошенной травой — «чтобы усилить ощущение свежести».</p>
+      </article>
+      <article class="fact f4 reveal" style="--d:.06s" data-tilt>
+        <span class="fn">04</span>
+        <span class="fk"><svg class="i" viewBox="0 0 24 24"><path d="M4 21h16M6 21V10l6-5 6 5v11"/><path d="M9.5 21v-6h5v6"/></svg>дом</span>
+        <h3>Один этаж и мезонин</h3>
+        <p>В первом этаже площадью 240 метров — шесть комнат и большой зал для вечерних чаепитий. В мезонине — 54 метра и детская спальня. Арочное окно мезонина смотрело в сад, к каменной лестнице и аллее туи. Из любимого парусинового кресла на веранде открывался Иверский.</p>
+      </article>
+      <article class="fact f5 reveal" data-tilt>
+        <span class="fn">05</span>
+        <span class="fk"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.4"/><path d="M4.5 20.5c1-3.8 4-5.8 7.5-5.8s6.5 2 7.5 5.8"/></svg>наследники</span>
+        <h3>Крестница Суворина и Достоевской</h3>
+        <p>Дочь публициста Ольга Меньшикова (1911–1998) — крестница А. С. Суворина и Л. Ф. Достоевской. Она стала хранительницей архива и помогла расшифровать валдайский дневник отца 1918 года, изданный в «Российском архиве».</p>
+      </article>
+      <article class="fact gold f6 reveal" style="--d:.06s" data-tilt>
+        <span class="fn">06</span>
+        <span class="fk"><svg class="i" viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-5h6v5"/></svg>лихолетье</span>
+        <h3>Дом, где писался фронт</h3>
+        <p>В годы войны в усадьбе размещалось Политуправление Северо-Западного фронта. Здесь бывали Михаил Светлов, Сергей Михалков, Маргарита Алигер, Михаил Матусовский, Дмитрий Кедрин. 25 марта 1942 года у дома встречали партизанский обоз — продовольствие для блокадного Ленинграда.</p>
+      </article>
+      <article class="fact f7 reveal" data-tilt>
+        <span class="fn">07</span>
+        <span class="fk"><svg class="i" viewBox="0 0 24 24"><path d="M12 21.5S5.5 15.6 5.5 10.8a6.5 6.5 0 0 1 13 0c0 4.8-6.5 10.7-6.5 10.7z"/><circle cx="12" cy="10.7" r="2.3"/></svg>ограда</span>
+        <h3>«Часовенка», в которой писали письма</h3>
+        <p>Ограду венчали декоративные столбы-павильоны с нишами и фронтонами. Полуразрушенный столб сохранился до сих пор — его до сих пор принимают за часовенку. В войну бойцы опускали туда записки с поминаниями; найденные в 1943-м, они стали ещё одним документом эпохи.</p>
+      </article>
+      <article class="fact f7 reveal" style="--d:.06s" data-tilt>
+        <span class="fn">08</span>
+        <span class="fk"><svg class="i" viewBox="0 0 24 24"><path d="M4 19h16M6 19V9M12 19V5M18 19v-8"/></svg>цифры</span>
+        <h3>Сколько стоил дом</h3>
+        <p>Купчая 1913 года сохранила арифметику сделки: долг банку — 1321 рубль 55 копеек, оценка четырёх участков с постройками — 8000 рублей (дом — 7100), страховая оценка — 12 000 рублей. Ссуду в 3600 рублей хозяин выплатить не успел — она девять лет тяготела на наследниках.</p>
+        <p class="q">«Все вещи до единой разве не обслуживают меня, как добрые ангелы…» — М. О. Меньшиков о доме и его мире вещей.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= V. АФИША ================= -->
+<section class="page" id="page-events">
+  <div class="wrap">
+    <div class="shead reveal">
+      <span class="snum">V</span>
+      <div>
+        <p class="caps" style="color:var(--gold);margin-bottom:8px">жизнь раньше музея</p>
+        <h2>Афиша</h2>
+        <p class="slede">Чтения, ведущие историю с 1995 года, вечера памяти и работы у лип — усадьба живёт, пока о ней говорят и рядом с ней работают.</p>
+      </div>
+    </div>
+
+    <div class="ev reveal">
+      <div class="ed"><b>IX</b><small>ежегодно</small></div>
+      <div>
+        <h3>Меньшиковские чтения <span class="et">конференция</span></h3>
+        <p class="edesc">Традиция с 1995 года: исследователи публицистики, потомки, архивисты. Проводятся при поддержке Общероссийского движения поддержки флота.</p>
+        <div class="em"><span><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.2V12l3.2 2"/></svg>день целиком</span><span><svg class="i" viewBox="0 0 24 24"><path d="M12 21.5S5.5 15.6 5.5 10.8a6.5 6.5 0 0 1 13 0c0 4.8-6.5 10.7-6.5 10.7z"/><circle cx="12" cy="10.7" r="2.3"/></svg>Валдай</span></div>
+      </div>
+      <button class="btn" data-event="Меньшиковские чтения">Записаться</button>
+    </div>
+
+    <div class="ev reveal" style="--d:.05s">
+      <div class="ed"><b>20</b><small>сентября</small></div>
+      <div>
+        <h3>Вечер памяти М. О. Меньшикова <span class="et">память</span></h3>
+        <p class="edesc">Ежегодная дата гибели публициста. Чтение валдайского дневника 1918 года, минута молчания, цветы на берегу озера.</p>
+        <div class="em"><span><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.2V12l3.2 2"/></svg>17:00–20:00</span><span><svg class="i" viewBox="0 0 24 24"><path d="M12 21.5S5.5 15.6 5.5 10.8a6.5 6.5 0 0 1 13 0c0 4.8-6.5 10.7-6.5 10.7z"/><circle cx="12" cy="10.7" r="2.3"/></svg>берег озера</span></div>
+      </div>
+      <button class="btn" data-event="Вечер памяти М. О. Меньшикова">Записаться</button>
+    </div>
+
+    <div class="ev reveal" style="--d:.1s">
+      <div class="ed"><b>сб</b><small>по записи</small></div>
+      <div>
+        <h3>Экскурсия «Три имени Образцовой горы» <span class="et">экскурсия</span></h3>
+        <p class="edesc">Пешеходный час по усадьбе: где стояли дом и флигели, где висел гамак, какой вид открывался на Иверский. Заканчиваем у столба-павильона.</p>
+        <div class="em"><span><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.2V12l3.2 2"/></svg>12:00</span><span><svg class="i" viewBox="0 0 24 24"><path d="M12 21.5S5.5 15.6 5.5 10.8a6.5 6.5 0 0 1 13 0c0 4.8-6.5 10.7-6.5 10.7z"/><circle cx="12" cy="10.7" r="2.3"/></svg>угол Сиверсовой и Садовой</span></div>
+      </div>
+      <button class="btn" data-event="Экскурсия «Три имени Образцовой горы»">Записаться</button>
+    </div>
+
+    <div class="ev reveal" style="--d:.05s">
+      <div class="ed"><b>VI</b><small>сезон</small></div>
+      <div>
+        <h3>Субботники «У лип» <span class="et">волонтёрство</span></h3>
+        <p class="edesc">Расчистка территории: кустарник, завалы, сохранение приствольных кругов старых лип. Инструмент и чай — наши.</p>
+        <div class="em"><span><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.2V12l3.2 2"/></svg>09:00–14:00</span><span><svg class="i" viewBox="0 0 24 24"><path d="M12 21.5S5.5 15.6 5.5 10.8a6.5 6.5 0 0 1 13 0c0 4.8-6.5 10.7-6.5 10.7z"/><circle cx="12" cy="10.7" r="2.3"/></svg>парк усадьбы</span></div>
+      </div>
+      <button class="btn" data-event="Субботники «У лип»">Записаться</button>
+    </div>
+
+    <p class="aftxt">Календарь пополняется по мере хода работ — подпишитесь на дневник усадьбы, чтобы не пропустить.</p>
+  </div>
+</section>
+
+<!-- ================= VI. ГАЛЕРЕЯ ================= -->
+<section class="page" id="page-gallery">
+  <div class="wrap">
+    <div class="shead reveal">
+      <span class="snum">VI</span>
+      <div>
+        <p class="caps" style="color:var(--gold);margin-bottom:8px">четыре времени одной горы</p>
+        <h2>Галерея</h2>
+        <p class="slede">Пока подлинные снимки не загружены, места занимают художественные реконструкции. Загрузить фотографии можно в разделе <b>VIII «Кабинет»</b> — они появятся здесь у всех посетителей.</p>
+      </div>
+    </div>
+
+    <div class="gal">
+      <div class="ghead reveal"><b>I. Архив</b><span></span><small>1894–1917</small></div>
+      <figure class="gitem g-w5 r45 reveal">
+        <svg class="art" aria-hidden="true"><use href="#art-house1917"/></svg>
+        <img class="ph" data-slot="semya" alt="Семья М. О. Меньшикова возле дома" loading="lazy">
+        <figcaption><span>Семья у дома · нач. XX века</span><b>I</b></figcaption>
+      </figure>
+      <figure class="gitem g-w4 r34 reveal" style="--d:.06s">
+        <svg class="art" aria-hidden="true"><use href="#art-hammock"/></svg>
+        <img class="ph" data-slot="gamak" alt="М. О. Меньшиков в гамаке" loading="lazy">
+        <figcaption><span>Кабинет под открытым небом</span><b>II</b></figcaption>
+      </figure>
+      <figure class="gitem g-w3 r34 reveal" style="--d:.12s">
+        <svg class="art" aria-hidden="true"><use href="#art-children"/></svg>
+        <img class="ph" data-slot="deti" alt="Дети у усадебной ограды, 1917" loading="lazy">
+        <figcaption><span>У ограды · 1917</span><b>III</b></figcaption>
+      </figure>
+
+      <figure class="gitem g-w3 r34 reveal">
+        <svg class="art" aria-hidden="true"><use href="#art-veranda"/></svg>
+        <img class="ph" data-slot="veranda" alt="М. О. Меньшиков на веранде" loading="lazy">
+        <figcaption><span>Веранда и любимое кресло</span><b>IV</b></figcaption>
+      </figure>
+      <figure class="gitem g-w3 r34 reveal" style="--d:.06s">
+        <svg class="art" aria-hidden="true"><use href="#art-portrait"/></svg>
+        <img class="ph" data-slot="portret" alt="М. О. Меньшиков с супругой" loading="lazy">
+        <figcaption><span>Михаил и Мария Меньшиковы</span><b>V</b></figcaption>
+      </figure>
+      <figure class="gitem g-w3 r34 reveal" style="--d:.12s">
+        <svg class="art" aria-hidden="true"><use href="#art-plan"/></svg>
+        <img class="ph" data-slot="plan" alt="План усадьбы, 1894" loading="lazy">
+        <figcaption><span>План усадьбы · 1894</span><b>VI</b></figcaption>
+      </figure>
+      <figure class="gitem g-w3 r34 reveal" style="--d:.18s">
+        <svg class="art" aria-hidden="true"><use href="#art-house1917"/></svg>
+        <img class="ph" data-slot="dom" alt="Дом среди деревьев, нач. XX века" loading="lazy">
+        <figcaption><span>Дом среди деревьев</span><b>VI·б</b></figcaption>
+      </figure>
+      <div class="gcard reveal" style="--d:.24s">
+        <span class="fk">фонд</span>
+        <p class="q">«Все вещи до единой разве не обслуживают меня, как добрые ангелы…»</p>
+        <p>Мебель, книги и вещи из валдайского дома хранятся в фондах Валдайского музея — и ждут возвращения в восстановленные интерьеры.</p>
+      </div>
+
+      <div class="ghead reveal"><b>II. Лихолетье</b><span></span><small>1941–1943</small></div>
+      <figure class="gitem g-w8 r1610 reveal">
+        <svg class="art" aria-hidden="true"><use href="#art-war"/></svg>
+        <img class="ph" data-slot="voyna" alt="Дом в годы Великой Отечественной войны" loading="lazy">
+        <figcaption><span>Дом Политуправления СЗФ · 1941–1943</span><b>VII</b></figcaption>
+      </figure>
+      <div class="gcard reveal" style="--d:.06s">
+        <span class="fk">слово фронта</span>
+        <p>Здесь бывали Михаил Светлов, Сергей Михалков, Маргарита Алигер, Михаил Матусовский, Дмитрий Кедрин.</p>
+        <p>25 марта 1942 года у дома встречали партизанский обоз с продовольствием для блокадного Ленинграда.</p>
+      </div>
+
+      <div class="ghead reveal"><b>III. Сегодня</b><span></span><small>2024–2025</small></div>
+      <figure class="gitem g-w8 r1610 reveal">
+        <svg class="art" aria-hidden="true"><use href="#art-ruins"/></svg>
+        <img class="ph" data-slot="ruiny" alt="Дом-руина на Образцовой горе, наши дни" loading="lazy">
+        <figcaption><span>Дом-руина на вершине горы · наши дни</span><b>VIII</b></figcaption>
+      </figure>
+      <div class="gcard reveal" style="--d:.06s">
+        <span class="fk">задача</span>
+        <p>Сруб еле держится на выбеленном кирпичном фундаменте. Первый шаг — консервация: укрепить основание и уберечь то, что уцелело. Липы у забора, где висел гамак, цветут до сих пор.</p>
+        <a class="glink" href="#page-support" data-go="support">Как помочь дому →</a>
+      </div>
+
+      <div class="ghead reveal"><b>IV. Проект 2027</b><span></span><small>реконструкция</small></div>
+      <figure class="gitem g-w8 r1610 reveal">
+        <svg class="art" aria-hidden="true"><use href="#art-recon"/></svg>
+        <figcaption><span>Художественная реконструкция · дом-музей · 2027</span><b>IX</b></figcaption>
+      </figure>
+      <div class="gcard reveal" style="--d:.06s">
+        <span class="fk">что вернём</span>
+        <p>Серо-голубой фасад с белыми наличниками, арочное окно мезонина, веранда с балконом, оба столба-павильона с фонарями, круглая клумба перед входом — и гамак между липами.</p>
+        <a class="glink" href="#page-before" data-go="before">Сравнить с руинами →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VII. ПОДДЕРЖАТЬ ================= -->
+<section class="page" id="page-support">
+  <div class="support">
+    <div class="wrap sup-grid">
+      <div>
+        <p class="caps reveal" style="color:var(--gold)">VII · деньги и руки</p>
+        <h2 class="reveal">Дом ждал девять лет между хозяевами.<br>Не заставляйте его ждать снова</h2>
+        <p class="lead reveal">Разговор о будущем усадьбы открылся в 1990 году. Меньшиковский музейный фонд комплектуется в Валдайском музее. Осталось вернуть ему стены.</p>
+        <div class="fund reveal">
+          <b><span class="cnt" data-count="1850000">0</span>&nbsp;₽</b>
+          <span>собрано из</span>
+          <b class="dimm"><span class="cnt" data-count="9000000">0</span>&nbsp;₽</b>
+        </div>
+        <div class="fbar reveal"><i id="fbarFill"></i></div>
+        <p class="fnote reveal">Цифры — демонстрационные для шаблона: здесь появятся отчётные суммы. Приоритет — консервация руин и историко-архивная часть проекта.</p>
+        <div class="reveal">
+          <div class="way"><svg class="i" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13"/><path d="M2.5 10.2h19M6 15h4"/></svg><div><b>Перевод на карту</b><small>0000 0000 0000 0000 · плейсхолдер — здесь будут реальные реквизиты</small></div></div>
+          <div class="way"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13"/><path d="M3.5 7l8.5 6 8.5-6"/></svg><div><b>Почта для предложений</b><small>gora@valday-dom.ru · плейсхолдер</small></div></div>
+          <div class="way"><svg class="i" viewBox="0 0 24 24"><path d="M12 21.5S5.5 15.6 5.5 10.8a6.5 6.5 0 0 1 13 0c0 4.8-6.5 10.7-6.5 10.7z"/><circle cx="12" cy="10.7" r="2.3"/></svg><div><b>Прийти лично</b><small>Валдай, Образцовая гора, угол Сиверсовой и Садовой улиц — по субботам</small></div></div>
+        </div>
+      </div>
+      <form class="sup-form reveal" id="supForm" style="--d:.1s">
+        <h3>Вести с Образцовой горы</h3>
+        <p>Подпишитесь на дневник усадьбы или запишитесь в волонтёры — напишем о чтениях, субботниках и ходе работ.</p>
+        <div class="fld"><label for="sfName">Имя</label><input id="sfName" type="text" placeholder="Как к вам обращаться" required></div>
+        <div class="fld"><label for="sfMail">Почта</label><input id="sfMail" type="email" placeholder="you@example.com" required></div>
+        <div class="fld"><label for="sfRole">Я хочу</label>
+          <select id="sfRole">
+            <option>Получать дневник усадьбы</option>
+            <option>Стать волонтёром</option>
+            <option>Помочь документами и памятью</option>
+            <option>Помочь деньгами (пришлите реквизиты)</option>
+          </select>
+        </div>
+        <button class="btn gold" type="submit">Отправить <svg class="i" viewBox="0 0 24 24"><path d="M21 3L10.5 13.5"/><path d="M21 3l-6.5 18-4-7.5L3 9.5z"/></svg></button>
+        <small>Только письма с горы — никаких рассылок сверх того.</small>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VIII. КАБИНЕТ ================= -->
+<section class="page" id="page-admin">
+  <div class="wrap" style="padding-bottom:90px">
+    <div class="shead reveal">
+      <span class="snum">VIII</span>
+      <div>
+        <p class="caps" style="color:var(--gold);margin-bottom:8px">личный кабинет</p>
+        <h2>Фотографии усадьбы</h2>
+        <p class="slede">Подключите сервер GitHub — и все изменения (фотографии, отметки) будут сохраняться <b>на сервере</b>: видны всем посетителям, переживают обновление, перезагрузку и смену устройства.</p>
+      </div>
+    </div>
+
+    <div class="gate" id="gate">
+      <div class="gate-card">
+        <svg class="i" viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>
+        <h3>Код доступа</h3>
+        <p>Введите код хранителя, чтобы открыть управление.</p>
+        <input id="gateCode" type="password" inputmode="numeric" maxlength="8" autocomplete="off" aria-label="Код доступа">
+        <button class="btn gold" id="gateBtn" type="button">Войти в кабинет</button>
+        <small>Код по умолчанию — <b style="color:var(--gold2)">1913</b> (год купчей).<br>Его можно сменить внутри кабинета.</small>
+      </div>
+    </div>
+
+    <div id="cabinet" hidden>
+      <!-- СЕРВЕР -->
+      <div class="cab-sec" style="border-top:none;padding-top:0">
+        <h3>Сервер — GitHub (база данных сайта)</h3>
+        <p class="desc">Заполните четыре поля и нажмите <b>«Сохранить настройки»</b>. После этого каждая загрузка фото и каждая отметка «нравится» уходит в ваш репозиторий на GitHub — то есть в постоянное хранилище, которое видят все посетители сайта. Пошаговая инструкция, где взять эти данные, — в сообщении, из которого вы скопировали этот сайт.</p>
+        <div class="gh-grid">
+          <div class="fld"><label for="ghOwner">Логин на GitHub (владелец)</label><input id="ghOwner" type="text" placeholder="например, mariya-ivanova" autocomplete="off"></div>
+          <div class="fld"><label for="ghRepo">Имя репозитория</label><input id="ghRepo" type="text" placeholder="например, menshikov-dom" autocomplete="off"></div>
+          <div class="fld"><label for="ghBranch">Ветка (обычно main)</label><input id="ghBranch" type="text" value="main" autocomplete="off"></div>
+          <div class="fld"><label for="ghToken">Ключ-токен (длинный секретный код)</label><input id="ghToken" type="password" placeholder="github_pat_…" autocomplete="off"></div>
+        </div>
+        <div class="gh-actions">
+          <button class="btn gold" id="ghSave" type="button">Сохранить настройки</button>
+          <button class="btn" id="ghTest" type="button">Проверить связь</button>
+          <button class="btn danger" id="ghOff" type="button">Отключить сервер</button>
+        </div>
+        <p class="st" id="ghStatus" style="margin-top:12px;font-size:11.5px"></p>
+      </div>
+
+      <div class="cab-sec">
+        <h3>Фотографии</h3>
+        <p class="desc" id="phDesc">Нажмите <b>«Загрузить»</b> на ячейке и выберите файл, или перетащите фото мышкой прямо на ячейку. При подключённом сервере снимок автоматически уезжает в репозиторий.</p>
+        <div class="cab-tools">
+          <label class="btn gold" for="bulkInput">Загрузить сразу несколько</label>
+          <input type="file" id="bulkInput" accept="image/*" multiple hidden>
+          <button class="btn" id="expBtn" type="button">Скачать архив</button>
+          <label class="btn" for="impInput">Загрузить архив</label>
+          <input type="file" id="impInput" accept=".json,application/json" hidden>
+          <button class="btn danger" id="clrBtn" type="button">Сбросить всё</button>
+          <span class="sto st" id="stoInfo"></span>
+        </div>
+        <div class="slots" id="slots"></div>
+      </div>
+
+      <div class="cab-sec">
+        <h3>Сменить код доступа</h3>
+        <div class="gh-actions">
+          <input id="newCode" type="text" maxlength="8" placeholder="новый код" style="background:transparent;border:none;border-bottom:1px solid var(--line2);color:var(--gold2);font:500 15px var(--fs);letter-spacing:.2em;padding:8px 2px;width:160px">
+          <button class="btn" id="codeBtn" type="button">Сохранить код</button>
+        </div>
+        <p class="cab-note">Подключённый сервер хранит токен только в вашем браузере — посетители сайта видят фотографии, но не могут их менять. Десять загруженных снимков занимают несколько мегабайт — лимиты бесплатного GitHub для этого с большим запасом. Обновление фотографий на сервере занимает несколько секунд; у сторонних посетителей новое фото может появиться с задержкой до пяти минут (кэш сети) — на вашем компьютере сразу.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ ФУТЕР ============ -->
+<footer>
+  <div class="ft">
+    <div>
+      <a class="rail-brand" href="#page-home" data-go="home" style="border:none;padding:0">
+        <svg class="rail-mark" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M12 36V22l12-9 12 9v14h-8v-8h-8v8z" fill="none" stroke="#EDE6D3" stroke-width="1.6"/>
+          <rect x="21" y="14" width="6" height="5" fill="none" stroke="#C9A24B" stroke-width="1.2"/>
+        </svg>
+        <span><b style="font:400 17px var(--fd)">Образцовая гора</b><small style="display:block;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim)">дневник усадьбы · Валдай</small></span>
+      </a>
+      <p>Общественная инициатива возрождения дома на Образцовой горе — усадьбы А. Н. Мосолова и М. О. Меньшикова. История сверен с купчей 1913 года, валдайским дневником 1918-го и публикациями исследователей усадьбы.</p>
+    </div>
+    <div>
+      <h4>Разделы</h4>
+      <nav>
+        <a href="#page-home" data-go="home">Дневник</a>
+        <a href="#page-history" data-go="history">История дома</a>
+        <a href="#page-before" data-go="before">До и после</a>
+        <a href="#page-facts" data-go="facts">Факты</a>
+        <a href="#page-events" data-go="events">Афиша</a>
+        <a href="#page-gallery" data-go="gallery">Галерея</a>
+        <a href="#page-support" data-go="support">Поддержать</a>
+        <a href="#page-admin" data-go="admin">Кабинет хранителя</a>
+      </nav>
+    </div>
+    <div>
+      <h4>Координаты</h4>
+      <address>
+        Образцовая гора<br>
+        26-й квартал, угол Сиверсовой и Садовой<br>
+        Валдай, Новгородская область
+      </address>
+    </div>
+  </div>
+  <div class="ftb">
+    <span>© 2025 · инициативная группа «Образцовая гора»</span>
+    <span>иллюстрации — художественная реконструкция по описям и снимкам 1917 года</span>
+  </div>
+</footer>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-ov" data-close></div>
+  <div class="modal-panel" role="dialog" aria-modal="true">
+    <button class="modal-x" data-close aria-label="Закрыть"><svg class="i" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="modal-meta" id="mMeta"></div>
+    <h3 id="mTitle"></h3>
+    <div class="modal-body" id="mBody"></div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function(){
+'use strict';
+var d = document;
+function $(s){ return d.querySelector(s); }
+function $$(s){ return Array.prototype.slice.call(d.querySelectorAll(s)); }
+function safe(fn){ try{ fn(); }catch(e){ if(window.console) console.warn('[gora]', e); } }
+
+var toastEl = $('#toast'), toastT = null;
+function toast(msg){
+  if(!toastEl) return;
+  toastEl.textContent = msg;
+  toastEl.classList.add('show');
+  clearTimeout(toastT);
+  toastT = setTimeout(function(){ toastEl.classList.remove('show'); }, 4200);
+}
+
+/* =====================================================
+   СЕРВЕР: GitHub-репозиторий как база данных.
+   Фото → img/{slot}.jpg в репозитории,
+   реестр и отметки → data/meta.json.
+   ===================================================== */
+var GH = null;           /* {owner, repo, branch, token} */
+var META = {v:1, photos:{}, likes:{}};
+
+function lsGet(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function lsSet(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+
+/* автовычисление репозитория из адреса сайта вида логин.github.io/имя-репо */
+function ghFromLocation(){
+  try{
+    var m = location.host.match(/^([a-z0-9-]+)\.github\.io$/i);
+    if(m){
+      var parts = location.pathname.split('/').filter(Boolean);
+      if(parts.length) return {owner:m[1], repo:parts[0], branch:'main'};
+      return {owner:m[1], repo:m[1]+'.github.io', branch:'main'};
+    }
+  }catch(e){}
+  return null;
+}
+function ghLoad(){
+  var saved = null;
+  try{ saved = JSON.parse(lsGet('ogora_gh')||'null'); }catch(e){}
+  var auto = ghFromLocation();
+  if(saved && saved.owner && saved.repo){
+    GH = saved;
+    if(auto){ GH.owner = auto.owner; GH.repo = auto.repo; }
+  } else if(auto){
+    GH = auto; /* публичное чтение без токена */
+  } else GH = null;
+}
+function ghBase(){ return 'https://raw.githubusercontent.com/'+GH.owner+'/'+GH.repo+'/'+GH.branch+'/'; }
+function ghHeaders(){
+  var h = {'Accept':'application/vnd.github+json'};
+  if(GH && GH.token) h.Authorization = 'Bearer '+GH.token;
+  return h;
+}
+function ghCanWrite(){ return !!(GH && GH.token && GH.owner && GH.repo); }
+
+function ghGetJSON(path){
+  return fetch(ghBase()+path+'?t='+Date.now())
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .catch(function(){ return null; });
+}
+function ghPutJSON(path, obj){
+  var b64 = btoa(unescape(encodeURIComponent(JSON.stringify(obj))));
+  return ghPutFile(path, b64, 'ogora: обновление '+path, true);
+}
+function ghPutFile(path, contentB64, msg, alreadyB64){
+  var url = 'https://api.github.com/repos/'+GH.owner+'/'+GH.repo+'/contents/'+path;
+  var body = {message: msg || ('ogora: '+path), branch: GH.branch};
+  body.content = alreadyB64 ? contentB64 : b64fromDataURL(contentB64);
+  return fetch(url+'?ref='+encodeURIComponent(GH.branch), {headers:ghHeaders()})
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(j){ if(j && j.sha) body.sha = j.sha; })
+    .then(function(){
+      return fetch(url, {method:'PUT', headers:ghHeaders(), body:JSON.stringify(body)});
+    })
+    .then(function(r){
+      if(!r.ok) throw new Error('GitHub ответил '+r.status+' — проверьте токен и имя репозитория');
+      return r.json();
+    });
+}
+function b64fromDataURL(dataURL){
+  var i = dataURL.indexOf(',');
+  return i < 0 ? dataURL : dataURL.substring(i+1);
+}
+
+/* ---------- локальный кэш (мгновенный показ до ответа сервера) ---------- */
+var LS_OK = (function(){ try{ localStorage.setItem('__t','1'); localStorage.removeItem('__t'); return true; }catch(e){ return false; } })();
+function cacheGet(slot){
+  if(!LS_OK) return null;
+  try{ return lsGet('ogora_p_'+slot); }catch(e){ return null; }
+}
+function cacheSet(slot, dataURL){ if(LS_OK) lsSet('ogora_p_'+slot, dataURL); }
+function cacheDel(slot){ if(LS_OK){ try{ localStorage.removeItem('ogora_p_'+slot); }catch(e){} } }
+
+/* ---------- Сжатие ---------- */
+function compress(file){
+  return new Promise(function(res, rej){
+    if(!file || !/^image\//.test(file.type)) return rej(new Error('Это не изображение'));
+    var fr = new FileReader();
+    fr.onload = function(){
+      var im = new Image();
+      im.onload = function(){
+        try{
+          var max = 1400, k = Math.min(1, max/Math.max(im.width, im.height));
+          var c = d.createElement('canvas');
+          c.width = Math.max(1, Math.round(im.width*k));
+          c.height = Math.max(1, Math.round(im.height*k));
+          var cx = c.getContext('2d');
+          cx.fillStyle = '#fff'; cx.fillRect(0,0,c.width,c.height);
+          cx.drawImage(im, 0, 0, c.width, c.height);
+          res(c.toDataURL('image/jpeg', .82));
+        }catch(e){ rej(e); }
+      };
+      im.onerror = function(){ rej(new Error('Браузер не смог открыть файл — попробуйте JPG')); };
+      im.src = fr.result;
+    };
+    fr.onerror = function(){ rej(new Error('Не удалось прочитать файл')); };
+    fr.readAsDataURL(file);
+  });
+}
+
+var SLOTS = [
+  {id:'ruiny',   t:'Руины сегодня',        art:'#art-ruins'},
+  {id:'plan',    t:'План усадьбы · 1894',  art:'#art-plan'},
+  {id:'semya',   t:'Семья у дома',         art:'#art-house1917'},
+  {id:'gamak',   t:'Гамак между липами',   art:'#art-hammock'},
+  {id:'deti',    t:'Дети у ограды · 1917', art:'#art-children'},
+  {id:'portret', t:'Михаил и Мария',       art:'#art-portrait'},
+  {id:'veranda', t:'На веранде',           art:'#art-veranda'},
+  {id:'balcon',  t:'Семья на балконе',     art:'#art-house1917'},
+  {id:'voyna',   t:'Годы войны',           art:'#art-war'},
+  {id:'dom',     t:'Дом среди деревьев',   art:'#art-house1917'}
+];
+
+function setSlotImg(slot, src){
+  $$('img[data-slot="'+slot+'"]').forEach(function(im){
+    if(src){ im.src = src; im.classList.add('ok'); }
+    else { im.removeAttribute('src'); im.classList.remove('ok'); }
+  });
+  var card = d.querySelector('.slot[data-id="'+slot+'"]');
+  if(card){
+    var im = card.querySelector('img.ph');
+    var st = card.querySelector('.st');
+    if(src){ im.src = src; im.classList.add('ok'); st.textContent = 'загружено ✓'; st.className = 'st ok'; card.classList.add('has'); }
+    else { im.removeAttribute('src'); im.classList.remove('ok'); st.textContent = 'иллюстрация'; st.className = 'st'; card.classList.remove('has'); }
+  }
+}
+function applyLocal(slot){
+  var c = cacheGet(slot);
+  if(c) setSlotImg(slot, c);
+}
+function refreshAll(){
+  SLOTS.forEach(function(s){
+    setSlotImg(s.id, null);
+    applyLocal(s.id);
+    if(GH){
+      var src = ghBase()+'img/'+s.id+'.jpg';
+      var im = new Image();
+      im.onload = function(){ if(META.photos[s.id]) setSlotImg(s.id, src); };
+      im.src = src;
+    }
+  });
+}
+
+var serverBadge = function(){
+  var b = $('#svBadge');
+  if(!b) return;
+  if(ghCanWrite()){ b.textContent = '✓ сервер подключён · '+GH.owner+'/'+GH.repo; b.className = 'st ok'; }
+  else if(GH && !GH.token){ b.textContent = 'сервер: только просмотр · нужен токен в кабинете'; b.className = 'st warn'; }
+  else { b.textContent = 'локальный режим · сервер не подключён'; b.className = 'st'; }
+};
+
+/* ---------- запись на сервер ---------- */
+function serverCommit(slot, dataURL){
+  if(!ghCanWrite()) return Promise.resolve('local');
+  return ghPutFile('img/'+slot+'.jpg', dataURL, 'ogora: фото «'+slot+'»')
+    .then(function(){
+      META.photos[slot] = 1;
+      return ghPutJSON('data/meta.json', META);
+    })
+    .then(function(){ return 'server'; });
+}
+function serverDel(slot){
+  if(!ghCanWrite()) return Promise.resolve('local');
+  META.photos[slot] = 0;
+  return ghPutJSON('data/meta.json', META).then(function(){ return 'server'; });
+}
+var likesTmr = null;
+function serverLikes(){
+  if(!ghCanWrite()) return;
+  clearTimeout(likesTmr);
+  likesTmr = setTimeout(function(){
+    ghPutJSON('data/meta.json', META).catch(function(){ /* тихо */ });
+  }, 1500);
+}
+
+function uploadTo(slot, file){
+  compress(file).then(function(dataURL){
+    cacheSet(slot, dataURL);
+    setSlotImg(slot, dataURL);
+    return serverCommit(slot, dataURL);
+  }).then(function(where){
+    if(where === 'server') toast('Фотография сохранена на сервере — видна всем посетителям.');
+    else toast('Фотография показана. Подключите сервер в кабинете, чтобы сохранить её навсегда.');
+  }).catch(function(err){
+    toast('На сервер записать не вышло ('+(err && err.message ? err.message : 'ошибка сети')+'). Локально фото показано.');
+  });
+}
+
+/* ---------- Кабинет: построение ячеек ---------- */
+function buildSlots(){
+  var host = $('#slots');
+  if(!host || host.dataset.built) return;
+  host.dataset.built = '1';
+  host.innerHTML = SLOTS.map(function(s){
+    return '<div class="slot" data-id="'+s.id+'">'
+      +'<div class="slot-ph"><svg class="art" aria-hidden="true"><use href="'+s.art+'"/></svg>'
+      +'<img class="ph" alt=""></div>'
+      +'<div class="slot-meta"><b>'+s.t+'</b><span class="st">иллюстрация</span></div>'
+      +'<div class="slot-btns">'
+      +'<label class="mini">Загрузить<input type="file" accept="image/*" class="slot-file" hidden></label>'
+      +'<button class="mini ghost slot-del" type="button">Убрать</button>'
+      +'</div></div>';
+  }).join('');
+  SLOTS.forEach(function(s){
+    var card = host.querySelector('.slot[data-id="'+s.id+'"]');
+    if(!card) return;
+    card.addEventListener('dragover', function(e){ e.preventDefault(); card.classList.add('drag'); });
+    card.addEventListener('dragleave', function(){ card.classList.remove('drag'); });
+    card.addEventListener('drop', function(e){
+      e.preventDefault();
+      card.classList.remove('drag');
+      var f = e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0];
+      if(f) uploadTo(s.id, f);
+    });
+  });
+}
+
+/* ---------- доступ ---------- */
+var unlockMem = false;
+function getCode(){ return lsGet('ogora_code') || '1913'; }
+function isUnlocked(){
+  if(unlockMem) return true;
+  try{ return sessionStorage.getItem('ogora_unlock') === '1'; }catch(e){ return false; }
+}
+function openCab(){
+  $('#gate').hidden = true;
+  $('#cabinet').hidden = false;
+  buildSlots();
+  fillGhForm();
+  refreshAll();
+  updateGhStatus();
+}
+function showGate(){ $('#gate').hidden = false; $('#cabinet').hidden = true; }
+function gateState(){ if(isUnlocked()) openCab(); else showGate(); }
+
+function fillGhForm(){
+  if(GH){
+    $('#ghOwner').value = GH.owner || '';
+    $('#ghRepo').value = GH.repo || '';
+    $('#ghBranch').value = GH.branch || 'main';
+    $('#ghToken').value = GH.token || '';
+  }
+}
+function updateGhStatus(){
+  var el = $('#ghStatus');
+  if(!el) return;
+  if(ghCanWrite()){ el.textContent = '✓ сервер подключён: '+GH.owner+'/'+GH.repo+' — изменения сохраняются в базе'; el.className = 'st ok'; }
+  else if(GH){ el.textContent = 'Просмотр с сервера работает, но для записи нужен токен (см. инструкцию).'; el.className = 'st warn'; }
+  else { el.textContent = 'Сервер не подключён — данные хранятся только в этом браузере.'; el.className = 'st err'; }
+  serverBadge();
+  var sto = $('#stoInfo');
+  if(sto) sto.textContent = ghCanWrite() ? '✓ база: GitHub' : 'база: локальная память';
+}
+
+/* ---------- роутер ---------- */
+function fillBar(){ var f = $('#fbarFill'); if(f) f.style.width = '20.5%'; }
+function tlFill(){
+  var tl = $('#tl'); if(!tl) return;
+  var r = tl.getBoundingClientRect();
+  var p = Math.min(1, Math.max(0, (window.innerHeight*0.72 - r.top)/r.height));
+  var f = $('#tlFill'); if(f) f.style.height = (p*100).toFixed(1)+'%';
+}
+function go(id){
+  var t = d.getElementById('page-'+id) ? id : 'home';
+  $$('.page').forEach(function(p){ p.classList.toggle('active', p.id === 'page-'+t); });
+  $$('.rail-nav a, .mnav a').forEach(function(a){ if(a.dataset.go) a.classList.toggle('active', a.dataset.go === t); });
+  try{ history.replaceState(null, '', '#page-'+t); }catch(e){}
+  window.scrollTo(0,0);
+  d.body.classList.remove('menu-open');
+  if(t === 'support') fillBar();
+  if(t === 'history') tlFill();
+  if(t === 'admin') gateState();
+}
+safe(function(){
+  d.addEventListener('click', function(e){
+    var g = e.target.closest('[data-go]');
+    if(g){ e.preventDefault(); go(g.dataset.go); }
+  });
+  go((location.hash||'').replace('#page-','') || 'home');
+});
+
+safe(function(){
+  $('#burger').addEventListener('click', function(){ d.body.classList.add('menu-open'); });
+  $('#mnavClose').addEventListener('click', function(){ d.body.classList.remove('menu-open'); });
+  window.addEventListener('keydown', function(e){ if(e.key==='Escape'){ d.body.classList.remove('menu-open'); closeModal(); } });
+});
+
+safe(function(){
+  var els = $$('.reveal');
+  if(!('IntersectionObserver' in window)){ els.forEach(function(el){ el.classList.add('in'); }); return; }
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(x){ if(x.isIntersecting){ x.target.classList.add('in'); io.unobserve(x.target); } });
+  }, {threshold:.1});
+  els.forEach(function(el){ io.observe(el); });
+});
+
+safe(function(){
+  function run(el){
+    var end = +el.dataset.count, t0 = performance.now();
+    (function step(now){
+      var k = Math.min(1,(now-t0)/1500), e = 1-Math.pow(1-k,3);
+      el.textContent = Math.round(end*e).toLocaleString('ru-RU');
+      if(k<1) requestAnimationFrame(step);
+    })(t0);
+  }
+  var els = $$('.cnt');
+  if(!('IntersectionObserver' in window)){ els.forEach(run); return; }
+  var cio = new IntersectionObserver(function(es){
+    es.forEach(function(x){ if(x.isIntersecting){ cio.unobserve(x.target); run(x.target); } });
+  }, {threshold:.4});
+  els.forEach(function(el){ cio.observe(el); });
+});
+
+safe(function(){
+  window.addEventListener('scroll', tlFill, {passive:true});
+  window.addEventListener('resize', tlFill);
+  tlFill();
+});
+
+safe(function(){
+  if(!window.matchMedia('(hover:hover)').matches) return;
+  $$('[data-tilt]').forEach(function(c){
+    c.addEventListener('mousemove', function(e){
+      var r = c.getBoundingClientRect();
+      var rx = ((e.clientY-r.top)/r.height - .5)*-4;
+      var ry = ((e.clientX-r.left)/r.width - .5)*5;
+      c.style.transform = 'perspective(800px) rotateX('+rx.toFixed(2)+'deg) rotateY('+ry.toFixed(2)+'deg) translateY(-2px)';
+    });
+    c.addEventListener('mouseleave', function(){ c.style.transform=''; });
+  });
+});
+
+/* ---------- Лайки (кэш + сервер) ---------- */
+safe(function(){
+  var LKEY = 'ogora_likes_v1';
+  var local = {};
+  try{ local = JSON.parse(lsGet(LKEY)||'{}'); }catch(e){}
+  $$('.like').forEach(function(b, i){
+    var id = b.dataset.like || ('L'+i);
+    var base = +b.dataset.count;
+    function paint(){
+      var on = !!local[id], n = base + (on?1:0);
+      b.dataset.count = n;
+      b.querySelector('span').textContent = n;
+      b.classList.toggle('liked', on);
+    }
+    if(META.likes[id]) local[id] = true;
+    paint();
+    b.addEventListener('click', function(){
+      local[id] = !local[id];
+      if(LS_OK) lsSet(LKEY, JSON.stringify(local));
+      META.likes[id] = local[id];
+      paint();
+      serverLikes();
+      if(ghCanWrite()) toast('Отметка сохранена на сервере.');
+    });
+  });
+});
+
+/* ---------- Кабинет: события ---------- */
+safe(function(){
+  function tryGate(){
+    var inp = $('#gateCode');
+    if(inp.value.trim() === getCode()){
+      unlockMem = true;
+      try{ sessionStorage.setItem('ogora_unlock','1'); }catch(e){}
+      openCab();
+      toast('Кабинет открыт. Добро пожаловать, хранитель.');
+    } else {
+      var g = $('#gate');
+      g.classList.remove('err'); void g.offsetWidth; g.classList.add('err');
+      toast('Неверный код. Подсказка: год подписания купчей.');
+    }
+  }
+  $('#gateBtn').addEventListener('click', tryGate);
+  $('#gateCode').addEventListener('keydown', function(e){ if(e.key==='Enter') tryGate(); });
+
+  /* --- GitHub --- */
+  $('#ghSave').addEventListener('click', function(){
+    var cfg = {
+      owner: $('#ghOwner').value.trim(),
+      repo:  $('#ghRepo').value.trim(),
+      branch:$('#ghBranch').value.trim() || 'main',
+      token: $('#ghToken').value.trim()
+    };
+    if(!cfg.owner || !cfg.repo){ toast('Заполните логин и имя репозитория.'); return; }
+    lsSet('ogora_gh', JSON.stringify(cfg));
+    ghLoad();
+    updateGhStatus();
+    if(ghCanWrite()){
+      toast('Сервер подключён! Теперь фото и отметки сохраняются в базу.');
+      refreshAll();
+    } else {
+      toast('Сохранено в режиме просмотра: сайт читает фото с сервера, запись недоступна без токена.');
+    }
+  });
+  $('#ghTest').addEventListener('click', function(){
+    var cfg = {
+      owner: $('#ghOwner').value.trim(),
+      repo:  $('#ghRepo').value.trim(),
+      branch:$('#ghBranch').value.trim() || 'main',
+      token: $('#ghToken').value.trim()
+    };
+    if(!cfg.owner || !cfg.repo){ toast('Сначала заполните логин и репозиторий.'); return; }
+    var el = $('#ghStatus');
+    el.textContent = 'Проверяем связь…'; el.className = 'st';
+    var saved = GH; GH = cfg;
+    fetch('https://api.github.com/repos/'+cfg.owner+'/'+cfg.repo, {headers:ghHeaders()})
+      .then(function(r){
+        GH = saved;
+        if(r.status === 200){
+          el.textContent = '✓ Репозиторий найден, токен действует. Можно сохранять настройки.';
+          el.className = 'st ok';
+        } else if(r.status === 401){
+          el.textContent = 'Токен неверный или устарел — сгенерируйте новый (см. инструкцию, часть 2).';
+          el.className = 'st err';
+        } else if(r.status === 404){
+          el.textContent = 'Репозиторий не найден — проверьте логин, имя и что репозиторий публичный.';
+          el.className = 'st err';
+        } else {
+          el.textContent = 'GitHub ответил '+r.status+'.';
+          el.className = 'st err';
+        }
+      })
+      .catch(function(){
+        GH = saved;
+        el.textContent = 'Нет связи с GitHub — проверьте интернет.';
+        el.className = 'st err';
+      });
+  });
+  $('#ghOff').addEventListener('click', function(){
+    try{ localStorage.removeItem('ogora_gh'); }catch(e){}
+    ghLoad();
+    fillGhForm();
+    updateGhStatus();
+    refreshAll();
+    toast('Сервер отключён. Фото остались в репозитории и вернутся при повторном подключении.');
+  });
+
+  /* --- фото --- */
+  $('#slots').addEventListener('change', function(e){
+    var inp = e.target.closest('.slot-file');
+    if(!inp || !inp.files || !inp.files[0]) return;
+    var id = inp.closest('.slot').dataset.id;
+    uploadTo(id, inp.files[0]);
+    inp.value = '';
+  });
+  $('#slots').addEventListener('click', function(e){
+    var del = e.target.closest('.slot-del');
+    if(!del) return;
+    var id = del.closest('.slot').dataset.id;
+    cacheDel(id);
+    setSlotImg(id, null);
+    serverDel(id).then(function(where){
+      toast(where === 'server' ? 'Фото убрано — изменения записаны в базу.' : 'Фото убрано локально (сервер не подключён).');
+    });
+  });
+
+  $('#bulkInput').addEventListener('change', function(e){
+    var files = Array.prototype.slice.call(e.target.files || []);
+    e.target.value = '';
+    if(!files.length) return;
+    Promise.all(SLOTS.map(function(s){ return stHas(s.id); }))
+      .then(function(state){
+        var empties = state.filter(function(x){ return !x.has; }).map(function(x){ return x.id; });
+        var used = 0, chain = Promise.resolve();
+        files.forEach(function(f){
+          if(used >= empties.length) return;
+          var id = empties[used++];
+          chain = chain.then(function(){ return compress(f).then(function(url){
+            cacheSet(id, url); setSlotImg(id, url);
+            return serverCommit(id, url);
+          });});
+        });
+        return chain.then(function(){
+          if(used === files.length) toast(ghCanWrite() ? 'Загружено '+used+' фото — все сохранены в базу.' : 'Загружено '+used+' фото локально.');
+          else if(used > 0) toast('Загружено '+used+' из '+files.length+' — свободных ячеек больше нет.');
+          else toast('Все ячейки уже заполнены.');
+        });
+      });
+  });
+  function stHas(id){
+    var c = cacheGet(id);
+    if(c) return Promise.resolve({id:id, has:true});
+    if(GH) return Promise.resolve({id:id, has:!!META.photos[id]});
+    return Promise.resolve({id:id, has:false});
+  }
+
+  $('#expBtn').addEventListener('click', function(){
+    var out = {v:1, photos:{}, likes:{}};
+    var chain = Promise.resolve();
+    SLOTS.forEach(function(s){
+      chain = chain.then(function(){
+        var c = cacheGet(s.id);
+        if(c) out.photos[s.id] = c;
+        return Promise.resolve();
+      });
+    });
+    chain.then(function(){
+      if(!Object.keys(out.photos).length){ toast('Пока нечего сохранять.'); return; }
+      var blob = new Blob([JSON.stringify(out)], {type:'application/json'});
+      var a = d.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'foto-usadby.json';
+      d.body.appendChild(a); a.click(); a.remove();
+      toast('Архив скачан — храните в надёжном месте.');
+    });
+  });
+  $('#impInput').addEventListener('change', function(e){
+    var f = e.target.files && e.target.files[0];
+    e.target.value = '';
+    if(!f) return;
+    var fr = new FileReader();
+    fr.onload = function(){
+      try{
+        var data = JSON.parse(fr.result);
+        if(!data || !data.photos) throw new Error();
+        var chain = Promise.resolve(), n = 0;
+        SLOTS.forEach(function(s){
+          var v = data.photos[s.id];
+          if(v){
+            n++;
+            chain = chain.then(function(){
+              cacheSet(s.id, v); setSlotImg(s.id, v);
+              return serverCommit(s.id, v);
+            });
+          }
+        });
+        chain.then(function(){
+          toast(n ? 'Архив восстановлен: '+n+' фото, записано в базу.' : 'В архиве нет фотографий.');
+        });
+      }catch(err){ toast('Файл архива повреждён.'); }
+    };
+    fr.readAsText(f);
+  });
+  $('#clrBtn').addEventListener('click', function(){
+    if(!confirm('Убрать все фотографии? (на сервере останутся, если он подключён)')) return;
+    SLOTS.forEach(function(s){ cacheDel(s.id); setSlotImg(s.id, null); });
+    toast('Локальные фото убраны.');
+  });
+  $('#codeBtn').addEventListener('click', function(){
+    var v = $('#newCode').value.trim();
+    if(v.length < 3){ toast('Код слишком короткий — минимум 3 символа.'); return; }
+    lsSet('ogora_code', v);
+    $('#newCode').value = '';
+    toast('Код доступа обновлён и сохранён.');
+  });
+});
+
+/* ---------- Компаратор ---------- */
+safe(function(){
+  var ba = $('#ba'); if(!ba) return;
+  var drag = false;
+  function set(x){
+    var r = ba.getBoundingClientRect();
+    var p = Math.min(96, Math.max(4, (x - r.left)/r.width*100));
+    ba.style.setProperty('--x', p.toFixed(2)+'%');
+  }
+  ba.addEventListener('pointerdown', function(e){ drag = true; ba.setPointerCapture(e.pointerId); set(e.clientX); });
+  ba.addEventListener('pointermove', function(e){ if(drag) set(e.clientX); });
+  ['pointerup','pointercancel'].forEach(function(ev){ ba.addEventListener(ev, function(){ drag = false; }); });
+
+  var pairs = [
+    { t:'Реконструкция дома-музея',
+      bArt:'#art-ruins',     bSlot:'ruiny', bl:'сегодня · руины',
+      aArt:'#art-recon',     aSlot:null,    br:'проект · 2027' },
+    { t:'Столетняя дистанция',
+      bArt:'#art-house1917', bSlot:'semya', bl:'1910-е · дом при хозяевах',
+      aArt:'#art-ruins',     aSlot:'ruiny', br:'сегодня · руины' },
+    { t:'Годы войны',
+      bArt:'#art-war',       bSlot:'voyna', bl:'1941–1943 · ПУ СЗФ',
+      aArt:'#art-ruins',     aSlot:'ruiny', br:'сегодня · руины' }
+  ];
+  $('#baTabs').addEventListener('click', function(e){
+    var t = e.target.closest('.ba-tab'); if(!t) return;
+    $$('.ba-tab').forEach(function(x){ x.classList.remove('active'); });
+    t.classList.add('active');
+    var p = pairs[+t.dataset.i];
+    $('#baUseB').setAttribute('href', p.bArt);
+    $('#baUseA').setAttribute('href', p.aArt);
+    var bB = $('#baImgB'), bA = $('#baImgA');
+    if(p.bSlot){ bB.setAttribute('data-slot', p.bSlot); setSlotImg(p.bSlot, ghBase()+'img/'+p.bSlot+'.jpg'); }
+    if(p.aSlot){ bA.setAttribute('data-slot', p.aSlot); setSlotImg(p.aSlot, ghBase()+'img/'+p.aSlot+'.jpg'); }
+    else { bA.removeAttribute('data-slot'); bA.removeAttribute('src'); bA.classList.remove('ok'); }
+    $('#baTagL').textContent = p.bl;
+    $('#baTagR').textContent = p.br;
+    $('#baTitle').textContent = p.t;
+  });
+});
+
+/* ---------- Модалка ---------- */
+var modal = $('#modal');
+function openModal(meta, title, html){
+  $('#mMeta').textContent = meta;
+  $('#mTitle').textContent = title;
+  $('#mBody').innerHTML = html;
+  modal.classList.add('open');
+  d.body.style.overflow = 'hidden';
+}
+function closeModal(){ modal.classList.remove('open'); d.body.style.overflow = ''; }
+safe(function(){ modal.addEventListener('click', function(e){ if(e.target.closest('[data-close]')) closeModal(); }); });
+
+/* ---------- Тексты дневника ---------- */
+var posts = {
+  p1:{ meta:'заметка № 14 · февраль 2025', title:'Не купец, а тайный советник: что говорит купчая 1913 года',
+    body:'<p>В публикациях кочевала версия: дом куплен «у купца Мосолова». Одна неточность — и история усадьбы потеряла половину своего первого хозяина.</p>'
+    +'<p>Документы говорят другое. Александр Николаевич Мосолов — тайный советник, директор Департамента духовных дел, а в 1883–1894 годах — новгородский губернатор. При нём выросло здание Новгородского музея древностей; горожане сделали его почётным гражданином Великого Новгорода.</p>'
+    +'<p>Купчая от 6 июня 1913 года, подписанная сыном душеприказчика А. А. Трубниковым, сохранила арифметику сделки: Меньшиков принял долг банку в 1321 рубль 55 копеек, а четыре участка с постройками были оценены в 8000 рублей.</p>'
+    +'<p class="sign">— заметки хранителя усадьбы</p>' },
+  p2:{ meta:'заметка № 13 · январь 2025', title:'Гамак между двумя липами',
+    body:'<p>Самый известный рабочий кабинет на всю округу висел между двумя старыми липами, у забора на краю крутого склона. Зимой здесь было шумно — по склону катались на санках, летом — тихо.</p>'
+    +'<p>Пленный немец Якоб говорил: будь у него такой сад в Германии, он вырабатывал бы 8 тысяч марок в год. «А я вырабатываю в этом саду, лёжа в гамаке, не подкашивая крапивы, — 100 тысяч», — отвечал Меньшиков. Усадьба кормила семью строчками, а не вишнями.</p>'
+    +'<p>Липы стоят до сих пор — каждое лето цветут ровно там, где был гамак. Мы считаем их главным живым экспонатом будущего музея.</p>'
+    +'<p class="sign">— заметки хранителя усадьбы</p>' },
+  p3:{ meta:'заметка № 12 · декабрь 2024', title:'Столб, который все зовут часовенкой',
+    body:'<p>Ограду усадьбы венчали декоративные столбы-павильоны: квадратные, с глубокими нишами, полуциркульными завершениями и фронтонами. Ниже по горе шёл плотный тесовый забор на кирпичных выбеленных столбах.</p>'
+    +'<p>Сохранился один такой столб — полуразрушенный, с нишей; валдайцы зовут его часовенкой. В годы войны бойцы опускали в нишу записки с поминаниями и письма. В 1943-м, вернувшись из эвакуации, местные жители нашли их там.</p>'
+    +'<p>В проекте реставрации столбу отведено место мемориального объекта: без достроек, как есть.</p>'
+    +'<p class="sign">— заметки хранителя усадьбы</p>' },
+  p4:{ meta:'заметка № 11 · ноябрь 2024', title:'1990: как начинался разговор о доме',
+    body:'<p>Первая публикация о валдайской усадьбе вышла в районной газете в 1990 году. Имя публициста только возвращалось в отечественную историю — но отклик превзошёл всё.</p>'
+    +'<p>Письма родственников, отклики Товарищества русских художников и Всероссийского фонда культуры, писателей и местных жителей. Открылась дискуссия о будущем усадьбы.</p>'
+    +'<p>Итог: 29 ноября 1990 года усадьбу передали внуку публициста Михаилу Борисовичу Поспелову. Через пять лет — мемориальная доска и первые Меньшиковские чтения. Продолжаем с того же места: дом ждёт.</p>'
+    +'<p class="sign">— заметки хранителя усадьбы</p>' },
+  p5:{ meta:'заметка № 10 · октябрь 2024', title:'Дом, где писался фронт',
+    body:'<p>В 1941–1943 годах дом, помнивший менышиковский гамак, стал редакцией целого фронта: в усадьбе размещалось Политуправление Северо-Западного фронта.</p>'
+    +'<p>Старый дом помнил Михаила Светлова, Сергея Михалкова, Маргариту Алигер, Михаила Матусовского, Дмитрия Кедрина. Здесь рождалось острое, полное любви к Отечеству слово — листовки, брошюры, фронтовые заметки.</p>'
+    +'<p>25 марта 1942 года возле дома встречали партизанский обоз — продовольствие партизанского края для блокадного Ленинграда.</p>'
+    +'<p class="sign">— заметки хранителя усадьбы</p>' }
+};
+safe(function(){
+  d.addEventListener('click', function(e){
+    var b = e.target.closest('[data-post]'); if(!b) return;
+    var p = posts[b.dataset.post]; if(!p) return;
+    openModal(p.meta, p.title, p.body);
+  });
+});
+
+safe(function(){
+  d.addEventListener('click', function(e){
+    var b = e.target.closest('[data-event]'); if(!b) return;
+    var name = b.dataset.event;
+    openModal('запись открыта · подтверждаем по почте', name,
+      '<form class="mform" id="evForm">'
+      +'<div class="fld"><label for="evName">Ваше имя</label><input id="evName" type="text" placeholder="Имя и фамилия" required></div>'
+      +'<div class="fld"><label for="evMail">Почта</label><input id="evMail" type="email" placeholder="you@example.com" required></div>'
+      +'<div class="fld"><label for="evQty">Сколько вас</label><input id="evQty" type="text" placeholder="Один / с семьёй / группой"></div>'
+      +'<button class="btn gold" type="submit">Отправить заявку</button>'
+      +'</form>');
+    $('#evForm').addEventListener('submit', function(ev){
+      ev.preventDefault(); closeModal();
+      toast('Заявка на «'+name+'» принята — напишем вам на почту.');
+    });
+  });
+});
+
+safe(function(){
+  $('#supForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var role = $('#sfRole').value, name = $('#sfName').value.trim() || 'Друг';
+    e.target.reset();
+    toast(name+', спасибо! «'+role+'» — мы напишем вам в ближайшие дни.');
+  });
+});
+
+/* =====================================================
+   3D-движок на Canvas 2D (без библиотек)
+   ===================================================== */
+safe(function(){
+  var stage = $('#stage'), canvas = $('#hero3d'), fb = $('#stageFallback');
+  var ctx = canvas.getContext ? canvas.getContext('2d') : null;
+  if(!ctx){ if(fb) fb.style.display = 'flex'; return; }
+
+  var W = 300, H = 300;
+  function resize(){
+    var w = stage.clientWidth, h = stage.clientHeight;
+    if(!w || !h) return;
+    var dp = Math.min(window.devicePixelRatio||1, 2);
+    canvas.width = Math.round(w*dp);
+    canvas.height = Math.round(h*dp);
+    ctx.setTransform(dp,0,0,dp,0,0);
+    W = w; H = h;
+  }
+  resize();
+  if('ResizeObserver' in window) new ResizeObserver(resize).observe(stage);
+  else window.addEventListener('resize', resize);
+
+  var yaw=-.55, pitch=.16, dist=13.5, yawT=yaw, pitchT=pitch, distT=dist;
+  function ramp(t,a,b){ var v=(t-a)/(b-a); if(v<0)v=0; if(v>1)v=1; return v*v*(3-2*v); }
+  function lerp(a,b,k){ return a+(b-a)*k; }
+  function hx(h){ return [parseInt(h.slice(1,3),16),parseInt(h.slice(3,5),16),parseInt(h.slice(5,7),16)]; }
+  function mix(a,b,k){ return [lerp(a[0],b[0],k),lerp(a[1],b[1],k),lerp(a[2],b[2],k)]; }
+  function rgb(c,a){ return 'rgba('+Math.round(c[0])+','+Math.round(c[1])+','+Math.round(c[2])+','+(a===undefined?1:a)+')'; }
+  var L=[-.45,.8,.4];
+
+  var K = {
+    found0:hx('#9a917c'), found1:hx('#ddd7c3'), wood0:hx('#565c5e'), wood1:hx('#8496a6'),
+    white:hx('#d9d3c1'), roof:hx('#2e3d3a'), door:hx('#3a2f22'), stone:hx('#8a8270'), path:hx('#6f6a5a'),
+    grass:hx('#2e4030'), earth:hx('#232b21'), slope:hx('#1c251f'),
+    trunk:hx('#4c4132'), leaf:hx('#33503f'), leaf2:hx('#3c5745'), thuya:hx('#22352b'),
+    beam:hx('#2c241c'), rub:hx('#565049'), scaf:hx('#a8834e'),
+    glassD:hx('#141d1c'), glassL:hx('#f2b96b'), water:hx('#14313a'), shadow:hx('#060a07'), flower:hx('#c98a4a')
+  };
+
+  function q(F,p0,p1,p2,p3,c,bg,a,gl){ F.push({p:[p0,p1,p2,p3],c:c,bg:bg,a:a,gl:gl}); }
+  function tri(F,p0,p1,p2,c,bg,a,gl){ F.push({p:[p0,p1,p2],c:c,bg:bg,a:a,gl:gl}); }
+  function box(F,cx,y0,cz,sx,sy,sz,c,bg,a,gl){
+    if(sy<=0.001) return;
+    var x0=cx-sx/2,x1=cx+sx/2,y1=y0+sy,z0=cz-sz/2,z1=cz+sz/2;
+    q(F,{x:x0,y:y0,z:z0},{x:x1,y:y0,z:z0},{x:x1,y:y1,z:z0},{x:x0,y:y1,z:z0},c,bg,a,gl);
+    q(F,{x:x0,y:y0,z:z1},{x:x1,y:y0,z:z1},{x:x1,y:y1,z:z1},{x:x0,y:y1,z:z1},c,bg,a,gl);
+    q(F,{x:x0,y:y0,z:z0},{x:x0,y:y0,z:z1},{x:x0,y:y1,z:z1},{x:x0,y:y1,z:z0},c,bg,a,gl);
+    q(F,{x:x1,y:y0,z:z0},{x:x1,y:y0,z:z1},{x:x1,y:y1,z:z1},{x:x1,y:y1,z:z0},c,bg,a,gl);
+    q(F,{x:x0,y:y1,z:z0},{x:x1,y:y1,z:z0},{x:x1,y:y1,z:z1},{x:x0,y:y1,z:z1},c,bg,a,gl);
+  }
+  function gable(F,prof,z0,z1,c,a,gl){
+    var i,n=prof.length;
+    for(i=0;i<n;i++){
+      var pA=prof[i],pB=prof[(i+1)%n];
+      q(F,{x:pA[0],y:pA[1],z:z0},{x:pB[0],y:pB[1],z:z0},{x:pB[0],y:pB[1],z:z1},{x:pA[0],y:pA[1],z:z1},c,false,a,gl);
+    }
+    var fr=[],bk=[],j;
+    for(j=n-1;j>=0;j--) fr.push({x:prof[j][0],y:prof[j][1],z:z0});
+    for(j=0;j<n;j++) bk.push({x:prof[j][0],y:prof[j][1],z:z1});
+    F.push({p:fr,c:c,bg:false,a:a,gl:gl});
+    F.push({p:bk,c:c,bg:false,a:a,gl:gl});
+  }
+  function pyr(F,cx,y0,cz,w,dd,h,c,a,gl){
+    if(h<=0.001) return;
+    var x0=cx-w/2,x1=cx+w/2,z0=cz-dd/2,z1=cz+dd/2,A={x:cx,y:y0+h,z:cz};
+    tri(F,{x:x0,y:y0,z:z0},{x:x1,y:y0,z:z0},A,c,false,a,gl);
+    tri(F,{x:x1,y:y0,z:z0},{x:x1,y:y0,z:z1},A,c,false,a,gl);
+    tri(F,{x:x1,y:y0,z:z1},{x:x0,y:y0,z:z1},A,c,false,a,gl);
+    tri(F,{x:x0,y:y0,z:z1},{x:x0,y:y0,z:z0},A,c,false,a,gl);
+  }
+  function flat(F,pts,y,c,a){
+    var v=[],i;
+    for(i=0;i<pts.length;i++) v.push({x:pts[i][0],y:y,z:pts[i][1]});
+    F.push({p:v,c:c,bg:true,a:a,gl:0});
+  }
+  function tree(F,cx,cz,s){
+    box(F,cx,.3,cz,.26*s,1.7*s,.26*s,K.trunk);
+    pyr(F,cx,.3+1.1*s,cz,1.6*s,1.6*s,1.2*s,K.leaf);
+    pyr(F,cx+.1*s,.3+1.9*s,cz+.08*s,1.1*s,1.1*s,.9*s,K.leaf2);
+  }
+
+  var WINS = [
+    {x:-1.3,y:2.15,z:1.51,ax:'z',w:.55,h:.8},{x:0,y:2.15,z:1.51,ax:'z',w:.55,h:.8},{x:1.3,y:2.15,z:1.51,ax:'z',w:.55,h:.8},
+    {x:-2.01,y:2.15,z:-.9,ax:'x',w:.55,h:.8},{x:-2.01,y:2.15,z:.9,ax:'x',w:.55,h:.8},
+    {x:-.9,y:2.15,z:-1.51,ax:'z',w:.55,h:.8},{x:.9,y:2.15,z:-1.51,ax:'z',w:.55,h:.8},
+    {x:-1.5,y:1.02,z:1.51,ax:'z',w:.34,h:.44},{x:1.5,y:1.02,z:1.51,ax:'z',w:.34,h:.44}
+  ];
+  var flies=[];
+  (function(){ for(var i=0;i<14;i++) flies.push({x:-4+Math.random()*8,z:-.5+Math.random()*4.2,y:.6+Math.random()*1.3,ph:Math.random()*6.28,sp:.5+Math.random()}); })();
+  var gulls=[{r:6.5,sp:.3,ph:0,y:4.9},{r:7.8,sp:.24,ph:2.1,y:5.4},{r:5.4,sp:.36,ph:4.2,y:4.5}];
+  var stars=[];
+  (function(){ for(var i=0;i<40;i++) stars.push([Math.random(),Math.random()*.45,.2+Math.random()*.5]); })();
+
+  function build(t,time,F){
+    box(F,0,-1.4,0,12.4,1.4,10.2,K.earth,true);
+    box(F,0,0,0,10.4,.3,8.2,K.grass,true);
+    box(F,0,-3.05,0,15,1.65,12.6,K.slope,true);
+    var sh=.5+.5*Math.sin(time*.7);
+    box(F,0,-3.42,0,70,.3,46,mix(K.water,[30,66,72],.3+.3*sh),true,1,.05);
+    flat(F,[[-2.4,-1.9],[2.4,-1.9],[2.4,2],[-2.4,2]],.303,K.shadow,.4);
+    flat(F,[[2.5,2.2],[4.7,2.2],[5,3.7],[2.8,3.7]],.303,K.shadow,.3);
+    box(F,0,.3,0,4.2,1.1,3.2,mix(K.found0,K.found1,ramp(t,0,.6)));
+    var s=1-ramp(t,.05,.32);
+    if(s>.01){
+      box(F,-1.4,1.4,1.35,1.25,.62*s+.02,.18,K.rub,false,.9);
+      box(F,1.9,1.4,-1,.18,.82*s+.02,.9,K.rub,false,.9);
+      box(F,3.1,.3,2.2,.9,.35*s,.7,K.beam,false,.9);
+      var i,x,z,tilt;
+      var beams=[[-.9,1.75,.9,.5],[.6,1.9,-.5,.7],[1.5,1.7,.8,.4],[-1.6,1.8,-.8,.6]];
+      for(i=0;i<beams.length;i++){
+        x=beams[i][0]; z=beams[i][2]; tilt=beams[i][3];
+        var bl=.8,co=Math.cos(tilt),si=Math.sin(tilt);
+        q(F,{x:x-bl*co/2,y:1.55-bl*si/2,z:z-.09},{x:x+bl*co/2,y:1.55+bl*si/2,z:z-.09},{x:x+bl*co/2,y:1.55+bl*si/2,z:z+.09},{x:x-bl*co/2,y:1.55-bl*si/2,z:z+.09},K.beam);
+        q(F,{x:x-bl*co/2,y:1.73-bl*si/2,z:z-.09},{x:x+bl*co/2,y:1.73+bl*si/2,z:z-.09},{x:x+bl*co/2,y:1.73+bl*si/2,z:z+.09},{x:x-bl*co/2,y:1.73-bl*si/2,z:z+.09},K.beam);
+      }
+    }
+    var gW=ramp(t,.05,.4), wallCol=mix(K.wood0,K.wood1,ramp(t,.1,.6));
+    if(gW>.01){
+      box(F,0,1.4,0,4,1.5*gW,3,wallCol);
+      var row;
+      for(row=1;row<6;row++){
+        var ry=1.4+1.5*gW*row/6;
+        box(F,0,ry-.02,1.505,4.04,.035,.02,mix(wallCol,[20,26,28],.35));
+      }
+    }
+    var gP=ramp(t,.3,.52);
+    if(gP>.01){
+      box(F,0,.3,1.95,1.4,.14*gP+.01,.3,K.stone);
+      box(F,0,.3,1.78,1.4,.28*gP+.01,.3,K.stone);
+      box(F,0,.3,1.62,1.4,.42*gP+.01,.3,K.stone);
+      box(F,0,1.4,1.52,1,1.66*gP,.06,K.white);
+      box(F,0,1.42,1.53,.85,1.5*gP,.07,K.door);
+      box(F,-.7,1.42,2,.07,1.5*gP,.07,K.white);
+      box(F,.7,1.42,2,.07,1.5*gP,.07,K.white);
+      gable(F,[[-.85,1.42],[.85,1.42],[0,1.42+.36*gP]],1.55,2.25,K.roof);
+    }
+    var gV=ramp(t,.4,.62);
+    if(gV>.01){
+      box(F,2.75,1.4,0,1.5,.12,2.8,K.white);
+      var vz,postH=1.3*gV;
+      for(vz=-1.25;vz<=1.26;vz+=1.25) box(F,3.42,1.52,vz,.09,postH,.09,K.white);
+      box(F,2.75,1.4+.12+postH,0,1.6,.1,2.9,K.roof);
+      box(F,3.42,2.2,0,.05,.05*gV,2.8,K.white);
+      var bz;
+      for(bz=-1.2;bz<=1.21;bz+=.6) box(F,3.42,1.95,bz,.04,.28*gV,.04,K.white);
+      box(F,2.03,1.5,0,.06,1.3*gV,.62,K.door);
+    }
+    var rk=ramp(t,.48,.7);
+    if(rk>.01) gable(F,[[-2.3,2.88],[2.3,2.88],[0,2.88+.95*rk]],-1.72,1.72,K.roof);
+    var m=ramp(t,.6,.8);
+    if(m>.01){
+      var mh=.85*m;
+      box(F,0,2.98,0,2.1,mh,1.7,wallCol);
+      pyr(F,0,2.98+mh,0,2.5,2.1,.55*m,K.roof);
+      var wy=2.98+mh*.52;
+      box(F,0,wy-.3,.84,.95,.62,.07,K.white);
+      var litM=m*(.8+.2*Math.sin(time*1.7));
+      box(F,0,wy-.27,.89,.8,.52,.06,mix(K.glassD,K.glassL,litM),false,1,litM);
+    }
+    var pk=ramp(t,.55,.75);
+    if(pk>.01) box(F,1.15,2.9,-.95,.3,.95*pk,.3,K.white);
+    var gWin=ramp(t,.66,.86);
+    if(gWin>.01){
+      var lit=gWin*(.82+.18*Math.sin(time*1.9)),wi,wn,gcol=mix(K.glassD,K.glassL,lit);
+      for(wi=0;wi<WINS.length;wi++){
+        wn=WINS[wi];
+        if(wn.ax==='z'){
+          box(F,wn.x,wn.y-wn.h/2*gWin,wn.z-.03,wn.w+.14,wn.h*gWin+.14,.06,K.white);
+          box(F,wn.x,wn.y-wn.h/2*gWin,wn.z+.02,wn.w,wn.h*gWin,.06,gcol,false,1,lit);
+        } else {
+          box(F,wn.x-.03,wn.y-wn.h/2*gWin,wn.z,.06,wn.h*gWin+.14,wn.w+.14,K.white);
+          box(F,wn.x+.02,wn.y-wn.h/2*gWin,wn.z,.06,wn.h*gWin,wn.w,gcol,false,1,lit);
+        }
+      }
+    }
+    var sK=Math.max(0,1-Math.abs(t-.48)/.4);
+    if(sK>.02){
+      var sa=sK*.8,sx2,sy2;
+      for(sx2=-1.8;sx2<=1.9;sx2+=1.2) box(F,sx2,.3,2.3,.06,4.4,.06,K.scaf,false,sa);
+      for(sy2=1.4;sy2<=3.9;sy2+=1.2) box(F,0,sy2,2.3,3.9,.06,.14,K.scaf,false,sa);
+    }
+    var gG=ramp(t,.25,.5);
+    if(gG>.01){
+      box(F,-2.1,.3,3.6,1.25,1.35*gG,1.5,K.stone);
+      box(F,2.1,.3,3.6,1.25,1.35*gG,1.5,K.stone);
+      pyr(F,-2.1,.3+1.35*gG,3.6,1.2,1.45,.42*gG,K.roof);
+      pyr(F,2.1,.3+1.35*gG,3.6,1.2,1.45,.42*gG,K.roof);
+      box(F,0,.3+1.28*gG,3.6,2.2,.16,.24,K.white);
+    }
+    var fWh=ramp(t,.3,.6);
+    box(F,-4.7,.3,3.5,.56,1.2,.56,mix(K.stone,K.white,fWh));
+    box(F,-4.7,.68,3.78,.3,.52,.08,K.beam);
+    var gC=ramp(t,.55,.7);
+    if(gC>.01) pyr(F,-4.7,1.5,3.5,.64,.64,.42*gC,K.roof);
+    var gF=ramp(t,.55,.75);
+    if(gF>.02){
+      var fx;
+      for(fx=-3.6;fx<=3.7;fx+=1.2) box(F,fx,.3,3.95,.09,.62*gF,.09,K.white);
+    }
+    var gG2=ramp(t,.7,.92);
+    if(gG2>.01){
+      var gi;
+      for(gi=0;gi<4;gi++) box(F,0,.3,2.6-gi*.66,.8,.06,.5,K.path,false,1);
+      pyr(F,-1.9,.3,2.5,1.2*gG2,1.2*gG2,.12,K.stone);
+      var fj,fa,fr;
+      for(fj=0;fj<7;fj++){
+        fa=fj/7*6.28; fr=.25+(fj%3)*.12;
+        box(F,-1.9+Math.cos(fa)*fr*gG2,.4,2.5+Math.sin(fa)*fr*gG2,.09,.1*gG2,.09,K.flower,false,1,.3*gG2);
+      }
+      var tx;
+      for(tx=-1.2;tx<=1.3;tx+=.8) pyr(F,tx,.3,-3.1,.5,.5,.85*gG2,K.thuya);
+    }
+    tree(F,3.15,2.75,1);
+    tree(F,4.25,3.2,.9);
+    if(ramp(t,.87,1)>.01) F.push({ham:true,k:ramp(t,.87,1)});
+  }
+
+  var cy_,sy_,cp_,sp_,fF,cxp,cyp;
+  function updCam(){
+    cy_=Math.cos(yaw); sy_=Math.sin(yaw);
+    cp_=Math.cos(pitch); sp_=Math.sin(pitch);
+    fF=H*1.55; cxp=W/2; cyp=H*.42;
+  }
+  function proj(p){
+    var x1=p.x*cy_+p.z*sy_;
+    var z1=-p.x*sy_+p.z*cy_;
+    var y2=p.y*cp_-z1*sp_;
+    var z2=p.y*sp_+z1*cp_;
+    var dd=z2+dist;
+    return {sx:cxp+x1*fF/dd, sy:cyp-y2*fF/dd, d:dd};
+  }
+  function render(t,time){
+    ctx.clearRect(0,0,W,H);
+    var sky=ctx.createLinearGradient(0,0,0,H);
+    sky.addColorStop(0,'#0B120F'); sky.addColorStop(.55,'#13211A'); sky.addColorStop(1,'#18271E');
+    ctx.fillStyle=sky; ctx.fillRect(0,0,W,H);
+    var i,s;
+    for(i=0;i<stars.length;i++){
+      s=stars[i];
+      ctx.fillStyle='rgba(237,230,211,'+(s[2]*(.4+.3*Math.sin(time*1.3+i)))+')';
+      ctx.fillRect(s[0]*W,s[1]*H,1.4,1.4);
+    }
+    var mg=ctx.createRadialGradient(W*.78,H*.14,4,W*.78,H*.14,60);
+    mg.addColorStop(0,'rgba(232,184,106,.5)'); mg.addColorStop(1,'rgba(232,184,106,0)');
+    ctx.fillStyle=mg; ctx.fillRect(W*.78-70,H*.14-70,140,140);
+    ctx.fillStyle='rgba(240,214,150,.9)';
+    ctx.beginPath(); ctx.arc(W*.78,H*.14,11,0,6.29); ctx.fill();
+
+    updCam();
+    var F=[];
+    build(t,time,F);
+    var bg=[],dyn=[],ham=null,j,f,q;
+    for(j=0;j<F.length;j++){
+      f=F[j];
+      if(f.ham){ ham=f; continue; }
+      (f.bg?bg:dyn).push(f);
+    }
+    for(j=0;j<bg.length;j++){
+      f=bg[j];
+      ctx.beginPath();
+      var ok=true;
+      for(q=0;q<f.p.length;q++){
+        var pt=proj(f.p[q]);
+        if(pt.d<.2){ ok=false; break; }
+        if(q===0) ctx.moveTo(pt.sx,pt.sy); else ctx.lineTo(pt.sx,pt.sy);
+      }
+      if(ok){ ctx.closePath(); ctx.fillStyle=rgb(f.c,f.a===undefined?1:f.a); ctx.fill(); }
+    }
+    for(j=0;j<dyn.length;j++){
+      f=dyn[j];
+      var sum=0,q2,pr=[];
+      for(q2=0;q2<f.p.length;q2++){ pr[q2]=proj(f.p[q2]); sum+=pr[q2].d; }
+      f.z=sum/f.p.length; f.pr=pr;
+    }
+    dyn.sort(function(a,b){ return b.z-a.z; });
+    for(j=0;j<dyn.length;j++){
+      f=dyn[j];
+      var pr2=f.pr, ok2=true, q3;
+      for(q3=0;q3<pr2.length;q3++){ if(pr2[q3].d<.2){ ok2=false; break; } }
+      if(!ok2) continue;
+      var a0=f.p[0],a1=f.p[1],a2=f.p[2];
+      var ux=a1.x-a0.x,uy=a1.y-a0.y,uz=a1.z-a0.z;
+      var vx=a2.x-a0.x,vy=a2.y-a0.y,vz=a2.z-a0.z;
+      var nx=uy*vz-uz*vy,ny=uz*vx-ux*vz,nz=ux*vy-uy*vx;
+      var nl=Math.sqrt(nx*nx+ny*ny+nz*nz)||1;
+      var shd=Math.max(0,(nx*L[0]+ny*L[1]+nz*L[2])/nl);
+      var k=.45+.55*shd;
+      var rC=f.c[0]*k,gC=f.c[1]*k,bC=f.c[2]*k;
+      if(f.gl){
+        rC=rC*(1-f.gl)+242*f.gl;
+        gC=gC*(1-f.gl)+185*f.gl;
+        bC=bC*(1-f.gl)+107*f.gl;
+      }
+      ctx.beginPath();
+      ctx.moveTo(pr2[0].sx,pr2[0].sy);
+      for(q3=1;q3<pr2.length;q3++) ctx.lineTo(pr2[q3].sx,pr2[q3].sy);
+      ctx.closePath();
+      ctx.fillStyle='rgba('+Math.round(rC)+','+Math.round(gC)+','+Math.round(bC)+','+(f.a===undefined?1:f.a)+')';
+      ctx.fill();
+      ctx.strokeStyle=ctx.fillStyle; ctx.lineWidth=.6; ctx.stroke();
+    }
+    if(ham&&ham.k>.01){
+      var h=ham.k;
+      var P0={x:3.2,y:1.55,z:2.78},P1={x:3.7,y:1.12,z:2.98},P2={x:4.22,y:1.55,z:3.18};
+      var pts=[],u,e=14,up;
+      for(u=0;u<=e;u++){
+        up=u/e;
+        var ix=(1-up)*(1-up)*P0.x+2*(1-up)*up*P1.x+up*up*P2.x;
+        var iy=(1-up)*(1-up)*P0.y+2*(1-up)*up*P1.y+up*up*P2.y;
+        var iz=(1-up)*(1-up)*P0.z+2*(1-up)*up*P1.z+up*up*P2.z;
+        pts.push(proj({x:ix,y:iy,z:iz}));
+      }
+      ctx.strokeStyle='rgba(216,202,162,'+(h*.95)+')';
+      ctx.lineCap='round';
+      var avgD=0;
+      for(u=0;u<pts.length;u++) avgD+=pts[u].d;
+      avgD/=pts.length;
+      ctx.lineWidth=Math.max(2,46/avgD);
+      ctx.beginPath();
+      ctx.moveTo(pts[0].sx,pts[0].sy);
+      for(u=1;u<pts.length;u++) ctx.lineTo(pts[u].sx,pts[u].sy);
+      ctx.stroke();
+      ctx.lineWidth=1;
+      var eA=proj(P0),eB=proj(P2);
+      var tA=proj({x:3.15,y:2.1,z:2.75}),tB=proj({x:4.25,y:2,z:3.2});
+      ctx.beginPath(); ctx.moveTo(eA.sx,eA.sy); ctx.lineTo(tA.sx,tA.sy); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(eB.sx,eB.sy); ctx.lineTo(tB.sx,tB.sy); ctx.stroke();
+    }
+    var flyOn=ramp(t,.85,1);
+    if(flyOn>.01){
+      for(i=0;i<flies.length;i++){
+        var fl=flies[i];
+        var pp=proj({x:fl.x+Math.sin(time*fl.sp+fl.ph)*.4, y:fl.y+Math.sin(time*fl.sp*.8+fl.ph*2)*.25, z:fl.z+Math.cos(time*fl.sp*.6+fl.ph)*.3});
+        if(pp.d<.3) continue;
+        ctx.fillStyle='rgba(242,207,126,'+(flyOn*(.3+.5*Math.abs(Math.sin(time*2*fl.sp+fl.ph))))+')';
+        ctx.beginPath(); ctx.arc(pp.sx,pp.sy,Math.max(1,30/pp.d),0,6.29); ctx.fill();
+      }
+    }
+    for(i=0;i<gulls.length;i++){
+      var b=gulls[i],a2=time*b.sp+b.ph;
+      var bp=proj({x:Math.cos(a2)*b.r,y:b.y+Math.sin(time*.8+b.ph)*.3,z:Math.sin(a2)*b.r});
+      if(bp.d<.3) continue;
+      var wl=130/bp.d,flap=Math.sin(time*5+b.ph)*.4;
+      ctx.strokeStyle='rgba(237,230,211,.4)'; ctx.lineWidth=1.2;
+      ctx.beginPath();
+      ctx.moveTo(bp.sx-wl,bp.sy+flap*wl*.4);
+      ctx.lineTo(bp.sx,bp.sy);
+      ctx.lineTo(bp.sx+wl,bp.sy+flap*wl*.4);
+      ctx.stroke();
+    }
+  }
+
+  var recPct=$('#recPct'), curT=0, range=$('#recRange'), playR=null;
+  function applyState(v){ curT=Math.min(1,Math.max(0,v)); if(recPct) recPct.textContent='восстановлено: '+Math.round(curT*100)+'%'; }
+  function stopPlay(){ if(playR){ cancelAnimationFrame(playR); playR=null; } }
+  if(range) range.addEventListener('input', function(){ stopPlay(); applyState(range.value/100); });
+  var playBtn=$('#playRec');
+  if(playBtn) playBtn.addEventListener('click', function(){
+    stopPlay();
+    var from=curT; if(from>.98) from=0;
+    var t0=performance.now(),D=5000;
+    (function anim(now){
+      var k=Math.min(1,(now-t0)/D);
+      var e=k<.5?2*k*k:1-Math.pow(-2*k+2,2)/2;
+      var v=from+(1-from)*e;
+      if(range) range.value=v*100;
+      applyState(v);
+      if(k<1) playR=requestAnimationFrame(anim); else playR=null;
+    })(t0);
+  });
+  applyState(0);
+
+  var dragging=false,px=0,py=0,lastAct=0;
+  canvas.addEventListener('pointerdown', function(e){
+    dragging=true; px=e.clientX; py=e.clientY; lastAct=performance.now();
+    canvas.setPointerCapture(e.pointerId);
+  });
+  canvas.addEventListener('pointermove', function(e){
+    if(!dragging) return;
+    yawT+=(e.clientX-px)*.006;
+    pitchT=Math.min(.32,Math.max(-.05,pitchT+(e.clientY-py)*.003));
+    px=e.clientX; py=e.clientY; lastAct=performance.now();
+  });
+  ['pointerup','pointercancel'].forEach(function(ev){ canvas.addEventListener(ev, function(){ dragging=false; }); });
+  canvas.addEventListener('wheel', function(e){
+    e.preventDefault();
+    distT=Math.min(22,Math.max(9,distT+e.deltaY*.012));
+    lastAct=performance.now();
+  }, {passive:false});
+  var zin=$('#zin'),zout=$('#zout');
+  if(zin) zin.addEventListener('click', function(){ distT=Math.max(9,distT-1.6); lastAct=performance.now(); });
+  if(zout) zout.addEventListener('click', function(){ distT=Math.min(22,distT+1.6); lastAct=performance.now(); });
+
+  var broken=false,tG=0,prev=performance.now();
+  function loop(now){
+    requestAnimationFrame(loop);
+    if(broken||document.hidden||!stage.offsetParent) return;
+    try{
+      var dt=Math.min(.05,(now-prev)/1000);
+      prev=now; tG+=dt;
+      if(!dragging&&now-lastAct>3500) yawT+=.0018;
+      yaw+=(yawT-yaw)*.08; pitch+=(pitchT-pitch)*.08; dist+=(distT-dist)*.08;
+      render(curT,tG);
+    }catch(err){
+      broken=true;
+      if(fb) fb.style.display='flex';
+    }
+  }
+  requestAnimationFrame(loop);
+});
+
+/* =====================================================
+   СТАРТ: определяем сервер, читаем базу, показываем фото
+   ===================================================== */
+safe(function(){
+  ghLoad();
+  serverBadge();
+  /* читаем meta.json из базы (если сервер доступен) */
+  if(GH){
+    ghGetJSON('data/meta.json').then(function(m){
+      if(m && m.photos) META.photos = m.photos;
+      if(m && m.likes) META.likes = m.likes;
+      /* применяем серверные фото */
+      SLOTS.forEach(function(s){
+        if(META.photos[s.id]) setSlotImg(s.id, ghBase()+'img/'+s.id+'.jpg');
+      });
+      /* лайки из базы */
+      $$('.like').forEach(function(b){
+        var id = b.dataset.like;
+        if(id && META.likes[id]){
+          b.classList.add('liked');
+          b.dataset.count = +b.dataset.count + 1;
+          b.querySelector('span').textContent = b.dataset.count;
+        }
+      });
+      if(location.hash.indexOf('admin')>-1 && isUnlocked()){ fillGhForm(); updateGhStatus(); }
+    });
+  }
+  /* локальный кэш — мгновенный показ */
+  SLOTS.forEach(function(s){ applyLocal(s.id); });
+  if(location.hash.indexOf('admin')>-1 && isUnlocked()){ buildSlots(); updateGhStatus(); }
+});
+
+})();
+</script>
+</body>
+</html>
