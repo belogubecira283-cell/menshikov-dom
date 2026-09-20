@@ -827,7 +827,7 @@ footer{border-top:1px solid var(--line2);background:#151F1A;padding:56px 5vw 30p
         <p>Девять лет искал покупателя, сам проводил здесь лето и завёл породистых коней. Валдайцы считали его хозяином и долго вспоминали «генерала в парадной форме» на выездах.</p>
       </article>
       <article class="name-card reveal" style="--d:.16s">
-        <div class="ny">1913 — 1918</div><h3>М. О. Меньшиков</h3>
+        <div class="ny">1913 — 1918</div><h3>М. О. Меньшиkov</h3>
         <div class="nr">публицист · «Новое время»</div>
         <p>Осуществил мечту, о которой писал Чехову ещё в 1894-м. Здесь работал в гамаке между липами, собирал за вечерним чаем большую семью и вёл валдайский дневник 1918 года.</p>
         <p class="nq">«Мне лучшего не нужно, чем этот старый дом и сад».</p>
@@ -1314,7 +1314,7 @@ footer{border-top:1px solid var(--line2);background:#151F1A;padding:56px 5vw 30p
       <div>
         <p class="caps" style="color:var(--gold);margin-bottom:8px">личный кабинет</p>
         <h2>Фотографии усадьбы</h2>
-        <p class="slede">Подключите сервер GitHub — и все изменения (фотографии, отметки) будут сохраняться <b>на сервере</b>: видны всем посетителям, переживают обновление, перезагрузку и смену устройства.</p>
+        <p class="slede">Логин и репозиторий уже вписаны. Осталось один раз вставить <b>новый токен</b> — и все изменения будут сохраняться на сервере и видны всем.</p>
       </div>
     </div>
 
@@ -1325,20 +1325,19 @@ footer{border-top:1px solid var(--line2);background:#151F1A;padding:56px 5vw 30p
         <p>Введите код хранителя, чтобы открыть управление.</p>
         <input id="gateCode" type="password" inputmode="numeric" maxlength="8" autocomplete="off" aria-label="Код доступа">
         <button class="btn gold" id="gateBtn" type="button">Войти в кабинет</button>
-        <small>Код по умолчанию — <b style="color:var(--gold2)">1913</b> (год купчей).<br>Его можно сменить внутри кабинета.</small>
+        <small>Код по умолчанию — <b style="color:var(--gold2)">1913</b> (год купчей).</small>
       </div>
     </div>
 
     <div id="cabinet" hidden>
-      <!-- СЕРВЕР -->
       <div class="cab-sec" style="border-top:none;padding-top:0">
         <h3>Сервер — GitHub (база данных сайта)</h3>
-        <p class="desc">Заполните четыре поля и нажмите <b>«Сохранить настройки»</b>. После этого каждая загрузка фото и каждая отметка «нравится» уходит в ваш репозиторий на GitHub — то есть в постоянное хранилище, которое видят все посетители сайта. Пошаговая инструкция, где взять эти данные, — в сообщении, из которого вы скопировали этот сайт.</p>
+        <p class="desc">Логин и репозиторий подставлены автоматически. Вставьте <b>новый токен</b>, нажмите «Проверить связь» и затем «Сохранить настройки».</p>
         <div class="gh-grid">
-          <div class="fld"><label for="ghOwner">Логин на GitHub (владелец)</label><input id="ghOwner" type="text" placeholder="например, mariya-ivanova" autocomplete="off"></div>
-          <div class="fld"><label for="ghRepo">Имя репозитория</label><input id="ghRepo" type="text" placeholder="например, menshikov-dom" autocomplete="off"></div>
+          <div class="fld"><label for="ghOwner">Логин на GitHub (владелец)</label><input id="ghOwner" type="text" value="belogubecera283-cell" autocomplete="off"></div>
+          <div class="fld"><label for="ghRepo">Имя репозитория</label><input id="ghRepo" type="text" value="menshikov-dom" autocomplete="off"></div>
           <div class="fld"><label for="ghBranch">Ветка (обычно main)</label><input id="ghBranch" type="text" value="main" autocomplete="off"></div>
-          <div class="fld"><label for="ghToken">Ключ-токен (длинный секретный код)</label><input id="ghToken" type="password" placeholder="github_pat_…" autocomplete="off"></div>
+          <div class="fld"><label for="ghToken">Ключ-токен (новый, секретный)</label><input id="ghToken" type="password" placeholder="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" autocomplete="off"></div>
         </div>
         <div class="gh-actions">
           <button class="btn gold" id="ghSave" type="button">Сохранить настройки</button>
@@ -1350,7 +1349,7 @@ footer{border-top:1px solid var(--line2);background:#151F1A;padding:56px 5vw 30p
 
       <div class="cab-sec">
         <h3>Фотографии</h3>
-        <p class="desc" id="phDesc">Нажмите <b>«Загрузить»</b> на ячейке и выберите файл, или перетащите фото мышкой прямо на ячейку. При подключённом сервере снимок автоматически уезжает в репозиторий.</p>
+        <p class="desc" id="phDesc">Нажмите <b>«Загрузить»</b> на ячейке и выберите файл, или перетащите фото мышкой прямо на ячейку. При подключённом сервере снимок уезжает в репозиторий и становится виден всем.</p>
         <div class="cab-tools">
           <label class="btn gold" for="bulkInput">Загрузить сразу несколько</label>
           <input type="file" id="bulkInput" accept="image/*" multiple hidden>
@@ -1369,7 +1368,7 @@ footer{border-top:1px solid var(--line2);background:#151F1A;padding:56px 5vw 30p
           <input id="newCode" type="text" maxlength="8" placeholder="новый код" style="background:transparent;border:none;border-bottom:1px solid var(--line2);color:var(--gold2);font:500 15px var(--fs);letter-spacing:.2em;padding:8px 2px;width:160px">
           <button class="btn" id="codeBtn" type="button">Сохранить код</button>
         </div>
-        <p class="cab-note">Подключённый сервер хранит токен только в вашем браузере — посетители сайта видят фотографии, но не могут их менять. Десять загруженных снимков занимают несколько мегабайт — лимиты бесплатного GitHub для этого с большим запасом. Обновление фотографий на сервере занимает несколько секунд; у сторонних посетителей новое фото может появиться с задержкой до пяти минут (кэш сети) — на вашем компьютере сразу.</p>
+        <p class="cab-note">Токен хранится только в вашем браузере — посетители видят фотографии, но не могут их менять. Новые фото на сайте появляются сразу у вас и через несколько минут у остальных (кэш сети). Если у вас другой адрес сайта, скажите — поправлю логин/репозиторий в значениях по умолчанию.</p>
       </div>
     </div>
   </div>
@@ -1446,17 +1445,18 @@ function toast(msg){
 }
 
 /* =====================================================
-   СЕРВЕР: GitHub-репозиторий как база данных.
-   Фото → img/{slot}.jpg в репозитории,
-   реестр и отметки → data/meta.json.
+   СЕРВЕР: GitHub как база данных.
+   Значения по умолчанию — ваш логин и репозиторий.
    ===================================================== */
-var GH = null;           /* {owner, repo, branch, token} */
+var GH = null;
 var META = {v:1, photos:{}, likes:{}};
 
 function lsGet(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
 function lsSet(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
 
-/* автовычисление репозитория из адреса сайта вида логин.github.io/имя-репо */
+function ghDefaults(){
+  return {owner:'belogubecera283-cell', repo:'menshikov-dom', branch:'main'};
+}
 function ghFromLocation(){
   try{
     var m = location.host.match(/^([a-z0-9-]+)\.github\.io$/i);
@@ -1469,15 +1469,19 @@ function ghFromLocation(){
   return null;
 }
 function ghLoad(){
+  var def = ghDefaults();
   var saved = null;
   try{ saved = JSON.parse(lsGet('ogora_gh')||'null'); }catch(e){}
   var auto = ghFromLocation();
   if(saved && saved.owner && saved.repo){
     GH = saved;
     if(auto){ GH.owner = auto.owner; GH.repo = auto.repo; }
+    else { GH.owner = def.owner; GH.repo = def.repo; GH.branch = def.branch; }
   } else if(auto){
-    GH = auto; /* публичное чтение без токена */
-  } else GH = null;
+    GH = auto;
+  } else {
+    GH = def;
+  }
 }
 function ghBase(){ return 'https://raw.githubusercontent.com/'+GH.owner+'/'+GH.repo+'/'+GH.branch+'/'; }
 function ghHeaders(){
@@ -1492,14 +1496,13 @@ function ghGetJSON(path){
     .then(function(r){ return r.ok ? r.json() : null; })
     .catch(function(){ return null; });
 }
-function ghPutJSON(path, obj){
-  var b64 = btoa(unescape(encodeURIComponent(JSON.stringify(obj))));
-  return ghPutFile(path, b64, 'ogora: обновление '+path, true);
+function b64fromDataURL(dataURL){
+  var i = dataURL.indexOf(',');
+  return i < 0 ? dataURL : dataURL.substring(i+1);
 }
-function ghPutFile(path, contentB64, msg, alreadyB64){
+function ghPutFile(path, contentB64, msg){
   var url = 'https://api.github.com/repos/'+GH.owner+'/'+GH.repo+'/contents/'+path;
-  var body = {message: msg || ('ogora: '+path), branch: GH.branch};
-  body.content = alreadyB64 ? contentB64 : b64fromDataURL(contentB64);
+  var body = {message: msg || ('ogora: '+path), branch: GH.branch, content: contentB64};
   return fetch(url+'?ref='+encodeURIComponent(GH.branch), {headers:ghHeaders()})
     .then(function(r){ return r.ok ? r.json() : null; })
     .then(function(j){ if(j && j.sha) body.sha = j.sha; })
@@ -1511,26 +1514,25 @@ function ghPutFile(path, contentB64, msg, alreadyB64){
       return r.json();
     });
 }
-function b64fromDataURL(dataURL){
-  var i = dataURL.indexOf(',');
-  return i < 0 ? dataURL : dataURL.substring(i+1);
+function ghPutJSON(path, obj){
+  var b64 = btoa(unescape(encodeURIComponent(JSON.stringify(obj))));
+  return ghPutFile(path, b64, 'ogora: обновление '+path);
 }
 
-/* ---------- локальный кэш (мгновенный показ до ответа сервера) ---------- */
+/* локальный кэш для мгновенного показа */
 var LS_OK = (function(){ try{ localStorage.setItem('__t','1'); localStorage.removeItem('__t'); return true; }catch(e){ return false; } })();
-function cacheGet(slot){
-  if(!LS_OK) return null;
-  try{ return lsGet('ogora_p_'+slot); }catch(e){ return null; }
-}
+function cacheGet(slot){ if(!LS_OK) return null; try{ return lsGet('ogora_p_'+slot); }catch(e){ return null; } }
 function cacheSet(slot, dataURL){ if(LS_OK) lsSet('ogora_p_'+slot, dataURL); }
 function cacheDel(slot){ if(LS_OK){ try{ localStorage.removeItem('ogora_p_'+slot); }catch(e){} } }
 
-/* ---------- Сжатие ---------- */
+/* сжатие с запасным вариантом: если холст недоступен — оригинал */
 function compress(file){
   return new Promise(function(res, rej){
     if(!file || !/^image\//.test(file.type)) return rej(new Error('Это не изображение'));
     var fr = new FileReader();
+    fr.onerror = function(){ rej(new Error('Не удалось прочитать файл')); };
     fr.onload = function(){
+      var frResult = fr.result;
       var im = new Image();
       im.onload = function(){
         try{
@@ -1539,15 +1541,17 @@ function compress(file){
           c.width = Math.max(1, Math.round(im.width*k));
           c.height = Math.max(1, Math.round(im.height*k));
           var cx = c.getContext('2d');
+          if(!cx) throw new Error('no-canvas');
           cx.fillStyle = '#fff'; cx.fillRect(0,0,c.width,c.height);
           cx.drawImage(im, 0, 0, c.width, c.height);
           res(c.toDataURL('image/jpeg', .82));
-        }catch(e){ rej(e); }
+        }catch(e){
+          res(frResult);
+        }
       };
       im.onerror = function(){ rej(new Error('Браузер не смог открыть файл — попробуйте JPG')); };
-      im.src = fr.result;
+      im.src = frResult;
     };
-    fr.onerror = function(){ rej(new Error('Не удалось прочитать файл')); };
     fr.readAsDataURL(file);
   });
 }
@@ -1589,24 +1593,23 @@ function refreshAll(){
     if(GH){
       var src = ghBase()+'img/'+s.id+'.jpg';
       var im = new Image();
-      im.onload = function(){ if(META.photos[s.id]) setSlotImg(s.id, src); };
+      im.onload = function(){ setSlotImg(s.id, src); };
       im.src = src;
     }
   });
 }
 
-var serverBadge = function(){
+function serverBadge(){
   var b = $('#svBadge');
   if(!b) return;
   if(ghCanWrite()){ b.textContent = '✓ сервер подключён · '+GH.owner+'/'+GH.repo; b.className = 'st ok'; }
   else if(GH && !GH.token){ b.textContent = 'сервер: только просмотр · нужен токен в кабинете'; b.className = 'st warn'; }
   else { b.textContent = 'локальный режим · сервер не подключён'; b.className = 'st'; }
-};
+}
 
-/* ---------- запись на сервер ---------- */
 function serverCommit(slot, dataURL){
   if(!ghCanWrite()) return Promise.resolve('local');
-  return ghPutFile('img/'+slot+'.jpg', dataURL, 'ogora: фото «'+slot+'»')
+  return ghPutFile('img/'+slot+'.jpg', b64fromDataURL(dataURL), 'ogora: фото «'+slot+'»')
     .then(function(){
       META.photos[slot] = 1;
       return ghPutJSON('data/meta.json', META);
@@ -1623,7 +1626,7 @@ function serverLikes(){
   if(!ghCanWrite()) return;
   clearTimeout(likesTmr);
   likesTmr = setTimeout(function(){
-    ghPutJSON('data/meta.json', META).catch(function(){ /* тихо */ });
+    ghPutJSON('data/meta.json', META).catch(function(){});
   }, 1500);
 }
 
@@ -1640,7 +1643,6 @@ function uploadTo(slot, file){
   });
 }
 
-/* ---------- Кабинет: построение ячеек ---------- */
 function buildSlots(){
   var host = $('#slots');
   if(!host || host.dataset.built) return;
@@ -1669,7 +1671,6 @@ function buildSlots(){
   });
 }
 
-/* ---------- доступ ---------- */
 var unlockMem = false;
 function getCode(){ return lsGet('ogora_code') || '1913'; }
 function isUnlocked(){
@@ -1688,9 +1689,12 @@ function showGate(){ $('#gate').hidden = false; $('#cabinet').hidden = true; }
 function gateState(){ if(isUnlocked()) openCab(); else showGate(); }
 
 function fillGhForm(){
+  var def = ghDefaults();
+  if($('#ghOwner') && !$('#ghOwner').value) $('#ghOwner').value = def.owner;
+  if($('#ghRepo') && !$('#ghRepo').value) $('#ghRepo').value = def.repo;
   if(GH){
-    $('#ghOwner').value = GH.owner || '';
-    $('#ghRepo').value = GH.repo || '';
+    $('#ghOwner').value = GH.owner || def.owner;
+    $('#ghRepo').value = GH.repo || def.repo;
     $('#ghBranch').value = GH.branch || 'main';
     $('#ghToken').value = GH.token || '';
   }
@@ -1698,15 +1702,14 @@ function fillGhForm(){
 function updateGhStatus(){
   var el = $('#ghStatus');
   if(!el) return;
-  if(ghCanWrite()){ el.textContent = '✓ сервер подключён: '+GH.owner+'/'+GH.repo+' — изменения сохраняются в базе'; el.className = 'st ok'; }
-  else if(GH){ el.textContent = 'Просмотр с сервера работает, но для записи нужен токен (см. инструкцию).'; el.className = 'st warn'; }
+  if(ghCanWrite()){ el.textContent = '✓ сервер подключён: '+GH.owner+'/'+GH.repo+' — изменения сохраняются в базу'; el.className = 'st ok'; }
+  else if(GH){ el.textContent = 'Просмотр с сервера работает, но для записи нужен токен.'; el.className = 'st warn'; }
   else { el.textContent = 'Сервер не подключён — данные хранятся только в этом браузере.'; el.className = 'st err'; }
   serverBadge();
   var sto = $('#stoInfo');
   if(sto) sto.textContent = ghCanWrite() ? '✓ база: GitHub' : 'база: локальная память';
 }
 
-/* ---------- роутер ---------- */
 function fillBar(){ var f = $('#fbarFill'); if(f) f.style.width = '20.5%'; }
 function tlFill(){
   var tl = $('#tl'); if(!tl) return;
@@ -1784,7 +1787,7 @@ safe(function(){
   });
 });
 
-/* ---------- Лайки (кэш + сервер) ---------- */
+/* Лайки: кэш + сервер */
 safe(function(){
   var LKEY = 'ogora_likes_v1';
   var local = {};
@@ -1798,7 +1801,6 @@ safe(function(){
       b.querySelector('span').textContent = n;
       b.classList.toggle('liked', on);
     }
-    if(META.likes[id]) local[id] = true;
     paint();
     b.addEventListener('click', function(){
       local[id] = !local[id];
@@ -1811,7 +1813,7 @@ safe(function(){
   });
 });
 
-/* ---------- Кабинет: события ---------- */
+/* Кабинет: события */
 safe(function(){
   function tryGate(){
     var inp = $('#gateCode');
@@ -1829,7 +1831,6 @@ safe(function(){
   $('#gateBtn').addEventListener('click', tryGate);
   $('#gateCode').addEventListener('keydown', function(e){ if(e.key==='Enter') tryGate(); });
 
-  /* --- GitHub --- */
   $('#ghSave').addEventListener('click', function(){
     var cfg = {
       owner: $('#ghOwner').value.trim(),
@@ -1845,7 +1846,7 @@ safe(function(){
       toast('Сервер подключён! Теперь фото и отметки сохраняются в базу.');
       refreshAll();
     } else {
-      toast('Сохранено в режиме просмотра: сайт читает фото с сервера, запись недоступна без токена.');
+      toast('Сохранено в режиме просмотра: нужна запись токена.');
     }
   });
   $('#ghTest').addEventListener('click', function(){
@@ -1862,19 +1863,10 @@ safe(function(){
     fetch('https://api.github.com/repos/'+cfg.owner+'/'+cfg.repo, {headers:ghHeaders()})
       .then(function(r){
         GH = saved;
-        if(r.status === 200){
-          el.textContent = '✓ Репозиторий найден, токен действует. Можно сохранять настройки.';
-          el.className = 'st ok';
-        } else if(r.status === 401){
-          el.textContent = 'Токен неверный или устарел — сгенерируйте новый (см. инструкцию, часть 2).';
-          el.className = 'st err';
-        } else if(r.status === 404){
-          el.textContent = 'Репозиторий не найден — проверьте логин, имя и что репозиторий публичный.';
-          el.className = 'st err';
-        } else {
-          el.textContent = 'GitHub ответил '+r.status+'.';
-          el.className = 'st err';
-        }
+        if(r.status === 200){ el.textContent = '✓ Репозиторий найден, токен действует. Сохраняйте настройки.'; el.className = 'st ok'; }
+        else if(r.status === 401){ el.textContent = 'Токен неверный — сгенерируйте новый.'; el.className = 'st err'; }
+        else if(r.status === 404){ el.textContent = 'Репозиторий не найден — проверьте логин, имя и что он публичный.'; el.className = 'st err'; }
+        else { el.textContent = 'GitHub ответил '+r.status+'.'; el.className = 'st err'; }
       })
       .catch(function(){
         GH = saved;
@@ -1891,7 +1883,6 @@ safe(function(){
     toast('Сервер отключён. Фото остались в репозитории и вернутся при повторном подключении.');
   });
 
-  /* --- фото --- */
   $('#slots').addEventListener('change', function(e){
     var inp = e.target.closest('.slot-file');
     if(!inp || !inp.files || !inp.files[0]) return;
@@ -1910,6 +1901,12 @@ safe(function(){
     });
   });
 
+  function stHas(id){
+    var c = cacheGet(id);
+    if(c) return Promise.resolve({id:id, has:true});
+    if(GH) return Promise.resolve({id:id, has:!!META.photos[id]});
+    return Promise.resolve({id:id, has:false});
+  }
   $('#bulkInput').addEventListener('change', function(e){
     var files = Array.prototype.slice.call(e.target.files || []);
     e.target.value = '';
@@ -1933,12 +1930,6 @@ safe(function(){
         });
       });
   });
-  function stHas(id){
-    var c = cacheGet(id);
-    if(c) return Promise.resolve({id:id, has:true});
-    if(GH) return Promise.resolve({id:id, has:!!META.photos[id]});
-    return Promise.resolve({id:id, has:false});
-  }
 
   $('#expBtn').addEventListener('click', function(){
     var out = {v:1, photos:{}, likes:{}};
@@ -1980,15 +1971,13 @@ safe(function(){
             });
           }
         });
-        chain.then(function(){
-          toast(n ? 'Архив восстановлен: '+n+' фото, записано в базу.' : 'В архиве нет фотографий.');
-        });
+        chain.then(function(){ toast(n ? 'Архив восстановлен: '+n+' фото, записано в базу.' : 'В архиве нет фотографий.'); });
       }catch(err){ toast('Файл архива повреждён.'); }
     };
     fr.readAsText(f);
   });
   $('#clrBtn').addEventListener('click', function(){
-    if(!confirm('Убрать все фотографии? (на сервере останутся, если он подключён)')) return;
+    if(!confirm('Убрать все локальные фотографии?')) return;
     SLOTS.forEach(function(s){ cacheDel(s.id); setSlotImg(s.id, null); });
     toast('Локальные фото убраны.');
   });
@@ -2001,7 +1990,7 @@ safe(function(){
   });
 });
 
-/* ---------- Компаратор ---------- */
+/* Компаратор */
 safe(function(){
   var ba = $('#ba'); if(!ba) return;
   var drag = false;
@@ -2033,8 +2022,9 @@ safe(function(){
     $('#baUseB').setAttribute('href', p.bArt);
     $('#baUseA').setAttribute('href', p.aArt);
     var bB = $('#baImgB'), bA = $('#baImgA');
-    if(p.bSlot){ bB.setAttribute('data-slot', p.bSlot); setSlotImg(p.bSlot, ghBase()+'img/'+p.bSlot+'.jpg'); }
-    if(p.aSlot){ bA.setAttribute('data-slot', p.aSlot); setSlotImg(p.aSlot, ghBase()+'img/'+p.aSlot+'.jpg'); }
+    if(p.bSlot){ bB.setAttribute('data-slot', p.bSlot); applyLocal(p.bSlot); }
+    else { bB.removeAttribute('data-slot'); bB.removeAttribute('src'); bB.classList.remove('ok'); }
+    if(p.aSlot){ bA.setAttribute('data-slot', p.aSlot); applyLocal(p.aSlot); }
     else { bA.removeAttribute('data-slot'); bA.removeAttribute('src'); bA.classList.remove('ok'); }
     $('#baTagL').textContent = p.bl;
     $('#baTagR').textContent = p.br;
@@ -2042,7 +2032,7 @@ safe(function(){
   });
 });
 
-/* ---------- Модалка ---------- */
+/* Модалка */
 var modal = $('#modal');
 function openModal(meta, title, html){
   $('#mMeta').textContent = meta;
@@ -2054,7 +2044,7 @@ function openModal(meta, title, html){
 function closeModal(){ modal.classList.remove('open'); d.body.style.overflow = ''; }
 safe(function(){ modal.addEventListener('click', function(e){ if(e.target.closest('[data-close]')) closeModal(); }); });
 
-/* ---------- Тексты дневника ---------- */
+/* Тексты дневника */
 var posts = {
   p1:{ meta:'заметка № 14 · февраль 2025', title:'Не купец, а тайный советник: что говорит купчая 1913 года',
     body:'<p>В публикациях кочевала версия: дом куплен «у купца Мосолова». Одна неточность — и история усадьбы потеряла половину своего первого хозяина.</p>'
@@ -2117,9 +2107,7 @@ safe(function(){
   });
 });
 
-/* =====================================================
-   3D-движок на Canvas 2D (без библиотек)
-   ===================================================== */
+/* 3D-движок на Canvas 2D */
 safe(function(){
   var stage = $('#stage'), canvas = $('#hero3d'), fb = $('#stageFallback');
   var ctx = canvas.getContext ? canvas.getContext('2d') : null;
@@ -2528,22 +2516,17 @@ safe(function(){
   requestAnimationFrame(loop);
 });
 
-/* =====================================================
-   СТАРТ: определяем сервер, читаем базу, показываем фото
-   ===================================================== */
+/* СТАРТ: сервер, база, фото */
 safe(function(){
   ghLoad();
   serverBadge();
-  /* читаем meta.json из базы (если сервер доступен) */
   if(GH){
     ghGetJSON('data/meta.json').then(function(m){
       if(m && m.photos) META.photos = m.photos;
       if(m && m.likes) META.likes = m.likes;
-      /* применяем серверные фото */
       SLOTS.forEach(function(s){
         if(META.photos[s.id]) setSlotImg(s.id, ghBase()+'img/'+s.id+'.jpg');
       });
-      /* лайки из базы */
       $$('.like').forEach(function(b){
         var id = b.dataset.like;
         if(id && META.likes[id]){
@@ -2555,7 +2538,6 @@ safe(function(){
       if(location.hash.indexOf('admin')>-1 && isUnlocked()){ fillGhForm(); updateGhStatus(); }
     });
   }
-  /* локальный кэш — мгновенный показ */
   SLOTS.forEach(function(s){ applyLocal(s.id); });
   if(location.hash.indexOf('admin')>-1 && isUnlocked()){ buildSlots(); updateGhStatus(); }
 });
